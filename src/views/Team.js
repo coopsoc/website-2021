@@ -83,37 +83,6 @@ class Team extends React.Component {
 
   }
 
-
-    muiTheme = this.createMuiTheme({
-        overrides:{
-          MuiSlider: {
-            thumb:{
-            color: "#64a19d",
-            },
-            track: {
-                color: '#64a19d',
-            },
-            rail: {
-              color: '#64a19d'
-            },
-            root: {
-                width: '500px'
-            }
-          }
-      }
-      });
-
-
-      const valueToYear = {
-        0: "2020",
-        100: "2021",
-      };
-
-      const handleYear = (year) => {
-        setYear(year);
-      };
-
-
   renderYear() {
     return this.team_2021()
   }
@@ -169,9 +138,9 @@ class Team extends React.Component {
                 </Col>
             </Row>
             <Row className="justify-content-center text-center mb-lg">
-                <Col lg="8">
-                <div className="slider" ref="yearSlider" />
-                <ThemeProvider theme={muiTheme}>
+                {/* <Col lg="8">
+                <div className="slider" ref="yearSlider" /> */}
+                {/* <ThemeProvider theme={muiTheme}>
                 <Slider
                     defaultValue={100}
                     aria-labelledby="discrete-slider"
@@ -182,7 +151,7 @@ class Team extends React.Component {
                     }
                 />
                 </ThemeProvider>
-                </Col>
+                </Col> */}
             </Row>
               
           
