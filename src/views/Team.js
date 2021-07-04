@@ -18,6 +18,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
+import '../assets/css/my.css'; 
 
 // reactstrap components
 import {
@@ -124,7 +125,7 @@ class Team extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-100">
-              <div className="shape shape-style-1 shape-default">
+              <div className="shape shape-style-1 shape-primary">
                 <span />
                 <span />
                 <span />
@@ -192,20 +193,17 @@ class Team extends React.Component {
                 <h2>Executives</h2>
                 </Row>
 
-                <div class="row justify-content-center">
-                
-                    
+                <div class="row justify-content-center">       
                     <div class="col-md-4">
-
                         <div class="meet-the-execs">
                             <img src={Kenuka_Image} class="card-img-top"></img>
                             {/* <div class="meet-the-execs-text">
                                 <p>
-                                    Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society. I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!
-                                </p>    
-                                <p>
-                                   What are the three things on the top of your bucket list? Travel to every continent, meet Tom Holland, and buy my parents a house.
-                                </p> 
+                            Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society. I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!
+                        </p>    
+                        <p>
+                            What are the three things on the top of your bucket list? Travel to every continent, meet Tom Holland, and buy my parents a house.
+                        </p> 
                             </div> */}
                         </div>
                         <div class="card-body text-center">

@@ -23,13 +23,15 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
+
 import Index from "views/Index.js";
 import Team from "views/Team.js";
-
+import Events from  "views/Events.js"
 import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
+import Charity from "views/Charity";
 
 ReactDOM.render(
   
@@ -47,17 +49,25 @@ ReactDOM.render(
         exact
         render={props => <Team {...props} />}
       />
-      <Route path="/events" exact render={props => <Landing {...props} />} />
+      <Route path="/charity" exact render={props => <Charity {...props} />} />
       <Route
-        path="/events"
+        path="/charity"
+        exact
+        render={props => <Charity {...props} />}
+      />
+      <Route path="/publications" exact render={props => <Landing {...props} />} />
+      <Route
+        path="/publications"
         exact
         render={props => <Landing {...props} />}
       />
+      <Route path="/events" exact render={props => <Events {...props} />} />
       <Route
-        path="/register-page"
+        path="/events"
         exact
-        render={props => <Register {...props} />}
+        render={props => <Events {...props} />}
       />
+
       <Redirect to="/" />
     </Switch>
   </HashRouter>,
