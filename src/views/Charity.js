@@ -88,15 +88,15 @@ render() {
         <div className="position-relative">
           {/* shape Hero */}
           <section className="section section-lg section-shaped pb-100">
-            <div className="shape shape-style-1 shape-primary img-fluid floating">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
+            <div className="shape shape-style-1 shape-primary">
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+              </div>
             
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">

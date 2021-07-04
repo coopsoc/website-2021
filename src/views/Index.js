@@ -23,9 +23,11 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 // import css
 import '../assets/css/my.css'; 
+
 
 class Index extends React.Component {
   componentDidMount() {
@@ -94,70 +96,62 @@ class Index extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="ni ni-calendar-grid-58" />
                           </div>
                           <h6 className="text-primary text-uppercase">
                             Social Events
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                           At the core of the society, our aims are to socialise and meet new people. We facilitate this through a wide range of social events,
+                           including an annual camp and ball.
                           </p>
                           <div>
-                            <Badge color="primary" pill className="mr-1">
-                              design
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              system
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              creative
-                            </Badge>
+                            <br></br>
                           </div>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
+
+                          
+                            <Button
+                              className="mt-4"
+                              color="primary" 
+                              onClick={e => e.preventDefault()}
+                            >
+                              <Link className="homeLink" to="/events">Learn more</Link>
+                            </Button>
+                          
+                          
                         </CardBody>
                       </Card>
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                          <div className="icon icon-shape icon-shape-danger rounded-circle mb-4">
+                            <i class="fa fa-pencil"></i>
                           </div>
-                          <h6 className="text-success text-uppercase">
+                          <h6 className="text-danger text-uppercase">
                             Publications
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          Our goal is to create a platform in which scholars past and present can share their experiences, learn something new, and stay connected.
                           </p>
+                          <br></br>
                           <div>
-                            <Badge color="success" pill className="mr-1">
-                              business
+                            <Badge color="danger" pill className="mr-1">
+                              Releases
                             </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              vision
+                            <Badge color="danger" pill className="mr-1">
+                              Blog Posts
                             </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              success
+                            <Badge color="danger" pill className="mr-1">
+                              Podcast
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="success"
-                            href="#pablo"
+                            color="danger"
                             onClick={e => e.preventDefault()}
                           >
-                            Learn more
+                            <Link className="homeLink" to="/blogs">Learn more</Link>
                           </Button>
                         </CardBody>
                       </Card>
@@ -166,34 +160,24 @@ class Index extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
+                            <i className="fa fa-heart" />
                           </div>
                           <h6 className="text-warning text-uppercase">
                             Charity Events
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          The charity portfolio is an integral way for Co-op scholars to give back to the community through events
+                          that raise awareness for a diverse range of charities and social issues.
                           </p>
                           <div>
-                            <Badge color="warning" pill className="mr-1">
-                              marketing
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              product
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              launch
-                            </Badge>
+                            <br></br>
                           </div>
                           <Button
                             className="mt-4"
                             color="warning"
-                            href="#pablo"
                             onClick={e => e.preventDefault()}
                           >
-                            Learn more
+                            <Link className="homeLink" to="/charity">Learn more</Link>
                           </Button>
                         </CardBody>
                       </Card>
@@ -203,6 +187,84 @@ class Index extends React.Component {
               </Row>
             </Container>
           </section>
+
+          <section className="section section-lg pt-lg-0 mt--200">
+          <Container>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src={require("assets/img/home/camp.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/gals.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/funRun.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src={require("assets/img/home/galsBall.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/campWhole.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/ball2.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src={require("assets/img/home/gals2.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/funRun2.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/ytb.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt=""
+              />
+            </div>
+          </div>
+          </Container>
+          </section>
+
+
         </main>
         <SimpleFooter />
       </>

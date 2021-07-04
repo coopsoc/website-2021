@@ -51,14 +51,14 @@ render() {
           {/* shape Hero */}
           <section className="section section-lg section-shaped pb-100">
             <div className="shape shape-style-1 shape-primary">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+              </div>
             
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">

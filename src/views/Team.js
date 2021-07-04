@@ -125,33 +125,33 @@ class Team extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-100">
-              <div className="shape shape-style-1 shape-primary">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
+            <div className="shape shape-style-1 shape-primary">
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
+                <span className="floating"/>
               </div>
-              
-              {/* SVG separator */}
-              <div className="separator separator-bottom separator-skew">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div>
-            </section>
+            
+            {/* SVG separator */}
+            <div className="separator separator-bottom separator-skew">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                version="1.1"
+                viewBox="0 0 2560 100"
+                x="0"
+                y="0"
+              >
+                <polygon
+                  className="fill-white"
+                  points="2560 0 2560 100 0 100"
+                />
+              </svg>
+            </div>
+          </section>
             {/* 1st Hero Variation */}
           </div>
           <section className="section section-lg">
@@ -196,15 +196,18 @@ class Team extends React.Component {
                 <div class="row justify-content-center">       
                     <div class="col-md-4">
                         <div class="meet-the-execs">
+                            <a class="card1 limit" >
                             <img src={Kenuka_Image} class="card-img-top"></img>
-                            {/* <div class="meet-the-execs-text">
-                                <p>
-                            Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society. I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!
-                        </p>    
-                        <p>
-                            What are the three things on the top of your bucket list? Travel to every continent, meet Tom Holland, and buy my parents a house.
-                        </p> 
-                            </div> */}
+                            <p>Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society. 
+                                I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!</p>
+
+                            <div class="go-corner">
+                            <div class="go-arrow">
+                                →
+                            </div>
+                            </div>
+                            
+                            </a>
                         </div>
                         <div class="card-body text-center">
                             <h4 class="about-name">Kenuka Wijayatunga</h4>
@@ -213,15 +216,19 @@ class Team extends React.Component {
                     </div>
                     <div class="col-md-4">
                         <div class="meet-the-execs">
+                            <a class="card1 limit" >
                             <img src={Celine_Image} class="card-img-top"></img>
-                            {/* <div class="meet-the-execs-text">
-                                <p>
-                                    My biggest goal stepping into this position is to facilitate the creation of long lasting memories and aid the development of the strongest community in UNSW - the co-op family. Not only does this entail running fantastic, consistent events and overseeing an online presence, but it also involves ensuring a key support network is maintained and all voices are heard, not just within the Executive team but throughout the society.
-                                </p>
-                                <p>
-                                    What are some of your hobbies/interests? Brunch, baking, online shopping hehe, podcasts and reading!! PLS feel free to send me book recs I am always in need :))
-                                </p>
-                            </div> */}
+                            <p>My biggest goal stepping into this position is to facilitate the creation of long lasting memories and aid the development of the strongest community in UNSW - the co-op family. 
+                                Not only does this entail running fantastic, consistent events and overseeing an online presence, but it also involves ensuring a key support network is maintained and all voices 
+                                are heard, not just within the Executive team but throughout the society.</p>
+
+                            <div class="go-corner">
+                            <div class="go-arrow">
+                                →
+                            </div>
+                            </div>
+                            
+                            </a>
                         </div>
                         <div class="card-body text-center">
                             <h4 class="about-name">Celine Goh</h4>
@@ -286,6 +293,7 @@ class Team extends React.Component {
                     </div>
                 </div>
                 <br></br>
+                <hr ></hr>
                 <Row className="justify-content-center text-center mb-lg">
                 <h2>Directors</h2>
                 </Row>
@@ -396,6 +404,7 @@ class Team extends React.Component {
                         </div>
                     </div>
                 </div>
+                <hr ></hr>
                 <Row className="justify-content-center text-center mb-lg">
                 <h2>First Year Representatives</h2>
                 </Row>
@@ -436,6 +445,7 @@ class Team extends React.Component {
 
                 <section class="about-section text-center bg-white pb-sm-5">
             <div class="container subcom">
+            <hr ></hr>
             <Row className="justify-content-center text-center mb-lg">
             <h2>The Committee</h2>
             </Row>
@@ -783,7 +793,8 @@ class Team extends React.Component {
                     </div>
                 </div>
             </div>
-
+        
+                           
         <section class="about-section text-center bg-white pb-sm-5">
             <div class="container subcom">
                 <Row className="justify-content-center text-center mb-lg">

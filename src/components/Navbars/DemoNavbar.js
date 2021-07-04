@@ -128,15 +128,22 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text">Events</span>
                     </NavLink>
                   </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
-                      to="/publications" 
-                      tag={Link}
-                    >
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
                       <span className="nav-link-inner--text">Publications</span>
-                    </NavLink>
-                  </NavItem>
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem to="/releases" tag={Link}>
+                        Annual Releases
+                      </DropdownItem>
+                      <DropdownItem to="/blog" tag={Link}>
+                        Blog Posts
+                      </DropdownItem>
+                      <DropdownItem to="/podcast" tag={Link}>
+                        Podcast
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
                   <NavItem>
                     <NavLink
                       className="navbar-nav-hover align-items-lg-center" 

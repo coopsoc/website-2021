@@ -35,15 +35,8 @@ class SimpleFooter extends React.Component {
       <>
         <footer className=" footer">
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
-              <Col lg="6">
-                <h2 className=" mb-0">
-                  Thanks for checking us out!
-                </h2>
-                <h4 className=" mb-0 font-weight-light">
-                Let's get in touch on any of these platforms.
-                </h4>
-              </Col>
+            <br></br>
+            <Row className="justify-content-center text-center">
               <Col className="text-lg-center btn-wrapper" lg="6">
                 {/* <Button
                     className="btn-icon-only rounded-circle ml-1"
@@ -61,8 +54,7 @@ class SimpleFooter extends React.Component {
                   </UncontrolledTooltip> */}
                   <Button
                     className="btn-icon-only rounded-circle ml-1"
-                    // color="info"
-                    color="success"
+                    color="info"
                     href = "mailto: coopsoc.unsw@gmail.com"
                     id="tooltip495507259"
                     target="_blank"
@@ -118,10 +110,9 @@ class SimpleFooter extends React.Component {
                 </UncontrolledTooltip>
                 
               </Col>
-              
-            </Row>
-            <hr />
-            <Row className="justify-content-center text-center ">
+              </Row>
+              <br></br>
+              <Row className="justify-content-center text-center">
               <Col lg="8">
               <div class="container">
                 <a className="footerLink" href="https://www.coopsoc.com.au/Constitution.pdf">Constitution</a> | <a className="footerLink" href="https://www.coopsoc.com.au/Grievance-Resolution-Policy-Procedure.pdf">Grievance Policy </a>
@@ -131,8 +122,6 @@ class SimpleFooter extends React.Component {
               </div>
               </Col>              
             </Row>
-            
-            
           </Container>
         </footer>
       </>
