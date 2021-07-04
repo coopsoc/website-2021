@@ -107,17 +107,17 @@ class Index extends React.Component {
                           </p>
                           <div>
                             <br></br>
-                          </div>
-
-                          
+                          </div>'
+                          <Link className="homeLink" to="/events">
                             <Button
+                             variant="contained"
                               className="mt-4"
                               color="primary" 
                               onClick={e => e.preventDefault()}
                             >
-                              <Link className="homeLink" to="/events">Learn more</Link>
+                             Learn more
                             </Button>
-                          
+                            </Link>
                           
                         </CardBody>
                       </Card>

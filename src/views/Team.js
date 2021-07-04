@@ -80,12 +80,27 @@ import Vincent_Image from '../assets/img/2020_exec/Vincent.jpg'
 class Team extends React.Component {
 
     state = {}
-
     constructor(props) {
         super(props)
-        this.state = {year : 100};
+        this.state = {
+            year : 100,
+            dimensions: {}
+        };
         this.renderYear = this.renderYear.bind(this);
+        this.onImgLoad = this.onImgLoad.bind(this);
+        this.imgRef = React.createRef();
     }
+
+    onImgLoad({target:img}) {
+        this.setState({dimensions:{height:img.offsetHeight,
+                                   width:img.offsetWidth}});
+    }
+
+    handleResize = e => {
+        const img = this.imgRef.current;
+        this.setState({dimensions:{height:img.offsetHeight,
+            width:img.offsetWidth}});
+      };
    
     componentDidMount() {
         document.documentElement.scrollTop = 0;
@@ -106,18 +121,31 @@ class Team extends React.Component {
         }.bind(this)
         );
 
+        window.addEventListener("resize", this.handleResize);
+
     }
 
     renderYear() {
+        var FONT_SIZE = '1vw';
+        const {width, height} = this.state.dimensions;
+
+        if (width > 400) {
+            FONT_SIZE = 20;
+        } else if (width == 210) {
+            FONT_SIZE = 8;
+        } 
+        
         if (this.state.year == 100) {
-            return this.team_2021();
+            return this.team_2021(FONT_SIZE);
         } else {
-            return this.team_2020();
+            return this.team_2020(FONT_SIZE);
         }
     }
     
 
   render() {
+    const {width} = this.state.dimensions;
+
     return (
       <>
         <DemoNavbar />
@@ -158,6 +186,7 @@ class Team extends React.Component {
             <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
                   <h2 className="display-3">MEET THE TEAM</h2>
+                  width = {width}
                 </Col>
                 
             </Row>
@@ -185,20 +214,20 @@ class Team extends React.Component {
     );
   }
 
-  team_2021() {
+  team_2021(FONT_SIZE) {
     return (
         <>
         <div class="container">
                 <Row className="justify-content-center text-center mb-lg">
-                <h2>Executives</h2>
+                <h2>Executives </h2>
                 </Row>
 
                 <div class="row justify-content-center">       
                     <div class="col-md-4">
                         <div class="meet-the-execs">
                             <a class="card1 limit" >
-                            <img src={Kenuka_Image} class="card-img-top"></img>
-                            <p>Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society. 
+                            <img src={Kenuka_Image} ref={this.imgRef} onLoad={this.onImgLoad} class="card-img-top"></img>
+                            <p  style={{fontSize:FONT_SIZE}}>Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society. 
                                 I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!</p>
 
                             <div class="go-corner">
@@ -218,7 +247,7 @@ class Team extends React.Component {
                         <div class="meet-the-execs">
                             <a class="card1 limit" >
                             <img src={Celine_Image} class="card-img-top"></img>
-                            <p>My biggest goal stepping into this position is to facilitate the creation of long lasting memories and aid the development of the strongest community in UNSW - the co-op family. 
+                            <p style={{fontSize:FONT_SIZE}}>My biggest goal stepping into this position is to facilitate the creation of long lasting memories and aid the development of the strongest community in UNSW - the co-op family. 
                                 Not only does this entail running fantastic, consistent events and overseeing an online presence, but it also involves ensuring a key support network is maintained and all voices 
                                 are heard, not just within the Executive team but throughout the society.</p>
 

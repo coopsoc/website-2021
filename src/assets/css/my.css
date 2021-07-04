@@ -83,7 +83,6 @@ transition: transform 0.25s ease-out;
 .limit p{
   width:80%;
   font-weight: 400;
-  /* font-size:1vw; */
 }
 
 .card1:hover:before {
