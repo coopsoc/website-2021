@@ -35,6 +35,7 @@ import Typewriter from 'typewriter-effect';
 
 // FYG
 // FIX Slider
+// FIX TYPEWRITER
 
 class Index extends React.Component {
   componentDidMount() {
