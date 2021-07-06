@@ -35,7 +35,6 @@ import Typewriter from 'typewriter-effect';
 
 // FYG
 // FIX Slider
-// FIX TYPEWRITER
 
 class Index extends React.Component {
   componentDidMount() {
@@ -72,12 +71,10 @@ class Index extends React.Component {
                   <Col lg="8" className="typeWriter">
                     <Typewriter
                       options={{
-                        loop: true,
+                        loop: false,
                       }}
                       onInit={(typewriter) => {
                         typewriter.typeString('UNSW CO-OP SOCIETY')
-                          .pauseFor(2500)
-                          .deleteAll()
                           .start();
                       }}
                     />
@@ -117,25 +114,23 @@ class Index extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-calendar-grid-58" />
+                          <i className="ni ni-calendar-grid-58" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Social Events
+                          Social Events
                           </h6>
                           <p className="description mt-3">
-                           At the core of the society, our aims are to socialise and meet new people. We facilitate this through a wide range of social events,
+                          At the core of the society, our aims are to socialise and meet new people. We facilitate this through a wide range of social events,
                            including an annual camp and ball.
                           </p>
-                          <div>
-                            <br></br>
-                          </div>
-                          <Link 
-                          className="btn btn-pink"
-                          role="button"
-                          to="/events"
-                          > 
-                          Learn more
-                          </Link>
+                          <br></br>
+                          <Button
+                            className="btn-icon mb-3 mb-sm-0"
+                            color="primary"
+                            href="#/events"
+                          >
+                            Learn more
+                          </Button>
                         </CardBody>
                       </Card>
                     </Col>
@@ -143,34 +138,32 @@ class Index extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-danger rounded-circle mb-4">
-                            <i class="fa fa-pencil"></i>
+                          <i class="fa fa-pencil"></i>
                           </div>
                           <h6 className="text-danger text-uppercase">
                             Publications
                           </h6>
                           <p className="description mt-3">
                           Our goal is to create a platform in which scholars past and present can share their experiences, learn something new, and stay connected.
+
                           </p>
-                          <br></br>
                           <div>
-                            <Badge color="danger" pill>
-                              Guides
-                            </Badge>
-                            {"    "}
                             <Badge color="danger" pill className="mr-1">
-                              Blog Posts
+                            Guides
                             </Badge>
                             <Badge color="danger" pill className="mr-1">
-                              Podcast
+                            Blog Posts
+                            </Badge>
+                            <Badge color="danger" pill className="mr-1">
+                            Podcast
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="danger"
-                            href="#"
-                            onClick={e => e.preventDefault()}
+                            href="#/publications"
                           >
-                            <Link className="homeLink" to="/publications">Learn more</Link>
+                            Learn more
                           </Button>
                         </CardBody>
                       </Card>
@@ -179,24 +172,22 @@ class Index extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="fa fa-heart" />
+                          <i className="fa fa-heart" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Charity Events
+                          Charity Events
                           </h6>
                           <p className="description mt-3">
                           The charity portfolio is an integral way for Co-op scholars to give back to the community through events
                           that raise awareness for a diverse range of charities and social issues.
                           </p>
-                          <div>
-                            <br></br>
-                          </div>
+                          <br></br>
                           <Button
-                            className="mt-4"
+                            className="btn-icon mb-3 mb-sm-0"
                             color="warning"
-                            onClick={e => e.preventDefault()}
+                            href="#/charity"
                           >
-                            <Link className="homeLink" to="/charity">Learn more</Link>
+                            Learn more
                           </Button>
                         </CardBody>
                       </Card>
@@ -206,19 +197,20 @@ class Index extends React.Component {
               </Row>
             </Container>
           </section>
-
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          
           <section className="section section-lg pt-lg-0 mt--200">
           <Container>
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+
           <div class="row">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
               <img
