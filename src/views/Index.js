@@ -206,7 +206,9 @@ class Index extends React.Component {
           <br></br>
           
           <section className="section section-lg pt-lg-0 mt--200">
+          
           <Container>
+          <hr></hr>
             <br></br>
             <br></br>
             <br></br>

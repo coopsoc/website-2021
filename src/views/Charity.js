@@ -8,6 +8,9 @@ import SimpleFooter from "components/Footers/SimpleFooter.js";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
+// yess let's get those animations
+import "animate.css"
+
 // reactstrap components
 import {
   Badge,
@@ -117,10 +120,11 @@ render() {
           </section>
           {/* 1st Hero Variation */}
         </div>
+        
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
-              <Col lg="8">
-                <h2 className="display-3">CHARITY</h2>
+              <Col lg="8">       
+              <h1 class="animate__animated animate__rubberBand animate__fast"><h2 className="display-1">CHARITY</h2></h1>
               </Col>              
           </Row>
           <Row className="justify-content-center text-center">

@@ -25,6 +25,9 @@ import {
   Col
 } from "reactstrap";
 
+// yess let's get those animations
+import "animate.css"
+
 // plugin that creates slider
 import Slider from "nouislider";
 
@@ -86,9 +89,9 @@ render() {
         </div>
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
-              <Col lg="8">
-                <h2 className="display-3">PUBLICATIONS</h2>
-              </Col>              
+          <Col lg="8">       
+              <h1 class="animate__animated animate__rubberBand animate__fast"><h2 className="display-1">PUBLICATIONS</h2></h1>
+            </Col>               
           </Row>
           <Row className="justify-content-center text-center">
               <Col lg="8">

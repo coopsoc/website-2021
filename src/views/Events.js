@@ -5,6 +5,9 @@ import React from "react";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
+// yess let's get those animations
+import "animate.css"
+
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
@@ -80,9 +83,9 @@ render() {
         </div>
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
-              <Col lg="8">
-                <h2 className="display-3">EVENTS</h2>
-              </Col>              
+            <Col lg="8">       
+              <h1 class="animate__animated animate__rubberBand animate__fast"><h2 className="display-1">EVENTS</h2></h1>
+            </Col>                
           </Row>
           <Row className="justify-content-center text-center">
               <Col lg="8">

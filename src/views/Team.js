@@ -50,6 +50,9 @@ import Slider from "nouislider";
 
 import teamData from "./data/TeamData.jsx";
 
+// yess let's get those animations
+import "animate.css"
+
 class Team extends React.Component {
 
   state = {};
@@ -190,9 +193,9 @@ class Team extends React.Component {
           </div>
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">
-              <Col lg="8">
-                <h2 className="display-3">MEET THE TEAM</h2>
-              </Col>
+            <Col lg="8">       
+              <h1 class="animate__animated animate__rubberBand animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
+            </Col>  
 
             </Row>
             <Row className="justify-content-center text-center ">
@@ -210,6 +213,7 @@ class Team extends React.Component {
               <Col className="mt-4 mt-md-0" lg="4" sm="2"></Col>
               <p>2021</p>
             </Row>
+            
             {this.renderYear()}
 
           </section>
@@ -280,6 +284,7 @@ class Team extends React.Component {
     return (
       <>
         <div class="container">
+        <hr />
           <Row className="justify-content-center text-center mb-lg">
             <h2>Executives </h2>
           </Row>
@@ -343,6 +348,7 @@ class Team extends React.Component {
     return (
       <>
         <div class="container">
+          <hr />
           <Row className="justify-content-center text-center mb-lg">
             <h2>Executives </h2>
           </Row>
