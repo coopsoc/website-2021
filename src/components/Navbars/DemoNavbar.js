@@ -130,11 +130,17 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <span className="nav-link-inner--text">Publications</span>
+                      <NavLink
+                        className="navbar-nav-hover align-items-lg-center" 
+                        tag={Link}
+                        to="/publications" 
+                      >
+                        <span className="nav-link-inner--text">Publications</span>
+                      </NavLink>
                     </DropdownToggle>
                     <DropdownMenu>
                       <DropdownItem to="/releases" tag={Link}>
-                        Annual Releases
+                        First Year Guide
                       </DropdownItem>
                       <DropdownItem to="/blog" tag={Link}>
                         Blog Posts

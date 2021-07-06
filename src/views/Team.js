@@ -98,8 +98,11 @@ class Team extends React.Component {
 
     handleResize = e => {
         const img = this.imgRef.current;
-        this.setState({dimensions:{height:img.offsetHeight,
-            width:img.offsetWidth}});
+        if (img!= null){
+            this.setState({dimensions:{height:img.offsetHeight,
+                width:img.offsetWidth}});
+        }
+        
       };
    
     componentDidMount() {
@@ -963,7 +966,6 @@ class Team extends React.Component {
         </>
     )
   }
-
 }
 
 export default Team;

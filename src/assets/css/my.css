@@ -712,3 +712,26 @@ button.bg-events:focus {
 .homeLink:hover {
   color: white;
 }
+
+.badge-pill {
+  padding-right: 0.875em;
+  padding-left: 0.875em;
+  border-radius: 10rem; }
+
+  
+.badge-danger {
+  color: #ff0a3b;
+  background-color: #ffacbc; }
+  a.badge-danger:hover, a.badge-danger:focus {
+    color: #fff;
+    background-color: #ca8694; }
+  a.badge-danger:focus, a.badge-danger.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(245, 54, 92, 0.5); }
+
+.typeWriter {
+  font-size: 3.3rem;
+  font-weight: 600;
+  line-height: 1.5; 
+  color:white;
+}

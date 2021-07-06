@@ -28,6 +28,7 @@ import Index from "views/Index.js";
 import Team from "views/Team.js";
 import Events from  "views/Events.js"
 import Landing from "views/examples/Landing.js";
+import Publications from "views/Publications.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
@@ -55,11 +56,11 @@ ReactDOM.render(
         exact
         render={props => <Charity {...props} />}
       />
-      <Route path="/publications" exact render={props => <Landing {...props} />} />
+      <Route path="/publications" exact render={props => <Publications {...props} />} />
       <Route
         path="/publications"
         exact
-        render={props => <Landing {...props} />}
+        render={props => <Publications {...props} />}
       />
       <Route path="/events" exact render={props => <Events {...props} />} />
       <Route

@@ -13,7 +13,7 @@ import {
   Button,
   Card,
   CardBody,
-  CardImg,
+  CardLink,
   FormGroup,
   Input,
   InputGroupAddon,
@@ -21,20 +21,31 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
+  NavLink,
+  Label
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
 // import css
 import '../assets/css/my.css'; 
 
+// Effects
+import Typewriter from 'typewriter-effect';
+
+// FYG
+// FIX Slider
 
 class Index extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
+
+    
   }
+
+  
   render() {
     return (
       <>
@@ -55,18 +66,27 @@ class Index extends React.Component {
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
+                <br></br>
                   <Row>
-                    <Col lg="6">
-                      <h1 className="display-2 text-white">
-                        UNSW CO-OP SOCIETY{" "}
-                      </h1>
-                      <p className="lead text-white">
+                  <Col lg="8" className="typeWriter">
+                    <Typewriter
+                      options={{
+                        loop: true,
+                      }}
+                      onInit={(typewriter) => {
+                        typewriter.typeString('UNSW CO-OP SOCIETY')
+                          .pauseFor(2500)
+                          .deleteAll()
+                          .start();
+                      }}
+                    />
+                    <p className="lead text-white">
                         A society for co-ops, by co-ops.
-                      </p>
-                      
-                    </Col>
+                    </p>
+                  </Col>
                   </Row>
                 </div>
+                
               </Container>
               {/* SVG separator */}
               <div className="separator separator-bottom separator-skew">
@@ -107,18 +127,14 @@ class Index extends React.Component {
                           </p>
                           <div>
                             <br></br>
-                          </div>'
-                          <Link className="homeLink" to="/events">
-                            <Button
-                             variant="contained"
-                              className="mt-4"
-                              color="primary" 
-                              onClick={e => e.preventDefault()}
-                            >
-                             Learn more
-                            </Button>
-                            </Link>
-                          
+                          </div>
+                          <Link 
+                          className="btn btn-pink"
+                          role="button"
+                          to="/events"
+                          > 
+                          Learn more
+                          </Link>
                         </CardBody>
                       </Card>
                     </Col>
@@ -136,9 +152,10 @@ class Index extends React.Component {
                           </p>
                           <br></br>
                           <div>
-                            <Badge color="danger" pill className="mr-1">
-                              Releases
+                            <Badge color="danger" pill>
+                              Guides
                             </Badge>
+                            {"    "}
                             <Badge color="danger" pill className="mr-1">
                               Blog Posts
                             </Badge>
@@ -149,9 +166,10 @@ class Index extends React.Component {
                           <Button
                             className="mt-4"
                             color="danger"
+                            href="#"
                             onClick={e => e.preventDefault()}
                           >
-                            <Link className="homeLink" to="/blogs">Learn more</Link>
+                            <Link className="homeLink" to="/publications">Learn more</Link>
                           </Button>
                         </CardBody>
                       </Card>
@@ -204,19 +222,19 @@ class Index extends React.Component {
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
               <img
                 src={require("assets/img/home/camp.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
 
               <img
                 src={require("assets/img/home/gals.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
 
               <img
                 src={require("assets/img/home/funRun.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
             </div>
@@ -224,19 +242,19 @@ class Index extends React.Component {
             <div class="col-lg-4 mb-4 mb-lg-0">
               <img
                 src={require("assets/img/home/galsBall.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
 
               <img
                 src={require("assets/img/home/campWhole.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
 
               <img
                 src={require("assets/img/home/ball2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
             </div>
@@ -244,19 +262,19 @@ class Index extends React.Component {
             <div class="col-lg-4 mb-4 mb-lg-0">
               <img
                 src={require("assets/img/home/gals2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
 
               <img
                 src={require("assets/img/home/funRun2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
 
               <img
                 src={require("assets/img/home/ytb.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
                 alt=""
               />
             </div>
