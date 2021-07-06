@@ -194,7 +194,7 @@ class Team extends React.Component {
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">
             <Col lg="8">       
-              <h1 class="animate__animated animate__rubberBand animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
+              <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
             </Col>  
 
             </Row>
@@ -223,17 +223,18 @@ class Team extends React.Component {
     );
   }
 
-  renderExec(year, name, font_size, fyp = false) {
+  renderExec(year, name, font_size, fyp, cardColour = false) {
     const data = teamData[year]["exec"][name];
     const random = Math.abs(this.seededRandom(name) % 5) + 1;
+    const colour = teamData[year]["exec"][name]["cardColour"];
 
     return (
       <div className="col-md-4">
         <div className="meet-the-execs">
-          <a className={`card${random} limit`} >
+          <a className={`card${colour} limit`} >
             <img src={data["image"]} ref={this.imgRef} onLoad={this.onImgLoad} className="card-img-top"></img>
             <p style={{ fontSize: font_size }}>{data["description"]}</p>
-            <div className={`go-corner${random}`}>
+            <div className={`go-corner${colour}`}>
               <div className="go-arrow">
                 →
               </div>
