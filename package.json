@@ -29,7 +29,7 @@
     "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "./node_modules/react-scripts/bin/react-scripts.js start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
