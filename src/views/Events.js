@@ -5,6 +5,9 @@ import React from "react";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
+// yess let's get those animations
+import "animate.css"
+
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
@@ -32,13 +35,12 @@ import ball from '../assets/img/events/ball.jpg'
 import camp from '../assets/img/events/camp.jpg'
 import peer_mentoring from '../assets/img/events/peer_mentoring.jpg'
 
-class Charity extends React.Component {
- 
+class Events extends React.Component {
+
   componentDidMount() {
       document.documentElement.scrollTop = 0;
       document.scrollingElement.scrollTop = 0;
       this.refs.main.scrollTop = 0;
-
   }
 
 
@@ -81,9 +83,9 @@ render() {
         </div>
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
-              <Col lg="8">
-                <h2 className="display-3">EVENTS</h2>
-              </Col>              
+            <Col lg="8">       
+              <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">EVENTS</h2></h1>
+            </Col>                
           </Row>
           <Row className="justify-content-center text-center">
               <Col lg="8">
@@ -304,4 +306,4 @@ render() {
 }
 
 
-export default Charity;
+export default Events;
