@@ -110,9 +110,9 @@ class DemoNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavItem >
+                  <NavItem class="animation-wrapper">
                     <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       tag={Link}
                       to="/team" 
                     >
@@ -121,7 +121,7 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       to="/events" 
                       tag={Link}
                     >
@@ -131,7 +131,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <NavLink
-                        className="navbar-nav-hover align-items-lg-center" 
+                        className="navbar-hover navbar-nav-hover align-items-lg-center" 
                         tag={Link}
                         to="/publications" 
                       >
@@ -152,7 +152,7 @@ class DemoNavbar extends React.Component {
                   </UncontrolledDropdown>
                   <NavItem>
                     <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       to="/charity" 
                       tag={Link}
                     >
