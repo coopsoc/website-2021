@@ -17,6 +17,7 @@
 */
 import React from "react";
 import { Link } from "react-router-dom";
+//import { NavLink } from 'react-router-dom';
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
@@ -110,19 +111,17 @@ class DemoNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavItem class="animation-wrapper">
-                    <NavLink
+                  <NavItem>
+                    <NavLink exact to="/team" activeClassName="nav-active"
                       className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       tag={Link}
-                      to="/team" 
                     >
                       <span className="nav-link-inner--text">The Team</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink
+                    <NavLink exact to="/events" activeClassName="nav-active"
                       className="navbar-hover navbar-nav-hover align-items-lg-center" 
-                      to="/events" 
                       tag={Link}
                     >
                       <span className="nav-link-inner--text">Events</span>
@@ -130,10 +129,9 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <NavLink
+                      <NavLink exact to="/publications" activeClassName="nav-active"
                         className="navbar-hover navbar-nav-hover align-items-lg-center" 
                         tag={Link}
-                        to="/publications" 
                       >
                         <span className="nav-link-inner--text">Publications</span>
                       </NavLink>
@@ -151,9 +149,8 @@ class DemoNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                   <NavItem>
-                    <NavLink
+                    <NavLink exact to="/charity" activeClassName="nav-active"
                       className="navbar-hover navbar-nav-hover align-items-lg-center" 
-                      to="/charity" 
                       tag={Link}
                     >
                       <span className="nav-link-inner--text">Charity</span>
