@@ -22,8 +22,12 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
+  UncontrolledAlert
 } from "reactstrap";
+
+import { Link } from "react-router-dom";
+
 
 // yess let's get those animations
 import "animate.css"
@@ -40,6 +44,11 @@ import hscWorkshop from '../assets/img/charity/hsc-workshops.jpg'
 import pokerNight from '../assets/img/charity/poker.jpg'
 import caseComp2021 from '../assets/img/charity/case-comp2021.png'
 import funRun from '../assets/img/charity/funRun.jpg'
+
+
+// Fas Icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullhorn, faDesktop, faDove, faEdit, faMicrophoneAlt, faQuestion, faUserFriends } from "@fortawesome/free-solid-svg-icons";
 
 class Publications extends React.Component {
 
@@ -90,6 +99,7 @@ render() {
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
           <Col lg="8">       
+          
               <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">PUBLICATIONS</h2></h1>
             </Col>               
           </Row>
@@ -100,11 +110,68 @@ render() {
                 </p>
               </Col>
               
-              
           </Row>
+          
+          </section>
+          <br></br>
+          <br></br>
+          <section className="section section-lg mt--200 ">
+          <Container>
+              <Row className="justify-content-center ">
+                <Col lg="12">
+                  <Row className="row-grid">
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                        
+                      <Link to={{ pathname: "/fyg"}}>
+                        <CardBody className="py-5 align-items-center">
+                        <div>
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4 ">
+                            <FontAwesomeIcon icon={faQuestion} size="4x" />
+                          </div>
+                          <h6 style={{textAlign: "center"}} className="text-primary display-4 text-uppercase ">
+                          First year Guide
+                          </h6>
+                          </div>
+                        </CardBody>
+                      </Link>
+                       
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                      <Link to={{ pathname: "/blog"}}>
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-danger rounded-circle mb-4">
+                          <i class="fa fa-pencil"></i>
+                          </div>
+                          <h6 style={{textAlign: "center"}} className="text-danger display-4 text-uppercase">
+                            Blog Posts
+                          </h6>
+                        </CardBody>
+                        </Link>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0">
+                      <Link to={{ pathname: "/podcast"}}>
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
+                          </div>
+                          <h6 style={{textAlign: "center"}} className="text-warning display-4 text-uppercase">
+                          Podcast
+                          </h6>
+                        </CardBody>
+                        </Link>
+                      </Card>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
       
-      
-        </section>
+          </section>
       </main>
       <SimpleFooter />
     </>

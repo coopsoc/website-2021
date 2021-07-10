@@ -63,7 +63,10 @@ class DemoNavbar extends React.Component {
     });
   };
 
+  
+
   render() {
+    const { location } = this.props; 
     return (
       <>
         <header className="header-global">
@@ -109,29 +112,42 @@ class DemoNavbar extends React.Component {
                     </Col>
                   </Row>
                 </div>
-                <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                <Nav className="navbar-nav-hover align-items-lg-center" navbar >
                   <NavItem >
-                    <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
+                  <NavLink exact to="/team" activeClassName="nav-active"
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       tag={Link}
-                      to="/team" 
                     >
                       <span className="nav-link-inner--text">The Team</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
+                      activeClassName="nav-active"
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       to="/events" 
                       tag={Link}
                     >
                       <span className="nav-link-inner--text">Events</span>
                     </NavLink>
                   </NavItem>
+                  <NavItem>
+                    <NavLink
+                      // activeClassName="nav-active"
+                      
+                      activeClassName="nav-active"
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
+                      to="/charity" 
+                      tag={Link}
+                    >
+                      <span className="nav-link-inner--text">Charity</span>
+                    </NavLink>
+                  </NavItem>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <NavLink
-                        className="navbar-nav-hover align-items-lg-center" 
+                        // activeClassName="nav-active"
+                        // className="navbar-hover navbar-nav-hover" 
                         tag={Link}
                         to="/publications" 
                       >
@@ -150,15 +166,7 @@ class DemoNavbar extends React.Component {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
-                  <NavItem>
-                    <NavLink
-                      className="navbar-nav-hover align-items-lg-center" 
-                      to="/charity" 
-                      tag={Link}
-                    >
-                      <span className="nav-link-inner--text">Charity</span>
-                    </NavLink>
-                  </NavItem>
+                  
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>

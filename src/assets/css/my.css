@@ -1,3 +1,40 @@
+.nav-active {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  background: rgb(255, 0, 0);
+  left: 0;
+  bottom: 0;
+}
+
+
+.navbar-hover {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.navbar-hover::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  background: rgb(255, 255, 255);
+  left: 0;
+  bottom: 0;
+  transform: scale(0,1);
+  transition: transform 0.2s ease;
+  /*
+  transform: translateY(3px);*/
+}
+
+.navbar-hover:hover::after {
+  transform: scale(1,1);
+  /*
+  transform: translateY(0);*/
+}
+
 .myblur--hover {
     position: relative; }
     .myblur--hover .myblur-item {
@@ -735,3 +772,10 @@ button.bg-events:focus {
   line-height: 1.5; 
   color:white;
 }
+
+.icon {
+  margin-left: calc(50% - 30px);
+  width: 4rem;
+  height: 4rem; }
+  .icon i, .icon svg {
+    font-size: 2.25rem; }
