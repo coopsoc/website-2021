@@ -123,7 +123,7 @@ render() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         
-                      <Link to={{ pathname: "/fyg"}}>
+                      <a href="https://www.coopsoc.com.au/FYG2021.pdf" target="_blank">
                         <CardBody className="py-5 align-items-center">
                         <div>
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4 ">
@@ -134,7 +134,7 @@ render() {
                           </h6>
                           </div>
                         </CardBody>
-                      </Link>
+                        </a>
                        
                       </Card>
                     </Col>
