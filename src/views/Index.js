@@ -79,7 +79,7 @@ class Index extends React.Component {
                       }}
                     />
                     <p className="lead text-white">
-                        A society for co-ops, by co-ops.
+                        A society for the co-ops, by co-ops.
                     </p>
                   </Col>
                   </Row>
