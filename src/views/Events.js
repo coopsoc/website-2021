@@ -1,5 +1,4 @@
-
-import React from "react";
+import React,{Component} from "react";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
@@ -7,6 +6,9 @@ import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 // yess let's get those animations
 import "animate.css"
+
+// Effects
+import Typewriter from 'typewriter-effect';
 
 // nodejs library that concatenates classes
 import classnames from "classnames";
@@ -29,11 +31,31 @@ import {
 } from "reactstrap";
 
 
-
 // images
 import ball from '../assets/img/events/ball.jpg'
 import camp from '../assets/img/events/camp.jpg'
 import peer_mentoring from '../assets/img/events/peer_mentoring.jpg'
+import Ball2021 from '../assets/img/upcomingEvents/co-op_ball.jpg'
+import ILFCaseComp from '../assets/img/upcomingEvents/ILF_case_comp.jpg'
+
+// Import Swiper React components
+//import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import Swiper bundle with all modules installed
+//import Swiper from 'swiper/bundle';
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+// import Swiper JS
+import Swiper from "swiper";
+// import Swiper styles
+import 'swiper/swiper-bundle.css';
+// core version + navigation, pagination modules:
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+// configure Swiper to use modules
+SwiperCore.use([Navigation, Pagination]);
+
 
 class Events extends React.Component {
 
@@ -43,6 +65,21 @@ class Events extends React.Component {
       this.refs.main.scrollTop = 0;
   }
 
+  componentDidMount() {
+    var swiper = new Swiper('.eventcard-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.eventcard-slider__pagination',
+        clickable: true,
+      }
+    });
+  }
 
 render() {
   return (
@@ -87,6 +124,7 @@ render() {
               <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">EVENTS</h2></h1>
             </Col>                
           </Row>
+          {/*
           <Row className="justify-content-center text-center">
               <Col lg="8">
                 <p className="lead text-muted">
@@ -94,9 +132,70 @@ render() {
                 </p>
               </Col>            
           </Row>
-          
-      
+          */}
         </section>
+        <section class="eventcard-bg-wrapper section section-lg">
+          <Row className="justify-content-center text-center">
+              <Col lg="8">
+                <h1 class="title-1">Upcoming Events</h1>
+              </Col>            
+          </Row>
+          <Row>
+          <Col>
+            <div class="eventcard-slider eventcard-bg-wrapper" >
+              <div class="eventcard-slider__wrp swiper-wrapper container">
+                {/*<div class="title-upcoming-events">
+                  <h1 class="title-1">Upcoming Events</h1>
+                </div>*/}
+
+                {/*EVENT 1*/}
+                <div class="eventcard-slider__item swiper-slide">
+                  <div class="eventcard-slider__img">
+                    <img src={Ball2021} alt="Ball 2021"/>
+                  </div>
+                  <div class="eventcard-slider__content">
+                    <span class="eventcard-slider__code">27 August 2021</span>
+                    <div class="eventcard-slider__title">Co-op Ball</div>
+                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
+                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+
+                  </div>
+                </div>
+                {/*EVENT 2*/}
+                <div class="eventcard-slider__item swiper-slide">
+                  <div class="eventcard-slider__img">
+                    <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
+                  </div>
+                  <div class="eventcard-slider__content">
+                    <span class="eventcard-slider__code">27 August 2021</span>
+                    <div class="eventcard-slider__title">The Indigenous Literacy Foundation x Co-op Soc: 2021 Charity Case Competition</div>
+                    <div class="eventcard-slider__text">Our annual charity case comp ...</div>
+                    {/*<a href="#" class="eventcard-slider__button">Find out more</a>*/}
+                  </div>
+                </div>
+                {/*EVENT 3*/}
+                <div class="eventcard-slider__item swiper-slide">
+                  <div class="eventcard-slider__img">
+                    <img src={ball} alt="Ball 2021"/>
+                  </div>
+                  <div class="eventcard-slider__content">
+                    <span class="eventcard-slider__code">27 August 2021</span>
+                    <div class="eventcard-slider__title">Co-op Ball</div>
+                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
+                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+
+                  </div>
+                </div>
+                {/*END EVENT CARDS*/}
+                
+              </div>
+              <div class="eventcard-slider__pagination"></div>
+            </div>
+
+          </Col> 
+          </Row>
+        </section>
+
         <section className="section section-md">
             <Container>
               <Row className="row-grid align-items-center">
