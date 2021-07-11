@@ -124,7 +124,7 @@ render() {
               <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">EVENTS</h2></h1>
             </Col>                
           </Row>
-          {/*
+          
           <Row className="justify-content-center text-center">
               <Col lg="8">
                 <p className="lead text-muted">
@@ -132,7 +132,7 @@ render() {
                 </p>
               </Col>            
           </Row>
-          */}
+          
         </section>
         <section class="eventcard-bg-wrapper section section-lg">
           <Row className="justify-content-center text-center">
