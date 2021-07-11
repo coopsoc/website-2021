@@ -192,28 +192,30 @@ class Team extends React.Component {
             {/* 1st Hero Variation */}
           </div>
           <section className="section section-lg">
-            <Row className="justify-content-center text-center mb-lg">
+            <Row className="justify-content-center text-center mb-lg">  
             <Col lg="8">       
               <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
             </Col>  
+            </Row>
 
-            </Row>
-            <Row className="justify-content-center text-center ">
-              <Col className="mt-4 mt-md-0" lg="5" sm="2">
+
+            <Container className="py-lg-md d-flex">
+              <Col></Col>     
+              <Col lg="5" sm="8" >
                 <div className="slider" ref="slider1" />
-                <Row className="mt-3 d-none">
-                  <span className="range-slider-value">
-                    {this.state.simpleValue}
-                  </span>
-                </Row>
               </Col>
-            </Row>
-            <Row className="justify-content-center text-center mb-lg">
+              <Col></Col>    
+            </Container>
+            <Container className="py-lg-md d-flex">
+              <Col></Col>     
               <p>2020</p>
-              <Col className="mt-4 mt-md-0" lg="4" sm="2"></Col>
+              <Col className="mt-4 mt-md-0"lg="4" sm="7"></Col>
               <p>2021</p>
-            </Row>
-            
+              <Col></Col>     
+
+             </Container>
+             <br></br>
+             <br></br>
             {this.renderYear()}
 
           </section>
@@ -284,7 +286,9 @@ class Team extends React.Component {
   team_2021(FONT_SIZE) {
     return (
       <>
+        
         <div class="container">
+        
         <hr />
           <Row className="justify-content-center text-center mb-lg">
             <h2>Executives </h2>
@@ -349,6 +353,7 @@ class Team extends React.Component {
     return (
       <>
         <div class="container">
+
           <hr />
           <Row className="justify-content-center text-center mb-lg">
             <h2>Executives </h2>

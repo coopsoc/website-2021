@@ -143,8 +143,9 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text">Charity</span>
                     </NavLink>
                   </NavItem>
+                  
                   <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
+                    <DropdownToggle nav >
                       <NavLink
                         // activeClassName="nav-active"
                         // className="navbar-hover navbar-nav-hover" 
@@ -218,7 +219,7 @@ class DemoNavbar extends React.Component {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip184698705">
-                      Connect with us on LinkedIn
+                      Connect on LinkedIn
                     </UncontrolledTooltip>
                   </NavItem>
                 </Nav>

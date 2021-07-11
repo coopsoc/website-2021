@@ -56,30 +56,22 @@ class SimpleFooter extends React.Component {
                     className="btn-icon-only rounded-circle ml-1"
                     color="info"
                     href = "mailto: coopsoc.unsw@gmail.com"
-                    id="tooltip495507259"
                     target="_blank"
                   >
                     <span className="btn-inner--icon">
                       <i className="fa fa-envelope" />
                     </span>
                   </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip495507259">
-                    Email us
-                  </UncontrolledTooltip>
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="facebook"
                   href="https://www.facebook.com/coopsoc.unsw/"
-                  id="tooltip837440414"
                   target="_blank"
                 >
                   <span className="btn-inner--icon">
                     <i className="fa fa-facebook-square" />
                   </span>
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip837440414">
-                  Like us
-                </UncontrolledTooltip>
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="dribbble"
@@ -91,23 +83,16 @@ class SimpleFooter extends React.Component {
                     <i className="fa fa-instagram" />
                   </span>
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip829810202">
-                  Follow us
-                </UncontrolledTooltip>
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="default"
                   href="https://www.linkedin.com/company/unsw-co-op-society/"
-                  id="tooltip495507257"
                   target="_blank"
                 >
                   <span className="btn-inner--icon">
                     <i className="fa fa-linkedin-square" />
                   </span>
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip495507257">
-                  Connect with us
-                </UncontrolledTooltip>
                 
               </Col>
               </Row>

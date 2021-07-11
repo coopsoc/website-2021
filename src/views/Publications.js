@@ -104,25 +104,24 @@ render() {
           {/* 1st Hero Variation */}
         </div>
         <section className="section section-lg">
+          
           <Row className="justify-content-center text-center ">
           <Col lg="8">       
-          
               <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">PUBLICATIONS</h2></h1>
             </Col>               
           </Row>
+          <Container className="py-lg-md d-flex">
           <Row className="justify-content-center text-center">
-              <Col lg="8">
+              <Col lg="10">
                 <p className="lead text-muted">
                 A central part of the Co-op society is the Publications portfolio who helps provide additional professional support for our Co-op scholars. Our work includes the First Year Guide, writing blogs and now an upcoming podcast with alumni who have stories to share. Together, our goal is to create a platform in which scholars past and present can share their experiences, learn something new, and stay connected.
                 </p>
               </Col>
               
           </Row>
-          
-          </section>
+          </Container>
           <br></br>
           <br></br>
-          <section className="section section-lg mt--200 ">
           <Container>
               <Row className="justify-content-center ">
                 <Col lg="12">
