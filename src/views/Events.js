@@ -154,9 +154,9 @@ render() {
                     <img src={Ball2021} alt="Ball 2021"/>
                   </div>
                   <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">Co-op Ball</div>
-                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
+                    <span class="eventcard-slider__code">27th August</span>
+                    <div class="eventcard-slider__title">Co-op Ball 2021</div>
+                    <div class="eventcard-slider__text">Our annual Co-op Ball is back! A bedazzling night in Spring’s essence; with charming co-op company - we promise it's not a night to be missed.</div>
                     {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
 
                   </div>
@@ -167,23 +167,10 @@ render() {
                     <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
                   </div>
                   <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">The Indigenous Literacy Foundation x Co-op Soc: 2021 Charity Case Competition</div>
-                    <div class="eventcard-slider__text">Our annual charity case comp ...</div>
+                    <span class="eventcard-slider__code">2nd July - 23rd July</span>
+                    <div class="eventcard-slider__title">Charity Case Competition 2021</div>
+                    <div class="eventcard-slider__text"> This year we’ve partnered with The Indigenous Literacy Foundation, a national book industry charity committed to lifting literacy levels in remote Indigenous communities for children across Australia.</div>
                     {/*<a href="#" class="eventcard-slider__button">Find out more</a>*/}
-                  </div>
-                </div>
-                {/*EVENT 3*/}
-                <div class="eventcard-slider__item swiper-slide">
-                  <div class="eventcard-slider__img">
-                    <img src={ball} alt="Ball 2021"/>
-                  </div>
-                  <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">Co-op Ball</div>
-                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
-                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
-
                   </div>
                 </div>
                 {/*END EVENT CARDS*/}
