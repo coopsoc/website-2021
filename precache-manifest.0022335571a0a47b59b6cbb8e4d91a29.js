@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad671ca06a67a772a6cd5fc2f0ff09ed",
+    "revision": "36f265a686e8223d3982fd9330297a9a",
     "url": "/website/index.html"
   },
   {
-    "revision": "d4cf4d73b59cb34f80cc",
+    "revision": "bc722e4cd9c65d75a4a6",
     "url": "/website/static/css/2.2ce0d9b2.chunk.css"
   },
   {
-    "revision": "44cac792fa621ebf6e18",
-    "url": "/website/static/css/main.015fd8be.chunk.css"
+    "revision": "9663e45cbb44f1e678ed",
+    "url": "/website/static/css/main.022faf57.chunk.css"
   },
   {
-    "revision": "d4cf4d73b59cb34f80cc",
-    "url": "/website/static/js/2.34c00897.chunk.js"
+    "revision": "bc722e4cd9c65d75a4a6",
+    "url": "/website/static/js/2.92ea6b69.chunk.js"
   },
   {
     "revision": "253d9fb52f3d335a50ef3bb1485c573a",
-    "url": "/website/static/js/2.34c00897.chunk.js.LICENSE.txt"
+    "url": "/website/static/js/2.92ea6b69.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "44cac792fa621ebf6e18",
-    "url": "/website/static/js/main.0b669701.chunk.js"
+    "revision": "9663e45cbb44f1e678ed",
+    "url": "/website/static/js/main.699eda86.chunk.js"
   },
   {
     "revision": "7a6956e196ccd2e4ccc8856708b02847",
-    "url": "/website/static/js/main.0b669701.chunk.js.LICENSE.txt"
+    "url": "/website/static/js/main.699eda86.chunk.js.LICENSE.txt"
   },
   {
     "revision": "7f15e66a975bdc93c7d1",
@@ -160,6 +160,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/case-comp2021.e156e8d5.png"
   },
   {
+    "revision": "0f6861b3af6d678361e5696a5ece2756",
+    "url": "/website/static/media/connected.0f6861b3.jpg"
+  },
+  {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/website/static/media/fontawesome-webfont.674f50d2.eot"
   },
@@ -204,32 +208,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/galsBall.bb8925fa.jpg"
   },
   {
-    "revision": "4ffd4fe7945af123788bf5888296c696",
-    "url": "/website/static/media/github.4ffd4fe7.svg"
-  },
-  {
-    "revision": "87be59a1f7061fc6021876aad6fee028",
-    "url": "/website/static/media/google.87be59a1.svg"
-  },
-  {
     "revision": "ebbb1b7b4d0484dd74c13bb663c1eddb",
     "url": "/website/static/media/greatest-shave.ebbb1b7b.jpg"
   },
   {
     "revision": "33d5dce5104f89f8fef1d96ffc8f94d3",
     "url": "/website/static/media/hsc-workshops.33d5dce5.jpg"
-  },
-  {
-    "revision": "594b1ee1d95ada356eaad078e9217932",
-    "url": "/website/static/media/ill-2.594b1ee1.svg"
-  },
-  {
-    "revision": "1e7c70dc7d471d845aeed9e9bead0fe5",
-    "url": "/website/static/media/img-1-1200x1000.1e7c70dc.jpg"
-  },
-  {
-    "revision": "0ec264785c9b6efbed2651d84105f436",
-    "url": "/website/static/media/landing.0ec26478.jpg"
   },
   {
     "revision": "8bdceb4b62575979d0dc532a8b5d2415",
@@ -260,32 +244,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/peer_mentoring.0904637e.jpg"
   },
   {
+    "revision": "c9adcc05fa85c6c8d91186adcbb18640",
+    "url": "/website/static/media/placement.c9adcc05.jpg"
+  },
+  {
     "revision": "67c0b54b3f36329c795d680ec9ba33f2",
     "url": "/website/static/media/poker.67c0b54b.jpg"
-  },
-  {
-    "revision": "278a0d250cc46de3a4f65a0791479e71",
-    "url": "/website/static/media/profile.278a0d25.jpg"
-  },
-  {
-    "revision": "75f7ab18f707114d817522df8dea0a3b",
-    "url": "/website/static/media/promo-1.75f7ab18.png"
-  },
-  {
-    "revision": "53033970a416368da35794389680266f",
-    "url": "/website/static/media/team-1-800x800.53033970.jpg"
-  },
-  {
-    "revision": "dcfcf3b77210fe85b0abc8260e6fa70e",
-    "url": "/website/static/media/team-2-800x800.dcfcf3b7.jpg"
-  },
-  {
-    "revision": "497bb3590e24c9f8b645864bfffc39b8",
-    "url": "/website/static/media/team-3-800x800.497bb359.jpg"
-  },
-  {
-    "revision": "230071328b705f8686cabd26a85ed6a5",
-    "url": "/website/static/media/team-4-800x800.23007132.jpg"
   },
   {
     "revision": "4c94a3957d92266d1f272fc9e299c1e5",
