@@ -41,6 +41,7 @@ import {
 
 
 class DemoNavbar extends React.Component {
+  
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -62,11 +63,10 @@ class DemoNavbar extends React.Component {
       collapseClasses: ""
     });
   };
-
   
 
   render() {
-    const { location } = this.props; 
+
     return (
       <>
         <header className="header-global">
@@ -114,7 +114,7 @@ class DemoNavbar extends React.Component {
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar >
                   <NavItem >
-                  <NavLink exact to="/team" activeClassName="nav-active"
+                  <NavLink to="/team" activeClassName="active"
                       className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       tag={Link}
                     >
@@ -123,7 +123,7 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      activeClassName="nav-active"
+                      activeClassName="active"
                       className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       to="/events" 
                       tag={Link}
@@ -135,7 +135,7 @@ class DemoNavbar extends React.Component {
                     <NavLink
                       // activeClassName="nav-active"
                       
-                      activeClassName="nav-active"
+                      activeClassName="active"
                       className="navbar-hover navbar-nav-hover align-items-lg-center" 
                       to="/charity" 
                       tag={Link}
@@ -150,20 +150,23 @@ class DemoNavbar extends React.Component {
                         // className="navbar-hover navbar-nav-hover" 
                         tag={Link}
                         to="/publications" 
+                        activeClassName="active"
                       >
                         <span className="nav-link-inner--text">Publications</span>
                       </NavLink>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to="/releases" tag={Link}>
+                      <DropdownItem>
+                      <a className="linkNone" href="https://www.coopsoc.com.au/FYG2021.pdf" target="_blank">
                         First Year Guide
+                      </a>
                       </DropdownItem>
-                      <DropdownItem to="/blog" tag={Link}>
+                      <DropdownItem to="/blog" tag={Link}>                
                         Blog Posts
                       </DropdownItem>
-                      <DropdownItem to="/podcast" tag={Link}>
+                      {/* <DropdownItem to="/podcast" tag={Link}>
                         Podcast
-                      </DropdownItem>
+                      </DropdownItem> */}
                     </DropdownMenu>
                   </UncontrolledDropdown>
                   

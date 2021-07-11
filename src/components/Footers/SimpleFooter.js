@@ -106,7 +106,7 @@ class SimpleFooter extends React.Component {
                   </span>
                 </Button>
                 <UncontrolledTooltip delay={0} target="tooltip495507257">
-                  Like us
+                  Connect with us
                 </UncontrolledTooltip>
                 
               </Col>

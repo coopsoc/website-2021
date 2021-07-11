@@ -21,6 +21,7 @@ import {
   InputGroupText,
   InputGroup,
   Container,
+  Modal,
   Row,
   Col,
   UncontrolledAlert
@@ -48,7 +49,7 @@ import funRun from '../assets/img/charity/funRun.jpg'
 
 // Fas Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullhorn, faDesktop, faDove, faEdit, faMicrophoneAlt, faQuestion, faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn, faDesktop, faDove, faEdit, faHandsHelping, faMicrophoneAlt, faQuestion, faUserFriends } from "@fortawesome/free-solid-svg-icons";
 
 class Publications extends React.Component {
 
@@ -58,6 +59,12 @@ class Publications extends React.Component {
       this.refs.main.scrollTop = 0;
   }
   
+  state = {};
+  toggleModal = state => {
+    this.setState({
+      [state]: !this.state[state]
+    });
+  };
 
 render() {
   return (
@@ -127,7 +134,7 @@ render() {
                         <CardBody className="py-5 align-items-center">
                         <div>
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4 ">
-                            <FontAwesomeIcon icon={faQuestion} size="4x" />
+                            <FontAwesomeIcon icon={faHandsHelping} size="4x" />
                           </div>
                           <h6 style={{textAlign: "center"}} className="text-primary display-4 text-uppercase ">
                           First year Guide
@@ -154,7 +161,47 @@ render() {
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
-                      <Link to={{ pathname: "/podcast"}}>
+                        <a style={{ cursor: 'pointer' }} onClick={() => this.toggleModal("notificationModal")}>
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
+                          </div>
+                          <h6 style={{textAlign: "center"}} className="text-warning display-4 text-uppercase">
+                          Podcast
+                          </h6>
+                          </CardBody>
+                        </a>
+                        <Modal
+                          className="modal-dialog-centered modal-danger"
+                          contentClassName="bg-gradient-danger"
+                          isOpen={this.state.notificationModal}
+                          toggle={() => this.toggleModal("notificationModal")}
+                        >
+                          
+                          <div className="modal-body">
+                            <div className="py-3 text-center">
+                              <i className="ni ni-bell-55 ni-3x" />
+                              <h4 className="heading mt-4">Watch this space</h4>
+                              <p>
+                                Some new exciting content coming very soon!
+                              </p>
+                            </div>
+                            
+                            <div className="justify-content-center text-center ">
+                            <Button
+                              className="text-white ml-auto"
+                              color="link"
+                              data-dismiss="modal"
+                              type="button"
+                              onClick={() => this.toggleModal("notificationModal")}
+                            >
+                              Close
+                            </Button>
+                            </div>
+                          </div>
+                        </Modal>
+                        
+                      {/* <Link to={{ pathname: "/podcast"}}>
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
                           <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
@@ -163,13 +210,16 @@ render() {
                           Podcast
                           </h6>
                         </CardBody>
-                        </Link>
+                      </Link> */}
+
                       </Card>
                     </Col>
                   </Row>
                 </Col>
               </Row>
+              
             </Container>
+            
       
           </section>
       </main>

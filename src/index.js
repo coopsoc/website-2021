@@ -18,6 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import { PageTransition } from '@steveeeie/react-page-transition';
 
 import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
@@ -27,17 +28,14 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 import Index from "views/Index.js";
 import Team from "views/Team.js";
 import Events from  "views/Events.js"
-import Landing from "views/examples/Landing.js";
+import Blog from  "views/Blog.js"
 import Publications from "views/Publications.js";
-import Login from "views/examples/Login.js";
-import Profile from "views/examples/Profile.js";
-import Register from "views/examples/Register.js";
 import Charity from "views/Charity";
 
 ReactDOM.render(
   
   <HashRouter basename="/" >
-    <Switch>
+    <Switch >
       <Route path="/" exact render={props => <Index {...props} />} />
       <Route
         path="/landing-page"
@@ -67,6 +65,12 @@ ReactDOM.render(
         path="/events"
         exact
         render={props => <Events {...props} />}
+      />
+      <Route path="/blog" exact render={props => <Blog {...props} />} />
+      <Route
+        path="/blog"
+        exact
+        render={props => <Blog {...props} />}
       />
 
       <Redirect to="/" />
