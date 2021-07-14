@@ -33,18 +33,45 @@ import '../assets/css/my.css';
 // Effects
 import Typewriter from 'typewriter-effect';
 
-// FYG
-// FIX Slider
+// images
+import Ball2021 from '../assets/img/upcomingEvents/co-op_ball.jpg'
+import ILFCaseComp from '../assets/img/upcomingEvents/ILF_case_comp.jpg'
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+// import Swiper JS
+import Swiper from "swiper";
+// import Swiper styles
+import 'swiper/swiper-bundle.css';
+// core version + navigation, pagination modules:
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+// configure Swiper to use modules
+SwiperCore.use([Navigation, Pagination]);
+
 
 class Index extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-
-    
+    this.refs.main.scrollTop = 0;    
   }
 
+  componentDidMount() {
+    var swiper = new Swiper('.eventcard-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.eventcard-slider__pagination',
+        clickable: true,
+      }
+    });
+  }
   
   render() {
     return (
@@ -203,11 +230,57 @@ class Index extends React.Component {
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
+
           
           <section className="section section-lg pt-lg-0 mt--200">
           
           <Container>
+
+          <hr></hr>
+          <section class="section section-lg">
+          <Row>
+          <Col>
+          <Row className="justify-content-center text-center ">
+            <Col lg="8">       
+              <h2 className="display-3">UPCOMING EVENTS</h2>
+              <br></br>
+            </Col>                
+          </Row>
+            <div class="eventcard-slider eventcard-bg-wrapper" >
+              <div class="eventcard-slider__wrp swiper-wrapper container">
+
+                {/*EVENT 1*/}
+                <div class="eventcard-slider__item swiper-slide">
+                  <div class="eventcard-slider__img">
+                    <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
+                  </div>
+                  <div class="eventcard-slider__content">
+                    <span class="eventcard-slider__code">On now!</span>
+                    <div class="eventcard-slider__title">The Indigenous Literacy Foundation x Co-op Soc: 2021 Charity Case Competition</div>
+                    <div class="eventcard-slider__text">Our annual charity case comp.</div>
+                    {/*<a href="#" class="eventcard-slider__button">Find out more</a>*/}
+                  </div>
+                </div>
+                {/*EVENT 2*/}
+                <div class="eventcard-slider__item swiper-slide">
+                  <div class="eventcard-slider__img">
+                    <img src={Ball2021} alt="Ball 2021"/>
+                  </div>
+                  <div class="eventcard-slider__content">
+                    <span class="eventcard-slider__code">27 August 2021</span>
+                    <div class="eventcard-slider__title">Co-op Ball</div>
+                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
+                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+
+                  </div>
+                </div>
+              </div>
+              <div class="eventcard-slider__pagination"></div>
+            </div>
+
+          </Col> 
+          </Row>
+        </section>
           <hr></hr>
             <br></br>
             <br></br>

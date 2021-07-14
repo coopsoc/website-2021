@@ -1,3 +1,7 @@
+.imageActiveTab{
+  border: 5px solid #bedaff;
+
+}
 .active{
   color:#cc0000;
  }
@@ -785,7 +789,6 @@ button.bg-events:focus {
   color:white;
 }
 
-<<<<<<< HEAD
 .icon {
   margin-left: calc(50% - 30px);
   width: 4rem;
@@ -805,7 +808,7 @@ button.bg-events:focus {
 .linkNone:active {
   color: white;
   text-decoration: none; 
-=======
+}
 /* Card slider for upcoming events */
 
 /*.eventCardSlider {
@@ -836,7 +839,6 @@ button.bg-events:focus {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
-  margin-top: 80px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1066,7 +1068,7 @@ button.bg-events:focus {
 }
 .eventcard-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #fd3838;
+  background: #fb6340;
   height: 30px;
   box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
 }
@@ -1102,5 +1104,4 @@ button.bg-events:focus {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
->>>>>>> origin/upcomingEvents
 }
