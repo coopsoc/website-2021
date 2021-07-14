@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36f265a686e8223d3982fd9330297a9a",
+    "revision": "9fec8132514f4ac6b35127918a4c3374",
     "url": "/website/index.html"
   },
   {
-    "revision": "bc722e4cd9c65d75a4a6",
-    "url": "/website/static/css/2.2ce0d9b2.chunk.css"
+    "revision": "037d9510169824304269",
+    "url": "/website/static/css/2.420168ba.chunk.css"
   },
   {
-    "revision": "9663e45cbb44f1e678ed",
-    "url": "/website/static/css/main.022faf57.chunk.css"
+    "revision": "b3ab889e27572aa06e61",
+    "url": "/website/static/css/main.11e2ada3.chunk.css"
   },
   {
-    "revision": "bc722e4cd9c65d75a4a6",
-    "url": "/website/static/js/2.92ea6b69.chunk.js"
+    "revision": "037d9510169824304269",
+    "url": "/website/static/js/2.f6f0d3a8.chunk.js"
   },
   {
     "revision": "253d9fb52f3d335a50ef3bb1485c573a",
-    "url": "/website/static/js/2.92ea6b69.chunk.js.LICENSE.txt"
+    "url": "/website/static/js/2.f6f0d3a8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9663e45cbb44f1e678ed",
-    "url": "/website/static/js/main.699eda86.chunk.js"
+    "revision": "b3ab889e27572aa06e61",
+    "url": "/website/static/js/main.7a5e4c77.chunk.js"
   },
   {
     "revision": "7a6956e196ccd2e4ccc8856708b02847",
-    "url": "/website/static/js/main.699eda86.chunk.js.LICENSE.txt"
+    "url": "/website/static/js/main.7a5e4c77.chunk.js.LICENSE.txt"
   },
   {
     "revision": "7f15e66a975bdc93c7d1",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a22c6e834a8919bd65a9aceb61278dcc",
     "url": "/website/static/media/Hirun.a22c6e83.jpeg"
+  },
+  {
+    "revision": "ac8e7cb0e8185c78a3289e10d2347a12",
+    "url": "/website/static/media/ILF_case_comp.ac8e7cb0.jpg"
   },
   {
     "revision": "8f5c925e858c20b7e860025c19ed7eda",
@@ -160,6 +164,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/case-comp2021.e156e8d5.png"
   },
   {
+    "revision": "b2a8b3cbb4f0a303abe239748cd522b6",
+    "url": "/website/static/media/checkin.b2a8b3cb.png"
+  },
+  {
+    "revision": "b05365f986276b13d0cda5183df40abc",
+    "url": "/website/static/media/co-op_ball.b05365f9.jpg"
+  },
+  {
     "revision": "0f6861b3af6d678361e5696a5ece2756",
     "url": "/website/static/media/connected.0f6861b3.jpg"
   },
@@ -214,6 +226,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "33d5dce5104f89f8fef1d96ffc8f94d3",
     "url": "/website/static/media/hsc-workshops.33d5dce5.jpg"
+  },
+  {
+    "revision": "08ed4e793b5ecb1fe35bbe11c7f45336",
+    "url": "/website/static/media/kahoot.08ed4e79.png"
   },
   {
     "revision": "8bdceb4b62575979d0dc532a8b5d2415",
