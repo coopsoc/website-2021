@@ -29,6 +29,7 @@ import {
   Button,
   NavItem,
   NavLink,
+  Container,
   Nav,
   TabContent,
   TabPane,
@@ -112,50 +113,44 @@ render() {
           </Row>
           
           </section>
-          <br></br>
-          <br></br>
           <section className="section section-lg mt--200 ">
           <Row className="justify-content-center text-center ">
 
+          
             <Col lg="5">       
-                <div class="card" style={{height: '580px'}}>
-                    <img src={connected} class="card-img-top"></img>
+            <br></br>
+            <br></br>
+            <Container className="py-lg-md d-flex">
+                <div class="card">
+                    <a style={{ cursor: 'pointer' }} onClick={() => this.toggleModal("modal1")}>
+                      <img src={connected} class="card-img-top"></img>
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title"><b>Social Distancing Without the Socially Distant.</b></h5>
+                        <h5 class="card-title"><b>Social Distancing Without the Socially Distant</b></h5>
                         <p class="card-text">How can we stay connected during isolation?</p><br />      
-                        <Button
-                          block
-                          class="btn btn-neutral"
-                          color="neutral"
-                          type="button"
-                          onClick={() => this.toggleModal("modal1")}
-                        >
-                          Read More
-                        </Button>
                     </div>
                 </div>
+                </Container>
             </Col>    
+            
             <Col lg="5">  
-                <div class="card" style={{height: '580px'}}>
-                    <img src={placement} class="card-img-top"></img>
+            <br></br>
+            <br></br>
+            <Container className="py-lg-md d-flex">
+                <div class="card">
+                    <a style={{ cursor: 'pointer' }} onClick={() => this.toggleModal("modal2")}>
+                      <img src={placement} class="card-img-top"></img>
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title"><b>First Placement Experiences</b></h5>
-                        <br></br>
-                        <p class="card-text">Worried about placement and not sure what to expect? We've got you covered.</p>
-                        <Button
-                          block
-                          class="btn btn-neutral"
-                          color="neutral"
-                          type="button"
-                          onClick={() => this.toggleModal("modal2")}
-                        >
-                          Read More
-                        </Button>
+                        <p class="card-text">Read about each 2020 Exec's experience in their placements!</p><br />      
                     </div>
               </div>
-            </Col>           
+              </Container>        
+            </Col> 
+              
           </Row>
-
+          
 
           {/* Social Distancing Without the Socially Distant */}
           <Modal
