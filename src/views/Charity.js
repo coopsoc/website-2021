@@ -108,11 +108,7 @@ class Charity extends React.Component {
       direction_str = "Left";
     }
 
-    if (this.state.dirToggle) {
-      direction_str += "1";
-    } else {
-      direction_str += "2";
-    }
+    direction_str += this.state.dirToggle ? "1" : "2";
 
     return (
       <Container className={direction === 0 ? "" : `animate__animated animate__fadeIn${direction_str}`}>

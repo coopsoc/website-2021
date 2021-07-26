@@ -1142,8 +1142,8 @@ button.bg-events:focus {
 @-webkit-keyframes fadeInLeft2 {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-101%, 0, 0);
-    transform: translate3d(-101%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -1156,8 +1156,8 @@ button.bg-events:focus {
 @keyframes fadeInLeft2 {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-101%, 0, 0);
-    transform: translate3d(-101%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -1207,8 +1207,8 @@ button.bg-events:focus {
 @-webkit-keyframes fadeInRight2 {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(101%, 0, 0);
-    transform: translate3d(101%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
@@ -1221,8 +1221,8 @@ button.bg-events:focus {
 @keyframes fadeInRight2 {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
