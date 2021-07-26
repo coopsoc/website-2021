@@ -1105,3 +1105,7 @@ button.bg-events:focus {
   overflow: hidden;
   white-space: nowrap;
 }
+
+.charityBody img {
+  margin-bottom: 10px;
+}
