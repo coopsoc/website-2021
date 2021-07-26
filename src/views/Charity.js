@@ -33,8 +33,10 @@ class Charity extends React.Component {
     super(props);
 
     this.state = {
+      dirToggle: false,
       prev: charityData.end,
       year: charityData.end,
+
       showModal: false,
       current: {
         "title": "",
@@ -52,7 +54,16 @@ class Charity extends React.Component {
   updateSlider = (values, handle) => {
     const value = parseInt(values[0]);
 
+    const prev_dir = this.state.year - this.state.prev;
+    const curr_dir = value - this.state.year;
+    let toggle = this.state.dirToggle;
+
+    if (Math.sign(prev_dir) === Math.sign(curr_dir)) {
+      toggle = !toggle;
+    }
+
     this.setState({
+      dirToggle: toggle,
       prev: this.state.year,
       year: value
     });
@@ -97,7 +108,11 @@ class Charity extends React.Component {
       direction_str = "Left";
     }
 
-    console.log("Direction:", direction_str);
+    if (this.state.dirToggle) {
+      direction_str += "1";
+    } else {
+      direction_str += "2";
+    }
 
     return (
       <Container className={direction === 0 ? "" : `animate__animated animate__fadeIn${direction_str}`}>
