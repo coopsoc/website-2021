@@ -124,77 +124,93 @@ render() {
               <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">EVENTS</h2></h1>
             </Col>                
           </Row>
-          {/*
-          <Row className="justify-content-center text-center">
+          
+          <Container className="py-lg-md d-flex">
+            <Row className="justify-content-center text-center">
               <Col lg="8">
                 <p className="lead text-muted">
-                  Fun events YAY!
+                  At Co-op Soc, our top aims are to socialise and meet new people. We facilitate this through a wide range of social events, including our highly anticipated annual camp and ball.
                 </p>
-              </Col>            
-          </Row>
-          */}
+              </Col>
+            </Row>
+            </Container>
+            <br></br>
+         
         </section>
-        <section class="eventcard-bg-wrapper section section-lg">
-          <Row className="justify-content-center text-center">
-              <Col lg="8">
-                <h1 class="title-1">Upcoming Events</h1>
-              </Col>            
-          </Row>
-          <Row>
-          <Col>
-            <div class="eventcard-slider eventcard-bg-wrapper" >
-              <div class="eventcard-slider__wrp swiper-wrapper container">
-                {/*<div class="title-upcoming-events">
-                  <h1 class="title-1">Upcoming Events</h1>
-                </div>*/}
 
-                {/*EVENT 1*/}
-                <div class="eventcard-slider__item swiper-slide">
-                  <div class="eventcard-slider__img">
-                    <img src={Ball2021} alt="Ball 2021"/>
-                  </div>
-                  <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">Co-op Ball</div>
-                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
-                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section className="section section-lg pt-lg-0 mt--200">
+          
+          <Container>
 
-                  </div>
-                </div>
-                {/*EVENT 2*/}
-                <div class="eventcard-slider__item swiper-slide">
-                  <div class="eventcard-slider__img">
-                    <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
-                  </div>
-                  <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">The Indigenous Literacy Foundation x Co-op Soc: 2021 Charity Case Competition</div>
-                    <div class="eventcard-slider__text">Our annual charity case comp ...</div>
-                    {/*<a href="#" class="eventcard-slider__button">Find out more</a>*/}
-                  </div>
-                </div>
-                {/*EVENT 3*/}
-                <div class="eventcard-slider__item swiper-slide">
-                  <div class="eventcard-slider__img">
-                    <img src={ball} alt="Ball 2021"/>
-                  </div>
-                  <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">Co-op Ball</div>
-                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
-                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src={require("assets/img/home/camp.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
 
-                  </div>
-                </div>
-                {/*END EVENT CARDS*/}
-                
-              </div>
-              <div class="eventcard-slider__pagination"></div>
+              <img
+                src={require("assets/img/home/gals.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/funRun.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
             </div>
 
-          </Col> 
-          </Row>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src={require("assets/img/home/galsBall.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/campWhole.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/ball2.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src={require("assets/img/home/gals2.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/funRun2.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+
+              <img
+                src={require("assets/img/home/ytb.jpg")}
+                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                alt=""
+              />
+            </div>
+          </div>
+        </Container>
         </section>
+        
 
 
       </main>

@@ -287,72 +287,7 @@ class Index extends React.Component {
         </section> */}
           {/* <hr></hr>
           <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
-          <hr></hr>
-            <br></br>
-            <br></br>
-            <br></br>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <img
-                src={require("assets/img/home/camp.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/gals.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/funRun.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src={require("assets/img/home/galsBall.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/campWhole.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/ball2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src={require("assets/img/home/gals2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/funRun2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/ytb.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-            </div>
-          </div>
+          
           </Container>
           </section>
 

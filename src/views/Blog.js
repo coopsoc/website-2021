@@ -122,13 +122,19 @@ render() {
             <br></br>
             <Container className="py-lg-md d-flex">
                 <div class="card">
-                    <a style={{ cursor: 'pointer' }} onClick={() => this.toggleModal("modal1")}>
-                      <img src={connected} class="card-img-top"></img>
-                    </a>
+                    <img src={connected} class="card-img-top"></img>
                     <div class="card-body">
-                        <h5 class="card-title"><b>Social Distancing Without the Socially Distant</b></h5>
-                        <p class="card-text">How can we stay connected during isolation?</p><br />      
+                        <h5 class="card-title" style={{height: '50px'}}><b>Social Distancing Without the Socially Distant</b></h5>
+                        <p class="card-text" style={{height: '50px'}}>How can we stay connected during isolation?</p>
+                        <Button
+                          className="mt-4"
+                          color="neutral"
+                          onClick={() => this.toggleModal("modal1")}
+                        >
+                          Learn more
+                        </Button>
                     </div>
+
                 </div>
                 </Container>
             </Col>    
@@ -138,12 +144,18 @@ render() {
             <br></br>
             <Container className="py-lg-md d-flex">
                 <div class="card">
-                    <a style={{ cursor: 'pointer' }} onClick={() => this.toggleModal("modal2")}>
-                      <img src={placement} class="card-img-top"></img>
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title"><b>First Placement Experiences</b></h5>
-                        <p class="card-text">Read about each 2020 Exec's experience in their placements!</p><br />      
+                    <img src={placement} class="card-img-top"></img>
+                    <div class="card-body" >
+                        <h5 class="card-title" style={{height: '50px'}}><b>First Placement Experiences</b></h5>
+                        <p class="card-text" style={{height: '50px'}}>Read about some of our past Exec's placement experiences!</p>   
+    
+                    <Button
+                      className="mt-4"
+                      color="neutral"
+                      onClick={() => this.toggleModal("modal2")}
+                    >
+                      Learn more
+                    </Button>
                     </div>
               </div>
               </Container>        
