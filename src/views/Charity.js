@@ -176,6 +176,7 @@ class Charity extends React.Component {
               </Col>
             </Row>
 
+            <Container className="py-lg-md d-flex">
             <Row className="justify-content-center text-center">
               <Col lg="8">
                 <p className="lead text-muted">
@@ -187,37 +188,42 @@ class Charity extends React.Component {
                 </p>
               </Col>
             </Row>
+            </Container>
+            <br></br>
 
-            <Row className="justify-content-center text-center ">
-              <Col className="mt-4 mt-md-0" lg="5" sm="2">
+            <Container className="py-lg-md d-flex">
+              <Col></Col>     
+              <Col lg="5" sm="8" >
                 <div className="slider" ref={this.sliderRef} />
-                <Row className="mt-3 d-none">
-                  <span className="range-slider-value">
-                    {this.state.simpleValue}
-                  </span>
-                </Row>
               </Col>
-            </Row>
-
-            <Row className="justify-content-center text-center mb-lg">
+              <Col></Col>    
+            </Container>
+            <Container className="py-lg-md d-flex">
+              <Col></Col>     
               <p>2019</p>
-              <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
+              <Col className="mt-4 mt-md-0"lg="2" sm="2"></Col>
               <p>2020</p>
-              <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
+              <Col className="mt-4 mt-md-0"lg="2" sm="2"></Col>
               <p>2021</p>
-            </Row>
+              <Col></Col>     
 
+             </Container>
+             <br></br>
+             <br></br>
             {this.renderYear()}
           </section>
 
-          <Modal isOpen={this.state.showModal} toggle={this.toggleModal}>
+          <Modal isOpen={this.state.showModal} toggle={this.toggleModal} className="modal-dialog-centered modal-lg">
             <ModalHeader toggle={this.toggleModal}>{this.state.current["title"]}</ModalHeader>
             <ModalBody className="charityBody">
-              <img src={this.state.current["image"]} alt={this.state.current["title"]} style={{ width: "100%" }} />
+              <div style={{textAlign: 'center'}}>
+              <img src={this.state.current["image"]} alt={this.state.current["title"]} style={{ width: "50%" }} />
+              </div>
+              <hr></hr>
               {this.state.current["description"].split("\n").map(line => <p>{line}</p>)}
             </ModalBody>
             <ModalFooter>
-              <a href={this.state.current["link"]}>
+              <a target="_blank" href={this.state.current["link"]}>
                 <Button color="primary" onClick={this.toggleModal}>Visit</Button>
               </a>
               <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>

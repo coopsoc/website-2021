@@ -9,6 +9,7 @@ import classnames from "classnames";
 
 // reactstrap components
 import {
+  UncontrolledAlert,
   Badge,
   Button,
   Card,
@@ -78,6 +79,7 @@ class Index extends React.Component {
       <>
         <DemoNavbar />
         <main ref="main">
+          
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
@@ -132,6 +134,7 @@ class Index extends React.Component {
             </section>
             {/* 1st Hero Variation */}
           </div>
+
           <section className="section section-lg pt-lg-0 mt--200">
             <Container>
               <Row className="justify-content-center">
@@ -230,13 +233,15 @@ class Index extends React.Component {
           <br></br>
           <br></br>
           <br></br>
+          <br></br>
 
           
           <section className="section section-lg pt-lg-0 mt--200">
           
           <Container>
 
-          <hr></hr>
+
+          {/* <hr></hr>
           <section class="section section-lg">
           <Row>
           <Col>
@@ -249,7 +254,6 @@ class Index extends React.Component {
             <div class="eventcard-slider eventcard-bg-wrapper" >
               <div class="eventcard-slider__wrp swiper-wrapper container">
 
-                {/*EVENT 1*/}
                 <div class="eventcard-slider__item swiper-slide">
                   <div class="eventcard-slider__img">
                     <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
@@ -258,10 +262,10 @@ class Index extends React.Component {
                     <span class="eventcard-slider__code">On now!</span>
                     <div class="eventcard-slider__title">The Indigenous Literacy Foundation x Co-op Soc: 2021 Charity Case Competition</div>
                     <div class="eventcard-slider__text">Our annual charity case comp.</div>
-                    {/*<a href="#" class="eventcard-slider__button">Find out more</a>*/}
+   
                   </div>
                 </div>
-                {/*EVENT 2*/}
+
                 <div class="eventcard-slider__item swiper-slide">
                   <div class="eventcard-slider__img">
                     <img src={Ball2021} alt="Ball 2021"/>
@@ -270,7 +274,7 @@ class Index extends React.Component {
                     <span class="eventcard-slider__code">27 August 2021</span>
                     <div class="eventcard-slider__title">Co-op Ball</div>
                     <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
-                    {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+
 
                   </div>
                 </div>
@@ -280,7 +284,9 @@ class Index extends React.Component {
 
           </Col> 
           </Row>
-        </section>
+        </section> */}
+          {/* <hr></hr>
+          <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
           <hr></hr>
             <br></br>
             <br></br>

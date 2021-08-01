@@ -1110,6 +1110,8 @@ button.bg-events:focus {
   margin-bottom: 10px;
 }
 
+
+
 /* Hack for animations resetting */
 @-webkit-keyframes fadeInLeft1 {
   from {

@@ -132,6 +132,20 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text">Events</span>
                     </NavLink>
                   </NavItem>
+                  
+                  <NavItem>
+                    <NavLink
+                      // activeClassName="nav-active"
+                      
+                      activeClassName="active"
+                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
+                      to="/publications" 
+                      tag={Link}
+                    >
+                      <span className="nav-link-inner--text">Publications</span>
+                    </NavLink>
+                  </NavItem>
+                  
                   <NavItem>
                     <NavLink
                       // activeClassName="nav-active"
@@ -145,7 +159,7 @@ class DemoNavbar extends React.Component {
                     </NavLink>
                   </NavItem>
                   
-                  <UncontrolledDropdown nav>
+                  {/* <UncontrolledDropdown nav>
                     <DropdownToggle nav >
                       <NavLink
                         // activeClassName="nav-active"
@@ -166,11 +180,13 @@ class DemoNavbar extends React.Component {
                       <DropdownItem to="/blog" tag={Link}>                
                         Blog Posts
                       </DropdownItem>
-                      {/* <DropdownItem to="/podcast" tag={Link}>
+                      <DropdownItem>
+                      <a className="linkNone" href="https://open.spotify.com/show/25fOObrHq0t3hPrmf8B8Dx?si=IYM-tZg-Q0CfufTKVqTqJg&dl_branch=1" target="_blank">
                         Podcast
-                      </DropdownItem> */}
+                      </a>
+                      </DropdownItem>
                     </DropdownMenu>
-                  </UncontrolledDropdown>
+                  </UncontrolledDropdown> */}
                   
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>

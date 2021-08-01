@@ -160,7 +160,7 @@ render() {
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
-                        <a style={{ cursor: 'pointer' }} onClick={() => this.toggleModal("notificationModal")}>
+                      <a href="https://open.spotify.com/show/25fOObrHq0t3hPrmf8B8Dx?si=IYM-tZg-Q0CfufTKVqTqJg&dl_branch=1" target="_blank">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
                           <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
@@ -170,35 +170,10 @@ render() {
                           </h6>
                           </CardBody>
                         </a>
-                        <Modal
-                          className="modal-dialog-centered modal-danger"
-                          contentClassName="bg-gradient-danger"
-                          isOpen={this.state.notificationModal}
-                          toggle={() => this.toggleModal("notificationModal")}
-                        >
-                          
-                          <div className="modal-body">
-                            <div className="py-3 text-center">
-                              <i className="ni ni-bell-55 ni-3x" />
-                              <h4 className="heading mt-4">Watch this space</h4>
-                              <p>
-                                Some new exciting content coming very soon!
-                              </p>
-                            </div>
-                            
-                            <div className="justify-content-center text-center ">
-                            <Button
-                              className="text-white ml-auto"
-                              color="link"
-                              data-dismiss="modal"
-                              type="button"
-                              onClick={() => this.toggleModal("notificationModal")}
-                            >
-                              Close
-                            </Button>
-                            </div>
-                          </div>
-                        </Modal>
+                        
+                        {/* <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
+
+                        
                         
                       {/* <Link to={{ pathname: "/podcast"}}>
                         <CardBody className="py-5">

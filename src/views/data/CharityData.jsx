@@ -42,7 +42,7 @@ const charityData = {
             {
                 "title": "HSC Workshop",
                 "image": hscWorkshop,
-                "description": `Filler text here`,
+                "description": `An HSC Workshop run by Co-ops to help highschoolers in the stressful pre-HSC time.`,
                 "link": "https://www.facebook.com/events/2137899859788914/",
             },
         ],
