@@ -238,7 +238,6 @@ class Team extends React.Component {
             <p style={{ fontSize: font_size }}>{data["description"]}</p>
             <div className={`go-corner${colour}`}>
               <div className="go-arrow">
-                →
               </div>
             </div>
           </a>

@@ -42,7 +42,8 @@ class Charity extends React.Component {
         "title": "",
         "image": "",
         "description": "",
-        "link": ""
+        "link": "",
+        "image2": ""
       },
     };
 
@@ -221,6 +222,25 @@ class Charity extends React.Component {
               </div>
               <hr></hr>
               {this.state.current["description"].split("\n").map(line => <p>{line}</p>)}
+
+              {/* Case Comp Winners  */}
+              { (this.state.current["title"] === "Case Comp 2021") 
+                ?
+                  <div >
+                    <hr></hr>
+                    <Row className="justify-content-center text-center ">
+                      <Col>
+                        <p > Congratulations to our winning team, Ignite Consulting, for their incredible solution. Well done Annie Yan, Nicole Huang, Jerry Yeh and Ethan Wong! </p>
+                      </Col> 
+                      <Col>       
+                        <img src={this.state.current["image2"]} alt={this.state.current["title"]} style={{ width: "100%" }} />
+                      </Col>                
+                    </Row>
+                  </div> 
+                :
+                  null 
+              }
+
             </ModalBody>
             <ModalFooter>
               <a target="_blank" href={this.state.current["link"]}>

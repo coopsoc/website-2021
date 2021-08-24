@@ -92,7 +92,7 @@ const teamData = {
                 "description": `Along with Hirun, my goal as Charity Director for 2021 is to create exciting opportunities for all co-ops to give back to the community. By partnering with various charities and running exciting events, I want to help us make a tangible difference in the lives of others, whilst also bringing our co-op family closer through the spirit of giving.`,
                 "name": "Keshmira Vijayan",
                 "role": "Charity",
-                "cardColour": 3,
+                "cardColour": 4,
             },
             "Claire": {
                 "image": Claire_Image,
@@ -231,7 +231,7 @@ const teamData = {
                 "description": `Coming into the Charity Director role, my goal was to organise fun events that allow Co-ops to volunteer first-hand and give back to the community - to do good and feel good. We’ve had the opportunity to hold some great events, such as our upcoming online Case Comp partnering with a real charity to help them tackle a very real issue in our society. Looking forward to launching some of our planned events when in-person activities resume!`,
                 "name": "Emily Kasovska",
                 "role": "Charity",
-                "cardColour": 3,
+                "cardColour": 4,
             },
             "Lelland": {
                 "image": Lelland_Image,

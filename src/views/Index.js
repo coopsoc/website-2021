@@ -285,8 +285,8 @@ class Index extends React.Component {
           </Col> 
           </Row>
         </section> */}
-          {/* <hr></hr>
-          <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
+          {/* <hr></hr> */}
+          {/* <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
           
           </Container>
           </section>
