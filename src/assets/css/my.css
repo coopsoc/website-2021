@@ -2,9 +2,7 @@
   border: 5px solid #bedaff;
 
 }
-.active{
-  color:#cc0000;
- }
+
  .tooltip-inner {
   background-color: #ffffff ;
   color: #fb6340;
@@ -25,6 +23,12 @@
 .bs-tooltip-auto[x-placement^="right"] .arrow::before, .bs-tooltip-right .arrow::before{
 	border-right-color: #ffffff;
 }
+
+.navbar-transparent .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 1); 
+  font-weight: 800;
+  font-size: large;
+}
 .navbar-hover {
   position: relative;
   cursor: pointer;
@@ -39,14 +43,14 @@
   background: rgb(255, 255, 255);
   left: 0;
   bottom: 0;
-  transform: scale(0,1);
+  transform: scale(0);
   transition: transform 0.2s ease;
   /*
   transform: translateY(3px);*/
 }
 
 .navbar-hover:hover::after {
-  transform: scale(1,1);
+  transform: scale(0.8,0.5);
   /*
   transform: translateY(0);*/
 }

@@ -20,6 +20,8 @@ import { Link } from "react-router-dom";
 //import { NavLink } from 'react-router-dom';
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
+import { useLocation } from "react-router-dom";
+
 // reactstrap components
 import {
   Button,
@@ -42,7 +44,7 @@ import {
 
 
 class DemoNavbar extends React.Component {
-  
+
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -53,6 +55,10 @@ class DemoNavbar extends React.Component {
     collapseOpen: false
   };
 
+  getNavLinkClass = (path) => {
+    return window.location.href.split("#")[1] === path ? "active" : "navbar-hover navbar-nav-hover align-items-lg-center" ;
+  }
+  
   onExiting = () => {
     this.setState({
       collapseClasses: "collapsing-out"
@@ -115,8 +121,9 @@ class DemoNavbar extends React.Component {
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar >
                   <NavItem >
-                  <NavLink to="/team" activeClassName="active"
-                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
+                  <NavLink 
+                    to="/team" 
+                      className={this.getNavLinkClass("/team")}
                       tag={Link}
                     >
                       <span className="nav-link-inner--text">The Team</span>
@@ -124,8 +131,7 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      activeClassName="active"
-                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
+                      className={this.getNavLinkClass("/events")}
                       to="/events" 
                       tag={Link}
                     >
@@ -136,9 +142,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       // activeClassName="nav-active"
-                      
-                      activeClassName="active"
-                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
+                      className={this.getNavLinkClass("/publications")}
                       to="/publications" 
                       tag={Link}
                     >
@@ -150,8 +154,7 @@ class DemoNavbar extends React.Component {
                     <NavLink
                       // activeClassName="nav-active"
                       
-                      activeClassName="active"
-                      className="navbar-hover navbar-nav-hover align-items-lg-center" 
+                      className={this.getNavLinkClass("/charity")}
                       to="/charity" 
                       tag={Link}
                     >
@@ -207,6 +210,22 @@ class DemoNavbar extends React.Component {
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
+                    <NavLink
+                      className="nav-link-icon"
+                      href = "mailto: coopsoc.unsw@gmail.com"
+                      id="tooltip356643867"
+                      target="_blank"
+                    >
+                      <i className="fa fa-envelope" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Email
+                      </span>
+                    </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip356643867">
+                      Email us
+                    </UncontrolledTooltip>
+                    </NavItem>
+                    <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       href="https://www.instagram.com/coopsoc_unsw/"

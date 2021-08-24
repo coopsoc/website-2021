@@ -35,67 +35,6 @@ class SimpleFooter extends React.Component {
       <>
         <footer className=" footer">
           <Container>
-            <br></br>
-            <Row className="justify-content-center text-center">
-              <Col className="text-lg-center btn-wrapper" lg="6">
-                {/* <Button
-                    className="btn-icon-only rounded-circle ml-1"
-                    color="success"
-                    href = "tel:61401454303"
-                    id="tooltip495507258"
-                    target="_blank"
-                  >
-                    <span className="btn-inner--icon">
-                      <i className="fa fa-phone" />
-                    </span>
-                  </Button>
-                  <UncontrolledTooltip delay={0} target="tooltip495507258">
-                    Phone us
-                  </UncontrolledTooltip> */}
-                  <Button
-                    className="btn-icon-only rounded-circle ml-1"
-                    color="info"
-                    href = "mailto: coopsoc.unsw@gmail.com"
-                    target="_blank"
-                  >
-                    <span className="btn-inner--icon">
-                      <i className="fa fa-envelope" />
-                    </span>
-                  </Button>
-                <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="facebook"
-                  href="https://www.facebook.com/coopsoc.unsw/"
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-facebook-square" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="dribbble"
-                  href="https://www.instagram.com/coopsoc_unsw/"
-                  id="tooltip829810202"
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-instagram" />
-                  </span>
-                </Button>
-                <Button
-                  className="btn-icon-only rounded-circle ml-1"
-                  color="default"
-                  href="https://www.linkedin.com/company/unsw-co-op-society/"
-                  target="_blank"
-                >
-                  <span className="btn-inner--icon">
-                    <i className="fa fa-linkedin-square" />
-                  </span>
-                </Button>
-                
-              </Col>
-              </Row>
               <br></br>
               <Row className="justify-content-center text-center">
               <Col lg="8">
@@ -103,8 +42,9 @@ class SimpleFooter extends React.Component {
                 <a className="footerLink" href="https://www.coopsoc.com.au/Constitution.pdf">Constitution</a> | <a className="footerLink" href="https://www.coopsoc.com.au/Grievance-Resolution-Policy-Procedure.pdf">Grievance Policy </a>
               </div>
               <div class="container">
-                  Copyright &copy; UNSW Co-op Society
+                  Copyright&copy; 2021 UNSW Co-op Society
               </div>
+              <br></br>
               </Col>              
             </Row>
           </Container>
