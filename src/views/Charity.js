@@ -228,9 +228,11 @@ class Charity extends React.Component {
                 ?
                   <div >
                     <hr></hr>
-                    <Row className="justify-content-center text-center ">
-                      <Col>
+                    <Row className="text-center">
+                      <Col >
+                      <div className='verticalAlignTextDiv'>
                         <p > Congratulations to our winning team, Ignite Consulting, for their incredible solution. Well done Annie Yan, Nicole Huang, Jerry Yeh and Ethan Wong! </p>
+                      </div>
                       </Col> 
                       <Col>       
                         <img src={this.state.current["image2"]} alt={this.state.current["title"]} style={{ width: "100%" }} />

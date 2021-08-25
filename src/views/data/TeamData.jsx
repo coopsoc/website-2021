@@ -181,7 +181,7 @@ const teamData = {
                 "description": `Stepping into the role of President, not only did I want to be the leader who oversees the events and logistics that happen ‘behind the scenes’; I wanted to act as a key support network for not only the executive members on the team but also those in the society as well- ensuring that the goals and voices of the co-op community were being heard and considered.`,
                 "name": "Jelinna Wang",
                 "role": "President",
-                "cardColour": 1,
+                "cardColour": 2,
             },
             "Roary": {
                 "image": Roary_Image,
@@ -195,14 +195,14 @@ const teamData = {
                 "description": `I honestly believe that organisation is a staple to running any society. I applied to be secretary so that I could help be the backbone of the society. Along the way I’ve helped develop the teams’ communication abilities further, whilst simultaneously increasing my ability to work in and lead a team.  My goal is to have everyone working together as a tightly oiled machine, and so far it’s been pretty good!!`,
                 "name": "Shrey Somaiya",
                 "role": "Secretary",
-                "cardColour": 3,
+                "cardColour": 2,
             },
             "Xavier": {
                 "image": Xavier_Image,
                 "description": `Over the year as treasurer I have sought to consistently reduce costs associated with events whilst continuing to improve engagement and attendance. Coming from a shaky financial position previously, gaining a reasonable buffer fund for the society has been my main priority for the past term. My goal is to make a total accrual profit for the year of $1000.`,
                 "name": "Xavier Crowley",
                 "role": "Treasurer",
-                "cardColour": 4,
+                "cardColour": 2,
             },
             "Ian": {
                 "image": Ian_Image,
@@ -210,28 +210,28 @@ const teamData = {
                 I stepped forward to help organise the buddy program to make sure that new scholars would make a strong connection right off the bat with people in the year above them.`,
                 "name": "Ian Ng",
                 "role": "Arc Delegate",
-                "cardColour": 5,
+                "cardColour": 2,
             },
             "Stanley": {
                 "image": Stanley_Image,
                 "description": `Social director and all-round LIFO. The aim for this year was to help y'all work hard, play hard. With COVID-19 in our systems, I’ve tried to help Co-op play hard, whether it be games over zoom, getting inebriated over zoom or finding love over zoom, I wanted to replicate that feeling of in person connection. Once COVID-19 is over, my goal is to throw a term you’ll never forget.`,
                 "name": "Stanley Chen",
                 "role": "Events",
-                "cardColour": 1,
+                "cardColour": 5,
             },
             "Hayes": {
                 "image": Hayes_Image,
                 "description": `As a Charity co-director I wanted to highlight the philanthropic side of Co-op Soc that our members tend to forget. Given that we’re a privileged bunch, it’s important we give back to the community, and these acts of kindness don’t have to be boring! We’ve already fundraised through the World’s Greatest Shave and started a new case comp initiative to help small charities. Later on we hope to run in the City2Surf and hold our much-anticipated Poker Night.`,
                 "name": "Hayes Choy",
                 "role": "Charity",
-                "cardColour": 2,
+                "cardColour": 5,
             },
             "Emily": {
                 "image": Emily_Image,
                 "description": `Coming into the Charity Director role, my goal was to organise fun events that allow Co-ops to volunteer first-hand and give back to the community - to do good and feel good. We’ve had the opportunity to hold some great events, such as our upcoming online Case Comp partnering with a real charity to help them tackle a very real issue in our society. Looking forward to launching some of our planned events when in-person activities resume!`,
                 "name": "Emily Kasovska",
                 "role": "Charity",
-                "cardColour": 3,
+                "cardColour": 5,
             },
             "Lelland": {
                 "image": Lelland_Image,
@@ -240,7 +240,7 @@ const teamData = {
                 think that having a strong presence in how we promote ourselves can help us establish us as a better society and engage more Co-ops with events.`,
                 "name": "Lelland Hui",
                 "role": "Marketing",
-                "cardColour": 4,
+                "cardColour": 5,
             },
             "Susan": {
                 "image": Susan_Image,
@@ -254,7 +254,7 @@ const teamData = {
                 "description": `I came into this role because I wanted to express my creativity and create a website that people would be willing and keen to use. I hope to make something that future Co-op Society members as well as alumni will continue to visit and find out more about how Co-ops are doing and what changes take place from year to year.`,
                 "name": "Vincent Chen",
                 "role": "IT",
-                "cardColour": 1,
+                "cardColour": 5,
             },
             "Celine": {
                 "image": Celine_Image,
@@ -268,7 +268,7 @@ const teamData = {
                 "description": `As one of this year’s First Year Representatives, my role has been to bridge the gap between the 2020 Co-op Soc First Year cohort and the Co-op Soc Executive team. I’ve strived to play an active role in the society by engaging with my cohort and working to design and distribute the 2020 Co-op Soc merchandise. After seeing how tightly-knit the second year cohort were, my main goal has been to foster a similar environment and make Co-op Soc a second family for my year.`,
                 "name": "Kenuka Wijayatunga",
                 "role": "",
-                "cardColour": 5,
+                "cardColour": 1,
             }
         },
         "subcoms": {

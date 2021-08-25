@@ -202,7 +202,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-facebook-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
+                        FACEBOOK
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
@@ -218,7 +218,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-envelope" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Email
+                        EMAIL
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356643867">
@@ -234,7 +234,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-instagram" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Instagram
+                        INSTAGRAM
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356693867">
@@ -251,7 +251,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-linkedin-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                      LinkedIn
+                      LINKEDIN
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip184698705">

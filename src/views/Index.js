@@ -57,22 +57,6 @@ class Index extends React.Component {
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;    
   }
-
-  componentDidMount() {
-    var swiper = new Swiper('.eventcard-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.eventcard-slider__pagination',
-        clickable: true,
-      }
-    });
-  }
   
   render() {
     return (
@@ -107,7 +91,7 @@ class Index extends React.Component {
                           .start();
                       }}
                     />
-                    <p className="lead text-white" style={{fontWeight : 'bold'}}>
+                    <p className="lead text-white" style={{fontWeight : 'normal'}}>
                         A society for co-ops, by co-ops.
                     </p>
                   </Col>
@@ -227,9 +211,6 @@ class Index extends React.Component {
               </Row>
             </Container>
           </section>
-          <br></br>
-          <br></br>
-          <br></br>
           <br></br>
           <br></br>
           <br></br>

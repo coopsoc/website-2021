@@ -82,7 +82,7 @@ a {
 
  .tooltip-inner {
   background-color: #ffffff ;
-  color: #006591;
+  color: #e5abc8;
 }
 
 .bs-tooltip-auto[x-placement^="bottom"] .arrow::before, .bs-tooltip-bottom .arrow::before{
@@ -832,7 +832,7 @@ button.bg-events:focus {
   background: #7ad4fa;
 }
 .noUi-target.noUi-horizontal .noUi-tooltip {
-  background-color: purple;
+  background-color: #e5abc8;
 }
 
 .headroom--not-top {
@@ -1325,4 +1325,10 @@ button.bg-events:focus {
 .animate__fadeInRight2 {
   -webkit-animation-name: fadeInRight2;
   animation-name: fadeInRight2;
+}
+
+.verticalAlignTextDiv {
+  display: table-cell;
+  height: 200px;
+  vertical-align: middle;
 }

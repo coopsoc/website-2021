@@ -65,21 +65,21 @@ class Events extends React.Component {
       this.refs.main.scrollTop = 0;
   }
 
-  componentDidMount() {
-    var swiper = new Swiper('.eventcard-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.eventcard-slider__pagination',
-        clickable: true,
-      }
-    });
-  }
+  // componentDidMount() {
+  //   var swiper = new Swiper('.eventcard-slider', {
+  //     spaceBetween: 30,
+  //     effect: 'fade',
+  //     loop: true,
+  //     mousewheel: {
+  //       invert: false,
+  //     },
+  //     // autoHeight: true,
+  //     pagination: {
+  //       el: '.eventcard-slider__pagination',
+  //       clickable: true,
+  //     }
+  //   });
+  // }
 
 render() {
   return (
