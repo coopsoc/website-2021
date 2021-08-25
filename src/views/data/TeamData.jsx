@@ -92,14 +92,14 @@ const teamData = {
                 "description": `Along with Hirun, my goal as Charity Director for 2021 is to create exciting opportunities for all co-ops to give back to the community. By partnering with various charities and running exciting events, I want to help us make a tangible difference in the lives of others, whilst also bringing our co-op family closer through the spirit of giving.`,
                 "name": "Keshmira Vijayan",
                 "role": "Charity",
-                "cardColour": 4,
+                "cardColour": 3,
             },
             "Claire": {
                 "image": Claire_Image,
                 "description": `My overarching goal for this year is to enrich and enhance the connections within the Co-op community. I believe that the uniqueness of our society lies in our ability to foster tight-knit friendships within and across cohorts. With my position as marketing director, I hope to use the power of social media to reach out to every member and facilitate long-lasting relationships between a diverse range of people, creating valuable memories and a truly unique community.`,
                 "name": "Claire Xue",
                 "role": "Marketing",
-                "cardColour": 3,
+                "cardColour": 4,
             },
             "Jack": {
                 "image": Jack_Image,
@@ -113,7 +113,7 @@ const teamData = {
                 "description": `Over the following year as IT Director, I’m hoping to cultivate the society’s online presence, channelling my creativity and love for tech into the Co-op Soc website. I’m looking forward to co-leading the first Pubs/IT Sub-committee as Jack and I strengthen the partnership between our two roles, introducing Co-op Soc Instagram and monthly newsletters. I’m also planning to introduce a new way to create and display blog posts from within the website.`,
                 "name": "Noa Challis",
                 "role": "IT",
-                "cardColour": 2,
+                "cardColour": 1,
             },
             "Miah": {
                 "image": Miah_Image,
@@ -127,7 +127,7 @@ const teamData = {
                 "description": `As one of the First Year Representatives, my duty is to connect our cohort with the Co-op Executives across a range of events. We are also responsible for designing the 2021 Co-op merchandise and making everyone look amazing! As time goes on, I hope that we get the privilege to call each and every Co-op scholar our second family.`,
                 "name": "Ronaldo Keng",
                 "role": "",
-                "cardColour": 3,
+                "cardColour": 5,
             }
         },
         "subcoms": {
@@ -231,7 +231,7 @@ const teamData = {
                 "description": `Coming into the Charity Director role, my goal was to organise fun events that allow Co-ops to volunteer first-hand and give back to the community - to do good and feel good. We’ve had the opportunity to hold some great events, such as our upcoming online Case Comp partnering with a real charity to help them tackle a very real issue in our society. Looking forward to launching some of our planned events when in-person activities resume!`,
                 "name": "Emily Kasovska",
                 "role": "Charity",
-                "cardColour": 4,
+                "cardColour": 3,
             },
             "Lelland": {
                 "image": Lelland_Image,
@@ -240,7 +240,7 @@ const teamData = {
                 think that having a strong presence in how we promote ourselves can help us establish us as a better society and engage more Co-ops with events.`,
                 "name": "Lelland Hui",
                 "role": "Marketing",
-                "cardColour": 3,
+                "cardColour": 4,
             },
             "Susan": {
                 "image": Susan_Image,
@@ -254,7 +254,7 @@ const teamData = {
                 "description": `I came into this role because I wanted to express my creativity and create a website that people would be willing and keen to use. I hope to make something that future Co-op Society members as well as alumni will continue to visit and find out more about how Co-ops are doing and what changes take place from year to year.`,
                 "name": "Vincent Chen",
                 "role": "IT",
-                "cardColour": 2,
+                "cardColour": 1,
             },
             "Celine": {
                 "image": Celine_Image,
@@ -268,7 +268,7 @@ const teamData = {
                 "description": `As one of this year’s First Year Representatives, my role has been to bridge the gap between the 2020 Co-op Soc First Year cohort and the Co-op Soc Executive team. I’ve strived to play an active role in the society by engaging with my cohort and working to design and distribute the 2020 Co-op Soc merchandise. After seeing how tightly-knit the second year cohort were, my main goal has been to foster a similar environment and make Co-op Soc a second family for my year.`,
                 "name": "Kenuka Wijayatunga",
                 "role": "",
-                "cardColour": 3,
+                "cardColour": 5,
             }
         },
         "subcoms": {

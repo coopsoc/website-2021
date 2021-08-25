@@ -143,10 +143,10 @@ class Index extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
                           <i className="ni ni-calendar-grid-58" />
                           </div>
-                          <h6 className="text-primary text-uppercase">
+                          <h6 className="text-uppercase">
                           Social Events
                           </h6>
                           <p className="description mt-3">
@@ -156,7 +156,7 @@ class Index extends React.Component {
                           <br></br>
                           <Button
                             className="btn-icon mb-3 mb-sm-0"
-                            color="primary"
+                            color="index"
                             href="#/events"
                           >
                             Learn more
@@ -167,10 +167,10 @@ class Index extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-danger rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
                           <i class="fa fa-pencil"></i>
                           </div>
-                          <h6 className="text-danger text-uppercase">
+                          <h6 className="text-uppercase">
                             Publications
                           </h6>
                           <p className="description mt-3">
@@ -178,19 +178,19 @@ class Index extends React.Component {
 
                           </p>
                           <div>
-                            <Badge color="danger" pill className="mr-1">
+                            <Badge color="index" pill className="mr-1">
                             Guides
                             </Badge>
-                            <Badge color="danger" pill className="mr-1">
+                            <Badge color="index" pill className="mr-1">
                             Blog Posts
                             </Badge>
-                            <Badge color="danger" pill className="mr-1">
+                            <Badge color="index" pill className="mr-1">
                             Podcast
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
-                            color="danger"
+                            color="index"
                             href="#/publications"
                           >
                             Learn more
@@ -201,10 +201,10 @@ class Index extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
                           <i className="fa fa-heart" />
                           </div>
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-uppercase">
                           Charity Events
                           </h6>
                           <p className="description mt-3">
@@ -214,7 +214,7 @@ class Index extends React.Component {
                           <br></br>
                           <Button
                             className="btn-icon mb-3 mb-sm-0"
-                            color="warning"
+                            color="index"
                             href="#/charity"
                           >
                             Learn more

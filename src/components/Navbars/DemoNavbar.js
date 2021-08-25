@@ -126,7 +126,7 @@ class DemoNavbar extends React.Component {
                       className={this.getNavLinkClass("/team")}
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">The Team</span>
+                      <span className="nav-link-inner--text">THE  TEAM</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -135,7 +135,7 @@ class DemoNavbar extends React.Component {
                       to="/events" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">Events</span>
+                      <span className="nav-link-inner--text">EVENTS</span>
                     </NavLink>
                   </NavItem>
                   
@@ -146,7 +146,7 @@ class DemoNavbar extends React.Component {
                       to="/publications" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">Publications</span>
+                      <span className="nav-link-inner--text">PUBLICATIONS</span>
                     </NavLink>
                   </NavItem>
                   
@@ -158,7 +158,7 @@ class DemoNavbar extends React.Component {
                       to="/charity" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">Charity</span>
+                      <span className="nav-link-inner--text">CHARITY</span>
                     </NavLink>
                   </NavItem>
                   

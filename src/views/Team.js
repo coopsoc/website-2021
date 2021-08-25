@@ -215,7 +215,6 @@ class Team extends React.Component {
 
              </Container>
              <br></br>
-             <br></br>
             {this.renderYear()}
 
           </section>
@@ -273,7 +272,8 @@ class Team extends React.Component {
         <div class="col-sm-4">
           <div class="card-body text-center">
             <ul class="list-group">
-              <li class="list-group-item border-0 li-name"><b>Members:</b></li>
+              <br></br>
+              {data["name"] === "Marketing" ? <></> : data["name"] === "Publications/IT" ? <div><br></br> <br></br></div> : <br></br> }
               {data["members"].map(name => <li class="list-group-item border-0 li-name">{name}</li>)}
             </ul>
           </div>

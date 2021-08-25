@@ -244,9 +244,9 @@ class Charity extends React.Component {
             </ModalBody>
             <ModalFooter>
               <a target="_blank" href={this.state.current["link"]}>
-                <Button color="primary" onClick={this.toggleModal}>Visit</Button>
+                <Button color="index" style={{minWidth: '100px'}} onClick={this.toggleModal}>Visit</Button>
               </a>
-              <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+              <Button color="secondary" style={{minWidth: '100px'}} onClick={this.toggleModal}>Cancel</Button>
             </ModalFooter>
           </Modal>
         </main>

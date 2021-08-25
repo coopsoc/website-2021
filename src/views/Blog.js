@@ -128,7 +128,7 @@ render() {
                         <p class="card-text" style={{height: '50px'}}>How can we stay connected during isolation?</p>
                         <Button
                           className="mt-4"
-                          color="neutral"
+                          color="index"
                           onClick={() => this.toggleModal("modal1")}
                         >
                           Learn more
@@ -151,7 +151,7 @@ render() {
     
                     <Button
                       className="mt-4"
-                      color="neutral"
+                      color="index"
                       onClick={() => this.toggleModal("modal2")}
                     >
                       Learn more
