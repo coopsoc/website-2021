@@ -121,7 +121,7 @@ render() {
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
             <Col lg="8">       
-              <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">EVENTS</h2></h1>
+              <h1 class="animate__animated animate__pulse animate__fast  animate__repeat-2"><h2 className="display-1">EVENTS</h2></h1>
             </Col>                
           </Row>
           

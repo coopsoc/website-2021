@@ -56,11 +56,6 @@ a {
     .show > .btn-index.dropdown-toggle:focus {
       box-shadow: 0 0 0 0 rgba(247, 84, 116, 0.5); } */
  
-/* .icon-shape-index {
-  color: #00b3ff;
-  background-color: #c8ebfa;
-  } */
-
 .icon-shape-index {
   color: #006591;
   background-color: #e4effc;
@@ -654,7 +649,8 @@ transition: transform 0.25s ease-out;
         height: 90px; } }
     .section-shaped .shape-style-1.shape-primary {
       /* LINEARGRAD */
-      background: linear-gradient(150deg, #00b3ff, #7ad4fa, #b8e6fa, #a0fce0,#b7ffea); } 
+      background: linear-gradient(150deg, #7ad4fa, #b8e6fa, #b8c3e5,#e5abc8,#fec1b3); } 
+      /* background: linear-gradient(150deg, #00b3ff, #7ad4fa, #b8e6fa, #a0fce0,#b7ffea); }  */
     .section-shaped .shape-style-1.shape-default {
       background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%); }
     .section-shaped .shape-style-1.shape-light {

@@ -107,7 +107,7 @@ class Index extends React.Component {
                           .start();
                       }}
                     />
-                    <p className="lead text-white">
+                    <p className="lead text-white" style={{fontWeight : 'bold'}}>
                         A society for co-ops, by co-ops.
                     </p>
                   </Col>
@@ -240,6 +240,7 @@ class Index extends React.Component {
           
           <Container>
 
+          
 
           {/* <hr></hr>
           <section class="section section-lg">

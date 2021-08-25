@@ -165,7 +165,7 @@ render() {
                           <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
                           <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
                           </div>
-                          <h6 style={{textAlign: "center"}} className="text-index display-4 text-uppercase">
+                          <h6 style={{textAlign: "center"}} className="text-index display-4 text-uppercase animate__animated animate__pulse animate__fast  animate__repeat-2">
                           Podcast
                           </h6>
                           </CardBody>
