@@ -120,12 +120,10 @@ class Team extends React.Component {
       FONT_SIZE = 8;
     } else if (width == 290) {
       FONT_SIZE = 12;
-    } else if (width == 317) {
+    } else {
       FONT_SIZE = 13;
-    } else{
-      FONT_SIZE = 18;
     }
-
+    
     if (this.state.year == 100) {
       return this.team_2021(FONT_SIZE);
     } else {
