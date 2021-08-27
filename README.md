@@ -1,5 +1,6 @@
 # Co-op Soc Website Redo
 
-Noa Challis
-Hanyuan Li
-Rohan Agarwal
+Authors:
+* Noa Challis
+* Hanyuan Li
+* Rohan Agarwal
