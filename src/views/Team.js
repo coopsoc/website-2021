@@ -120,10 +120,10 @@ class Team extends React.Component {
       FONT_SIZE = 8;
     } else if (width == 290) {
       FONT_SIZE = 12;
-    } else if (width == 317) {
+    } else {
       FONT_SIZE = 13;
     }
-
+    
     if (this.state.year == 100) {
       return this.team_2021(FONT_SIZE);
     } else {
@@ -194,7 +194,7 @@ class Team extends React.Component {
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">  
             <Col lg="8">       
-              <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
+              <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
             </Col>  
             </Row>
 
@@ -214,7 +214,6 @@ class Team extends React.Component {
               <Col></Col>     
 
              </Container>
-             <br></br>
              <br></br>
             {this.renderYear()}
 
@@ -251,6 +250,7 @@ class Team extends React.Component {
   }
 
   renderSubcom(year, name) {
+    
     const data = teamData[year]["subcoms"][name];
     const n_icons = data["icon"].length;
 
@@ -273,7 +273,8 @@ class Team extends React.Component {
         <div class="col-sm-4">
           <div class="card-body text-center">
             <ul class="list-group">
-              <li class="list-group-item border-0 li-name"><b>Members:</b></li>
+              <br></br>
+              {data["name"] === "Marketing" ? <></> : data["name"] === "Publications/IT" ? <div><br></br> <br></br></div> : <br></br> }
               {data["members"].map(name => <li class="list-group-item border-0 li-name">{name}</li>)}
             </ul>
           </div>
@@ -283,6 +284,7 @@ class Team extends React.Component {
   }
 
   team_2021(FONT_SIZE) {
+
     return (
       <>
         
@@ -290,7 +292,7 @@ class Team extends React.Component {
         
         <hr />
           <Row className="justify-content-center text-center mb-lg">
-            <h2>Executives </h2>
+            <h2>Executives</h2>
           </Row>
           <div class="row justify-content-center">
             {this.renderExec(2021, "Kenuka", FONT_SIZE)}

@@ -126,7 +126,7 @@ class DemoNavbar extends React.Component {
                       className={this.getNavLinkClass("/team")}
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">The Team</span>
+                      <span className="nav-link-inner--text">THE  TEAM</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -135,7 +135,7 @@ class DemoNavbar extends React.Component {
                       to="/events" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">Events</span>
+                      <span className="nav-link-inner--text">EVENTS</span>
                     </NavLink>
                   </NavItem>
                   
@@ -146,7 +146,7 @@ class DemoNavbar extends React.Component {
                       to="/publications" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">Publications</span>
+                      <span className="nav-link-inner--text">PUBLICATIONS</span>
                     </NavLink>
                   </NavItem>
                   
@@ -158,7 +158,7 @@ class DemoNavbar extends React.Component {
                       to="/charity" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">Charity</span>
+                      <span className="nav-link-inner--text">CHARITY</span>
                     </NavLink>
                   </NavItem>
                   
@@ -202,7 +202,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-facebook-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
+                        FACEBOOK
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
@@ -218,7 +218,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-envelope" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Email
+                        EMAIL
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356643867">
@@ -234,7 +234,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-instagram" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Instagram
+                        INSTAGRAM
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356693867">
@@ -251,7 +251,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-linkedin-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                      LinkedIn
+                      LINKEDIN
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip184698705">

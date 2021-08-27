@@ -173,7 +173,7 @@ class Charity extends React.Component {
           <section className="section section-lg">
             <Row className="justify-content-center text-center ">
               <Col lg="8">
-                <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">CHARITY</h2></h1>
+              <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
               </Col>
             </Row>
 
@@ -228,9 +228,11 @@ class Charity extends React.Component {
                 ?
                   <div >
                     <hr></hr>
-                    <Row className="justify-content-center text-center ">
-                      <Col>
+                    <Row className="text-center">
+                      <Col >
+                      <div className='verticalAlignTextDiv'>
                         <p > Congratulations to our winning team, Ignite Consulting, for their incredible solution. Well done Annie Yan, Nicole Huang, Jerry Yeh and Ethan Wong! </p>
+                      </div>
                       </Col> 
                       <Col>       
                         <img src={this.state.current["image2"]} alt={this.state.current["title"]} style={{ width: "100%" }} />
@@ -244,9 +246,9 @@ class Charity extends React.Component {
             </ModalBody>
             <ModalFooter>
               <a target="_blank" href={this.state.current["link"]}>
-                <Button color="primary" onClick={this.toggleModal}>Visit</Button>
+                <Button color="index" style={{minWidth: '100px'}} onClick={this.toggleModal}>Visit</Button>
               </a>
-              <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+              <Button color="secondary" style={{minWidth: '100px'}} onClick={this.toggleModal}>Cancel</Button>
             </ModalFooter>
           </Modal>
         </main>

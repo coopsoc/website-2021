@@ -65,21 +65,21 @@ class Events extends React.Component {
       this.refs.main.scrollTop = 0;
   }
 
-  componentDidMount() {
-    var swiper = new Swiper('.eventcard-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.eventcard-slider__pagination',
-        clickable: true,
-      }
-    });
-  }
+  // componentDidMount() {
+  //   var swiper = new Swiper('.eventcard-slider', {
+  //     spaceBetween: 30,
+  //     effect: 'fade',
+  //     loop: true,
+  //     mousewheel: {
+  //       invert: false,
+  //     },
+  //     // autoHeight: true,
+  //     pagination: {
+  //       el: '.eventcard-slider__pagination',
+  //       clickable: true,
+  //     }
+  //   });
+  // }
 
 render() {
   return (
@@ -121,7 +121,7 @@ render() {
         <section className="section section-lg">
           <Row className="justify-content-center text-center ">
             <Col lg="8">       
-              <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">EVENTS</h2></h1>
+            <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">EVENTS</h2></h1>
             </Col>                
           </Row>
           

@@ -107,7 +107,7 @@ render() {
           
           <Row className="justify-content-center text-center ">
           <Col lg="8">       
-              <h1 class="animate__animated animate__fadeInDown animate__fast"><h2 className="display-1">PUBLICATIONS</h2></h1>
+          <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">PUBLICATIONS</h2></h1>
             </Col>               
           </Row>
           <Container className="py-lg-md d-flex">
@@ -132,10 +132,10 @@ render() {
                       <a href="https://www.coopsoc.com.au/FYG2021.pdf" target="_blank">
                         <CardBody className="py-5 align-items-center">
                         <div>
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4 ">
+                          <div className="icon icon-shape icon-shape-index1 rounded-circle mb-4 ">
                             <FontAwesomeIcon icon={faHandsHelping} size="4x" />
                           </div>
-                          <h6 style={{textAlign: "center"}} className="text-primary display-4 text-uppercase ">
+                          <h6 style={{textAlign: "center"}} className="display-4 text-uppercase ">
                           First year Guide
                           </h6>
                           </div>
@@ -148,10 +148,10 @@ render() {
                       <Card className="card-lift--hover shadow border-0">
                       <Link to={{ pathname: "/blog"}}>
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-danger rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index2 rounded-circle mb-4">
                           <i class="fa fa-pencil"></i>
                           </div>
-                          <h6 style={{textAlign: "center"}} className="text-danger display-4 text-uppercase">
+                          <h6 style={{textAlign: "center"}} className="display-4 text-uppercase">
                             Blog Posts
                           </h6>
                         </CardBody>
@@ -162,10 +162,10 @@ render() {
                       <Card className="card-lift--hover shadow border-0">
                       <a href="https://open.spotify.com/show/25fOObrHq0t3hPrmf8B8Dx?si=IYM-tZg-Q0CfufTKVqTqJg&dl_branch=1" target="_blank">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index3 rounded-circle mb-4">
                           <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
                           </div>
-                          <h6 style={{textAlign: "center"}} className="text-warning display-4 text-uppercase">
+                          <h6 style={{textAlign: "center"}} className=" display-4 text-uppercase animate__animated animate__pulse animate__fast ">
                           Podcast
                           </h6>
                           </CardBody>
