@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.36adf750.chunk.css",
+    "main.css": "/website/static/css/main.f88195e4.chunk.css",
     "main.js": "/website/static/js/main.7e85619a.chunk.js",
     "main.js.map": "/website/static/js/main.7e85619a.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.0deb8e04.js",
@@ -9,10 +9,10 @@
     "static/js/2.d48509a8.chunk.js": "/website/static/js/2.d48509a8.chunk.js",
     "static/js/2.d48509a8.chunk.js.map": "/website/static/js/2.d48509a8.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.fc034bc261b597b9451a39858f58d741.js": "/website/precache-manifest.fc034bc261b597b9451a39858f58d741.js",
+    "precache-manifest.9427311825dfe0aba9426666b14c5191.js": "/website/precache-manifest.9427311825dfe0aba9426666b14c5191.js",
     "service-worker.js": "/website/service-worker.js",
     "static/css/2.420168ba.chunk.css.map": "/website/static/css/2.420168ba.chunk.css.map",
-    "static/css/main.36adf750.chunk.css.map": "/website/static/css/main.36adf750.chunk.css.map",
+    "static/css/main.f88195e4.chunk.css.map": "/website/static/css/main.f88195e4.chunk.css.map",
     "static/js/2.d48509a8.chunk.js.LICENSE.txt": "/website/static/js/2.d48509a8.chunk.js.LICENSE.txt",
     "static/js/main.7e85619a.chunk.js.LICENSE.txt": "/website/static/js/main.7e85619a.chunk.js.LICENSE.txt",
     "static/media/6k-for-water.jpg": "/website/static/media/6k-for-water.c833120d.jpg",
@@ -72,7 +72,7 @@
     "static/js/runtime-main.0deb8e04.js",
     "static/css/2.420168ba.chunk.css",
     "static/js/2.d48509a8.chunk.js",
-    "static/css/main.36adf750.chunk.css",
+    "static/css/main.f88195e4.chunk.css",
     "static/js/main.7e85619a.chunk.js"
   ]
 }
