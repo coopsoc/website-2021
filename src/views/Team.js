@@ -122,6 +122,8 @@ class Team extends React.Component {
       FONT_SIZE = 12;
     } else if (width == 317) {
       FONT_SIZE = 13;
+    } else{
+      FONT_SIZE = 18;
     }
 
     if (this.state.year == 100) {
@@ -285,8 +287,6 @@ class Team extends React.Component {
 
   team_2021(FONT_SIZE) {
 
-    const { width, height } = this.state.dimensions;
-
     return (
       <>
         
@@ -294,7 +294,7 @@ class Team extends React.Component {
         
         <hr />
           <Row className="justify-content-center text-center mb-lg">
-            <h2>Executives {width}</h2>
+            <h2>Executives</h2>
           </Row>
           <div class="row justify-content-center">
             {this.renderExec(2021, "Kenuka", FONT_SIZE)}
