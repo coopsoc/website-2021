@@ -250,6 +250,7 @@ class Team extends React.Component {
   }
 
   renderSubcom(year, name) {
+    
     const data = teamData[year]["subcoms"][name];
     const n_icons = data["icon"].length;
 
@@ -283,6 +284,9 @@ class Team extends React.Component {
   }
 
   team_2021(FONT_SIZE) {
+
+    const { width, height } = this.state.dimensions;
+
     return (
       <>
         
@@ -290,7 +294,7 @@ class Team extends React.Component {
         
         <hr />
           <Row className="justify-content-center text-center mb-lg">
-            <h2>Executives </h2>
+            <h2>Executives {width}</h2>
           </Row>
           <div class="row justify-content-center">
             {this.renderExec(2021, "Kenuka", FONT_SIZE)}

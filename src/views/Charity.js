@@ -173,7 +173,7 @@ class Charity extends React.Component {
           <section className="section section-lg">
             <Row className="justify-content-center text-center ">
               <Col lg="8">
-                <h1 class="animate__animated animate__fadeIn animate__slow"><h2 className="display-1">CHARITY</h2></h1>
+              <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
               </Col>
             </Row>
 

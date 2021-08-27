@@ -127,9 +127,10 @@ class Index extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index1 rounded-circle mb-4">
                           <i className="ni ni-calendar-grid-58" />
                           </div>
+                          <div className="justify-content-center text-center ">
                           <h6 className="text-uppercase">
                           Social Events
                           </h6>
@@ -138,22 +139,26 @@ class Index extends React.Component {
                            including an annual camp and ball.
                           </p>
                           <br></br>
+                          </div>
+                          <div className="justify-content-center text-center ">
                           <Button
                             className="btn-icon mb-3 mb-sm-0"
-                            color="index"
+                            color="index1"
                             href="#/events"
                           >
                             Learn more
                           </Button>
+                          </div>
                         </CardBody>
                       </Card>
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index2 rounded-circle mb-4">
                           <i class="fa fa-pencil"></i>
                           </div>
+                          <div className="justify-content-center text-center ">
                           <h6 className="text-uppercase">
                             Publications
                           </h6>
@@ -161,33 +166,27 @@ class Index extends React.Component {
                           Our goal is to create a platform in which scholars past and present can share their experiences, learn something new, and stay connected.
 
                           </p>
-                          <div>
-                            <Badge color="index" pill className="mr-1">
-                            Guides
-                            </Badge>
-                            <Badge color="index" pill className="mr-1">
-                            Blog Posts
-                            </Badge>
-                            <Badge color="index" pill className="mr-1">
-                            Podcast
-                            </Badge>
+                          <br></br>
                           </div>
+                          <div className="justify-content-center text-center ">
                           <Button
                             className="mt-4"
-                            color="index"
+                            color="index2"
                             href="#/publications"
                           >
                             Learn more
                           </Button>
+                          </div>
                         </CardBody>
                       </Card>
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-index rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-index3 rounded-circle mb-4">
                           <i className="fa fa-heart" />
                           </div>
+                          <div className="justify-content-center text-center ">
                           <h6 className="text-uppercase">
                           Charity Events
                           </h6>
@@ -196,13 +195,16 @@ class Index extends React.Component {
                           that raise awareness for a diverse range of charities and social issues.
                           </p>
                           <br></br>
+                          </div>
+                          <div className="justify-content-center text-center ">
                           <Button
                             className="btn-icon mb-3 mb-sm-0"
-                            color="index"
+                            color="index3"
                             href="#/charity"
                           >
                             Learn more
                           </Button>
+                          </div>
                         </CardBody>
                       </Card>
                     </Col>
