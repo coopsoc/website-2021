@@ -311,7 +311,7 @@ border-radius: 0 4px 0 32px;
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #9dd8f1;
+  background-color: #72bfe0;
   border-radius: 0 4px 0 32px;
   }
 .go-arrow {
@@ -562,7 +562,7 @@ position: absolute;
 z-index: 0;
 top: -16px;
 right: -16px;
-background: #9dd8f1;
+background: #72bfe0;
 height: 32px;
 width: 32px;
 border-radius: 32px;
