@@ -52,11 +52,63 @@ SwiperCore.use([Navigation, Pagination]);
 
 
 class Index extends React.Component {
+
+  state = {};
+
+  constructor(props) {
+    super(props)
+    this.state = { windowWidth: window.innerWidth };
+  }
+
+  handleResize = (e) => {
+    this.setState({ windowWidth: window.innerWidth });
+  };
+
+
+
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;    
+    this.refs.main.scrollTop = 0;   
+    
+    window.addEventListener("resize", this.handleResize);
   }
+
+  renderTitle() {
+    var FONT_SIZE = '.9vw';
+    const { windowWidth } = this.state; 
+
+    if (windowWidth > 8000) {
+      FONT_SIZE = 50;
+    } else if (windowWidth > 500) {
+      FONT_SIZE = 40;
+    } else {
+      FONT_SIZE = 30;
+    }
+
+    return (
+      <>
+      <Row>
+        <Col lg="8" className="typeWriter"  style={{ fontSize: FONT_SIZE }}>
+          <Typewriter
+            options={{
+              loop: false,
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString('UNSW CO-OP SOCIETY')
+                .start();
+            }}
+          />
+          <p className="lead text-white" style={{fontWeight : 'normal'}}>
+              A society for co-ops, by co-ops. {windowWidth}
+          </p>
+        </Col>
+      </Row>
+      </>
+    )
+  
+  }
+
   
   render() {
     return (
@@ -80,22 +132,8 @@ class Index extends React.Component {
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                 <br></br>
-                  <Row>
-                  <Col lg="8" className="typeWriter">
-                    <Typewriter
-                      options={{
-                        loop: false,
-                      }}
-                      onInit={(typewriter) => {
-                        typewriter.typeString('UNSW CO-OP SOCIETY')
-                          .start();
-                      }}
-                    />
-                    <p className="lead text-white" style={{fontWeight : 'normal'}}>
-                        A society for co-ops, by co-ops.
-                    </p>
-                  </Col>
-                  </Row>
+                {this.renderTitle()}
+                  
                 </div>
                 
               </Container>
