@@ -143,72 +143,72 @@ render() {
         <br></br>
         <br></br>
         <br></br>
+        
+        {/* image gallery */}
         <section className="section section-lg pt-lg-0 mt--200">
-          
           <Container>
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img
+                  src={require("assets/img/home/camp.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
 
-          <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <img
-                src={require("assets/img/home/camp.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
+                <img
+                  src={require("assets/img/home/gals.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
 
-              <img
-                src={require("assets/img/home/gals.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
+                <img
+                  src={require("assets/img/home/funRun.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+              </div>
 
-              <img
-                src={require("assets/img/home/funRun.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                  src={require("assets/img/home/galsBall.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+
+                <img
+                  src={require("assets/img/home/campWhole.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+
+                <img
+                  src={require("assets/img/home/ball2.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                  src={require("assets/img/home/gals2.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+
+                <img
+                  src={require("assets/img/home/funRun2.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+
+                <img
+                  src={require("assets/img/home/ytb.jpg")}
+                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                  alt=""
+                />
+              </div>
             </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src={require("assets/img/home/galsBall.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/campWhole.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/ball2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-            </div>
-
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src={require("assets/img/home/gals2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/funRun2.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-
-              <img
-                src={require("assets/img/home/ytb.jpg")}
-                class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                alt=""
-              />
-            </div>
-          </div>
-        </Container>
+          </Container>
         </section>
         
 
