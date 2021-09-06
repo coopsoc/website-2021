@@ -161,6 +161,18 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text">CHARITY</span>
                     </NavLink>
                   </NavItem>
+
+                  <NavItem>
+                    <NavLink
+                      // activeClassName="nav-active"
+                      
+                      className={this.getNavLinkClass("/nominations")}
+                      to="/nominations" 
+                      tag={Link}
+                    >
+                      <span className="nav-link-inner--text">Nominations</span>
+                    </NavLink>
+                  </NavItem>
                   
                   {/* <UncontrolledDropdown nav>
                     <DropdownToggle nav >

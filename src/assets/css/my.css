@@ -1627,3 +1627,21 @@ button.bg-events:focus {
   .card > .list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
+
+  
+
+.nominations_scroll {
+  overflow-y:unset;
+  overflow-x:auto;
+}
+
+.row-fluid{
+  white-space: nowrap;
+}
+
+.row-fluid .col-lg-3{
+  display: inline-block;
+  width:100%;
+  height:100%;
+}
+
