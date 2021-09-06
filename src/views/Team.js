@@ -198,7 +198,6 @@ class Team extends React.Component {
             </Col>  
             </Row>
 
-
             <Container className="py-lg-md d-flex">
               <Col></Col>     
               <Col lg="5" sm="8" >

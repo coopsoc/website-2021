@@ -53,8 +53,18 @@ import 'swiper/swiper-bundle.css';
 // core version + navigation, pagination modules:
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
+/* import ScriptTag from 'react-script-tag';
+ */
 // configure Swiper to use modules
 SwiperCore.use([Navigation, Pagination]);
+
+/* class Demo extends Component {
+ 
+    render() {
+        return (<ScriptTag isHydrating={true} type="text/javascript" src="../views/data/EventsAnimation.js"/>);
+    }
+} */
+
 
 
 class Events extends React.Component {
@@ -65,22 +75,37 @@ class Events extends React.Component {
       this.refs.main.scrollTop = 0;
   }
 
-  // componentDidMount() {
-  //   var swiper = new Swiper('.eventcard-slider', {
-  //     spaceBetween: 30,
-  //     effect: 'fade',
-  //     loop: true,
-  //     mousewheel: {
-  //       invert: false,
-  //     },
-  //     // autoHeight: true,
-  //     pagination: {
-  //       el: '.eventcard-slider__pagination',
-  //       clickable: true,
-  //     }
-  //   });
-  // }
+  componentDidMount () {
+    const script = document.createElement("script");
+    script.src = "../views/EventsAnimation.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }
 
+  componentDidMount() {
+    var swiper = new Swiper('.eventcard-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.eventcard-slider__pagination',
+        clickable: true,
+      }
+    });
+  }
+  /* componentDidMount () {
+    const script = document.createElement("script");
+    script.src = "../views/data/EventsAnimation.js";
+    script.async = true;
+    document.body.appendChild(script);
+  } */
+  
+
+  
 render() {
   return (
     <>
@@ -138,78 +163,272 @@ render() {
          
         </section>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        
-        {/* image gallery */}
-        <section className="section section-lg pt-lg-0 mt--200">
-          <Container>
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img
-                  src={require("assets/img/home/camp.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
+        <div class="test-container">
+          {/* Events Slider */}
+          <section class="eventcard-bg-wrapper section section-lg">
+            <Row className="justify-content-center text-center">
+                <Col lg="8">
+                  <h1 class="title-1">Upcoming Events</h1>
+                </Col>            
+            </Row>
+            <Row>
+            <Col>
+              <div class="eventcard-slider eventcard-bg-wrapper" >
+                <div class="eventcard-slider__wrp swiper-wrapper container">
+                  {/*<div class="title-upcoming-events">
+                    <h1 class="title-1">Upcoming Events</h1>
+                  </div>*/}
 
-                <img
-                  src={require("assets/img/home/gals.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
-
-                <img
-                  src={require("assets/img/home/funRun.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
+                  {/*EVENT 1*/}
+                  <div class="eventcard-slider__item swiper-slide">
+                    <div class="eventcard-slider__img">
+                        <img src={Ball2021} alt="Ball 2021"/>
+                    </div>
+                    <div  /* class= "outer" */>
+                      <div class="eventcard-slider__content">
+                        <span class="eventcard-slider__code">27th August</span>
+                        <div class="eventcard-slider__title">Co-op Ball 2021</div>
+                        <div class="eventcard-slider__text">Our annual Co-op Ball is back! A bedazzling night in Spring’s essence; with charming co-op company - we promise it's not a night to be missed.</div>
+                        {/*<a href="#" class="eventcard-slider__button">READ MORE</a>*/}
+                      </div>
+                    </div>
+                    
+                  </div>
+                  {/*EVENT 2*/}
+                  <div class="eventcard-slider__item swiper-slide">
+                    <div class="eventcard-slider__img">
+                      <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
+                    </div>
+                    <div class="eventcard-slider__content">
+                      <span class="eventcard-slider__code">2nd July - 23rd July</span>
+                      <div class="eventcard-slider__title">Charity Case Competition 2021</div>
+                      <div class="eventcard-slider__text"> This year we’ve partnered with The Indigenous Literacy Foundation, a national book industry charity committed to lifting literacy levels in remote Indigenous communities for children across Australia.</div>
+                      {/*<a href="#" class="eventcard-slider__button">Find out more</a>*/}
+                    </div>
+                  </div>
+                  {/*END EVENT CARDS*/}
+                  
+                </div>
+                <div class="eventcard-slider__pagination"></div>
               </div>
 
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                  src={require("assets/img/home/galsBall.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
+            </Col> 
+            </Row>
+          </section>
 
-                <img
-                  src={require("assets/img/home/campWhole.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
-
-                <img
-                  src={require("assets/img/home/ball2.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
-              </div>
-
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                  src={require("assets/img/home/gals2.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
-
-                <img
-                  src={require("assets/img/home/funRun2.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
-
-                <img
-                  src={require("assets/img/home/ytb.jpg")}
-                  class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
-                  alt=""
-                />
-              </div>
+          {/* image gallery */}
+          <section className="section cards_container1">
+            <div className="card_scroll_row" >
+              <ul className="row1_content">
+                  {/* ONE */}
+                  <li>
+                        <div className="display_card" >
+                                  <img
+                                    src={require("assets/img/home/camp.jpg")}
+                                    class="w-100 shadow-1-strong rounded class-lift--hover"
+                                    alt=""
+                                  />
+                                  <p class="card_text shadow-1-strong rounded card-img">1</p>
+                                </div>
+                  </li>
+                  <li>
+                        {/* TWO */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/gals.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">2</p>
+                          </div>
+                  </li>
+                  <li>
+                        {/* THREE */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/ytb.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">3</p>
+                          </div>
+                  </li>
+                  {/* FOUR */}
+                  <li>
+                        <div className="display_card">
+                                  <img
+                                    src={require("assets/img/home/funRun2.jpg")}
+                                    class="w-100 shadow-1-strong rounded class-lift--hover"
+                                    alt=""
+                                  />
+                                  <p class="card_text shadow-1-strong rounded card-img">4</p>
+                                </div>
+                  </li>
+                  <li>
+                        {/* FIVE */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/gals2.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">5</p>
+                          </div>
+                  </li>
+                  <li>
+                        {/* SIX */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/funRun.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">6</p>
+                          </div>
+                  </li>
+              </ul>
             </div>
-          </Container>
-        </section>
+          </section>
+
+
+          <section className="section cards_container2">
+            <div className="card_scroll_row">
+              <ul className="row2_content">
+                  {/* ONE */}
+                  <li>
+                        <div className="display_card class-lift--hover" >
+                                  <img
+                                    src={require("assets/img/home/camp.jpg")}
+                                    class="w-100 shadow-1-strong rounded class-lift--hover"
+                                    alt=""
+                                  />
+                                  <p class="card_text shadow-1-strong rounded">EVENT 1</p>
+                                </div>
+                  </li>
+                  <li>
+                        {/* TWO */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/gals.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">EVENT 2</p>
+                          </div>
+                  </li>
+                  <li>
+                        {/* THREE */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/ytb.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">EVENT 3</p>
+                          </div>
+                  </li>
+                  {/* FOUR */}
+                  <li>
+                        <div className="display_card">
+                                  <img
+                                    src={require("assets/img/home/funRun2.jpg")}
+                                    class="w-100 shadow-1-strong rounded class-lift--hover"
+                                    alt=""
+                                  />
+                                  <p class="card_text shadow-1-strong rounded">EVENT 4</p>
+                                </div>
+                  </li>
+                  <li>
+                        {/* FIVE */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/gals2.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">EVENT 5</p>
+                          </div>
+                  </li>
+                  <li>
+                        {/* SIX */}
+                          <div className="display_card">
+                            <img
+                              src={require("assets/img/home/funRun.jpg")}
+                              class="w-100 shadow-1-strong rounded class-lift--hover"
+                              alt=""
+                            />
+                            <p class="card_text shadow-1-strong rounded">EVENT 6</p>
+                          </div>
+                  </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* <Container>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                  <img
+                    src={require("assets/img/home/camp.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+
+                  <img
+                    src={require("assets/img/home/gals.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+
+                  <img
+                    src={require("assets/img/home/funRun.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src={require("assets/img/home/galsBall.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+
+                  <img
+                    src={require("assets/img/home/campWhole.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+
+                  <img
+                    src={require("assets/img/home/ball2.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="col">
+                  <img
+                    src={require("assets/img/home/gals2.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+
+                  <img
+                    src={require("assets/img/home/funRun2.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+
+                  <img
+                    src={require("assets/img/home/ytb.jpg")}
+                    class="w-100 shadow-1-strong rounded mb-4 card-lift--hover"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </Container> */}
+
+        </div>
         
 
 
