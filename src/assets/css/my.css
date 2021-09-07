@@ -1127,7 +1127,7 @@ button.bg-events:focus {
   height:100%;
   display:flex;
   width:50vw;
-  animation: scrolling_left 30s linear infinite;
+  animation: scrolling_left 5s linear infinite;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -1138,7 +1138,7 @@ button.bg-events:focus {
   height:100%;
   display:flex;
   width:50vw;
-  animation: scrolling_right 30s linear infinite;
+  animation: scrolling_right 5s linear infinite;
   margin: 0;
   padding: 0;
   align-items: center;

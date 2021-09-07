@@ -75,12 +75,12 @@ class Events extends React.Component {
       this.refs.main.scrollTop = 0;
   }
 
-  componentDidMount () {
+  /* componentDidMount () {
     const script = document.createElement("script");
     script.src = "../views/EventsAnimation.js";
     script.async = true;
     document.body.appendChild(script);
-  }
+  } */
 
   componentDidMount() {
     var swiper = new Swiper('.eventcard-slider', {
@@ -104,6 +104,21 @@ class Events extends React.Component {
     document.body.appendChild(script);
   } */
   
+  componentDidMount () {
+    const row1_ElementsDisplayed = 6;
+    const row1_Content = document.querySelector(".row1_content");
+      
+    for (let i = 0; i < row1_ElementsDisplayed; i++) {
+        row1_Content.appendChild(row1_Content.children[i].cloneNode(true));
+    }
+  
+    const row2_ElementsDisplayed = 6;
+    const row2_Content = document.querySelector(".row2_content");
+    
+    for(let i = 0; i < row2_ElementsDisplayed; i++) {
+        row2_Content.appendChild(row2_Content.children[i].cloneNode(true));
+    }
+  };
 
   
 render() {
@@ -363,6 +378,7 @@ render() {
               </ul>
             </div>
           </section>
+          
 
           {/* <Container>
               <div class="row">
