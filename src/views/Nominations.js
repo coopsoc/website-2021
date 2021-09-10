@@ -62,10 +62,6 @@ class Nominations extends React.Component {
     });
   };
 
-<<<<<<< HEAD
-  renderYear() {
-    var FONT_SIZE = '.9vw';
-=======
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -86,7 +82,6 @@ class Nominations extends React.Component {
 
   render() {
     let FONT_SIZE = '.9vw';
->>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
     const { width, height } = this.state.dimensions;
 
     if (width > 400) {
@@ -98,33 +93,6 @@ class Nominations extends React.Component {
     } else {
       FONT_SIZE = 13;
     }
-<<<<<<< HEAD
-    
-    
-    return this.nominations_2022(FONT_SIZE);
-  }
-
-    handleResize = e => {
-        const img = this.imgRef.current;
-        if (img!= null){
-            this.setState({dimensions:{height:img.offsetHeight,
-                width:img.offsetWidth}});
-        }
-        
-      };
-   
-
-  seededRandom(s) {
-    let hash = 0;
-    if (s.length === 0) return hash;
-
-    for (let i = 0; i < s.length; i++) {
-      const chr = s.charCodeAt(i);
-      hash = ((hash << 5) - hash) + chr;
-      hash |= 0; // Convert to 32bit integer
-    }
-=======
->>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
 
     return (
       <>
@@ -163,15 +131,6 @@ class Nominations extends React.Component {
             {/* 1st Hero Variation */}
           </div>
           <section className="section section-lg">
-<<<<<<< HEAD
-            <Row className="justify-content-center text-center mb-lg">  
-            <Col lg="8">       
-              <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">Nominations for 2022 Exec</h2></h1>
-            </Col>  
-            </Row>
-            {this.renderYear()}
-
-=======
             {/* Title */}
             <Row className="justify-content-center text-center mb-lg">
               <Col lg="8">
@@ -202,81 +161,12 @@ class Nominations extends React.Component {
                 </>
               ))}
             </div>
->>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
           </section>
         </main>
         <SimpleFooter />
       </>
     );
   }
-<<<<<<< HEAD
-
-  nominations_2022(FONT_SIZE) {
-    return (
-      <>
-        <div class="container">
-
-          <hr />
-          <Row className="justify-content-center text-center mb-lg">
-            <h2>President</h2>
-          </Row>
-
-        <div className="nominations_scroll">
-            <div class="row-fluid">
-                {this.renderExec(2020, "Jelinna", FONT_SIZE)}
-                {this.renderExec(2020, "Roary", FONT_SIZE)}
-                {this.renderExec(2020, "Shrey", FONT_SIZE)}
-                {this.renderExec(2020, "Xavier", FONT_SIZE)}
-                {this.renderExec(2020, "Ian", FONT_SIZE)}
-            </div>
-        </div>
-          <hr ></hr>
-          <Row className="justify-content-center text-center mb-lg">
-            <h2>Vice-President</h2>
-          </Row>
-
-          <div class="row">
-            {this.renderExec(2020, "Stanley", FONT_SIZE)}
-            {this.renderExec(2020, "Hayes", FONT_SIZE)}
-            {this.renderExec(2020, "Emily", FONT_SIZE)}
-          </div>
-          <div class="row">
-            {this.renderExec(2020, "Lelland", FONT_SIZE)}
-            {this.renderExec(2020, "Susan", FONT_SIZE)}
-            {this.renderExec(2020, "Vincent", FONT_SIZE)}
-          </div>
-          <hr ></hr>
-          <Row className="justify-content-center text-center mb-lg">
-            <h2>First Year Representatives</h2>
-          </Row>
-          <div class="row justify-content-center">
-            {this.renderExec(2020, "Celine", FONT_SIZE, true)}
-            {this.renderExec(2020, "Kenuka", FONT_SIZE, true)}
-          </div>
-        </div>
-      </>
-    )
-  }
-
-  renderExec(year, name, font_size, fyp, cardColour = false) {
-    const data = teamData[year]["exec"][name];
-    const random = Math.abs(this.seededRandom(name) % 5) + 1;
-    const colour = teamData[year]["exec"][name]["cardColour"];
-
-    return (
-      <div className="col-md-4" className="col-lg-3">
-        <div className="meet-the-execs">
-          <img src={data["image"]} ref={this.imgRef} onLoad={this.onImgLoad} className="card-img-top"></img>
-        </div>
-        <div className="card-body text-center">
-          <h5 className="about-name">{data["name"]}</h5>
-        </div>
-      </div>
-    );
-  }
-  
-=======
->>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
 }
 
 export default Nominations;
