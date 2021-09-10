@@ -16,56 +16,31 @@
 
 */
 import React from "react";
-// nodejs library that concatenates classes
-import classnames from "classnames";
 import '../assets/css/my.css';
 
 // reactstrap components
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
-// Fas Icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullhorn, faDesktop, faDove, faEdit, faUserFriends } from "@fortawesome/free-solid-svg-icons";
-
-// plugin that creates slider
-import Slider from "nouislider";
-
-import teamData from "./data/TeamData.jsx";
+import NominationsData from "./data/NominationsData";
 
 // yess let's get those animations
 import "animate.css"
+import NomineeCard from "components/nominations/NomineeCard";
 
-class Team extends React.Component {
-
-  state = {};
-
+class Nominations extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+
     this.state = {
-      year: 100,
       dimensions: {}
     };
-    this.renderYear = this.renderYear.bind(this);
-    this.onImgLoad = this.onImgLoad.bind(this);
+
     this.imgRef = React.createRef();
+    this.mainRef = React.createRef();
   }
 
   onImgLoad({ target: img }) {
@@ -87,8 +62,31 @@ class Team extends React.Component {
     });
   };
 
+<<<<<<< HEAD
   renderYear() {
     var FONT_SIZE = '.9vw';
+=======
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.mainRef.current.scrollTop = 0;
+  }
+
+  handleResize = e => {
+    const img = this.imgRef.current;
+    if (img != null) {
+      this.setState({
+        dimensions: {
+          height: img.offsetHeight,
+          width: img.offsetWidth
+        }
+      });
+    }
+  };
+
+  render() {
+    let FONT_SIZE = '.9vw';
+>>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
     const { width, height } = this.state.dimensions;
 
     if (width > 400) {
@@ -100,6 +98,7 @@ class Team extends React.Component {
     } else {
       FONT_SIZE = 13;
     }
+<<<<<<< HEAD
     
     
     return this.nominations_2022(FONT_SIZE);
@@ -124,15 +123,13 @@ class Team extends React.Component {
       hash = ((hash << 5) - hash) + chr;
       hash |= 0; // Convert to 32bit integer
     }
+=======
+>>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
 
-    return hash;
-  }
-
-  render() {
     return (
       <>
         <DemoNavbar />
-        <main ref="main">
+        <main ref={this.mainRef}>
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-100">
@@ -166,6 +163,7 @@ class Team extends React.Component {
             {/* 1st Hero Variation */}
           </div>
           <section className="section section-lg">
+<<<<<<< HEAD
             <Row className="justify-content-center text-center mb-lg">  
             <Col lg="8">       
               <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">Nominations for 2022 Exec</h2></h1>
@@ -173,12 +171,45 @@ class Team extends React.Component {
             </Row>
             {this.renderYear()}
 
+=======
+            {/* Title */}
+            <Row className="justify-content-center text-center mb-lg">
+              <Col lg="8">
+                <h1 class="animate__animated animate__zoomIn animate__fast">
+                  <h2 className="display-1">AGM NOMINATIONS</h2>
+                </h1>
+              </Col>
+            </Row>
+            <br />
+            {/* Rendering all nominees using map functions */}
+            <div class="container">
+              {/* Iterate over every role */}
+              {NominationsData.map(role => (
+                <>
+                  <Row className="justify-content-center text-center mb-lg">
+                    <h2>{role.role}</h2>
+                  </Row>
+                  <div class="row justify-content-center">
+                    {/* Iterate over every nominee going for that role */}
+                    {role.nominees.map(nominee => (
+                      <NomineeCard
+                        data={nominee}
+                        fontSize={FONT_SIZE}
+                        imageRef={this.imgRef}
+                        onImageLoad={this.onImgLoad} />
+                    ))}
+                  </div>
+                </>
+              ))}
+            </div>
+>>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
           </section>
         </main>
         <SimpleFooter />
       </>
     );
   }
+<<<<<<< HEAD
 
   nominations_2022(FONT_SIZE) {
     return (
@@ -244,6 +275,8 @@ class Team extends React.Component {
     );
   }
   
+=======
+>>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
 }
 
-export default Team;
+export default Nominations;
