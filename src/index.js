@@ -31,11 +31,7 @@ import Events from  "views/Events.js"
 import Blog from  "views/Blog.js"
 import Publications from "views/Publications.js";
 import Charity from "views/Charity";
-<<<<<<< HEAD
 import Nominations from "views/Nominations.js";
-=======
-import Nominations from "views/Nominations";
->>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
 
 ReactDOM.render(
   <HashRouter basename="/" >
@@ -80,7 +76,7 @@ ReactDOM.render(
       <Route
         path="/nominations"
         exact
-        render={props => <Blog {...props} />}
+        render={props => <Nominations {...props} />}
       />
 
       <Redirect to="/" />

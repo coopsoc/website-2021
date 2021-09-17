@@ -9,22 +9,19 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
-      }
+      },
     ]
   },
   {
@@ -35,21 +32,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -61,21 +55,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -87,21 +78,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -113,21 +101,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -139,21 +124,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -165,21 +147,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -191,21 +170,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -217,21 +193,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   },
@@ -243,21 +216,18 @@ export default [
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
       {
         "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
-        "cardColour": "2",
       },
     ]
   }

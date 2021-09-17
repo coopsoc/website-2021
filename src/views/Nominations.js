@@ -21,55 +21,39 @@ import '../assets/css/my.css';
 // reactstrap components
 import { Row, Col } from "reactstrap";
 
+// yess let's get those animations
+import "animate.css"
+
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
+import NomineeCard from "components/nominations/NomineeCard";
+import NomineeModal from "components/nominations/NomineeModal";
 
 import NominationsData from "./data/NominationsData";
-
-// yess let's get those animations
-import "animate.css"
-import NomineeCard from "components/nominations/NomineeCard";
 
 class Nominations extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      dimensions: {}
+      dimensions: {},
+      toggleModal: false,
+      nominee: {
+        name: "",
+        image: "",
+        description: "",
+        cardColour: ""
+      },
     };
 
     this.imgRef = React.createRef();
     this.mainRef = React.createRef();
   }
 
-  onImgLoad({ target: img }) {
-    this.setState({
-      dimensions: {
-        height: img.offsetHeight,
-        width: img.offsetWidth
-      }
-    });
-  }
-
-  handleResize = e => {
+  handleResize = _ => {
     const img = this.imgRef.current;
-    this.setState({
-      dimensions: {
-        height: img.offsetHeight,
-        width: img.offsetWidth
-      }
-    });
-  };
 
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.mainRef.current.scrollTop = 0;
-  }
-
-  handleResize = e => {
-    const img = this.imgRef.current;
     if (img != null) {
       this.setState({
         dimensions: {
@@ -80,7 +64,7 @@ class Nominations extends React.Component {
     }
   };
 
-  render() {
+  getFontSize = () => {
     let FONT_SIZE = '.9vw';
     const { width, height } = this.state.dimensions;
 
@@ -93,6 +77,56 @@ class Nominations extends React.Component {
     } else {
       FONT_SIZE = 13;
     }
+
+    return FONT_SIZE;
+  }
+
+  // Given a person's name, returns all roles they're nominated for
+  getNominatedRoles = (name) => {
+    const roles = [];
+
+    for (const role of NominationsData) {
+      const role_name = role.role;
+
+      for (const data of role.nominees) {
+        if (data.name === name) {
+          roles.push(role_name);
+          break;
+        }
+      }
+    }
+
+    return roles;
+  }
+
+  clickNominee = (nominee) => {
+    this.setState({
+      nominee: nominee,
+      toggleModal: true
+    });
+  }
+
+  setModal = () => {
+    this.setState({toggleModal: !this.state.toggleModal});
+  }
+
+  onImgLoad({ target: img }) {
+    this.setState({
+      dimensions: {
+        height: img.offsetHeight,
+        width: img.offsetWidth
+      }
+    });
+  }
+
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.mainRef.current.scrollTop = 0;
+  }
+
+  render() {
+    const font_size = this.getFontSize();
 
     return (
       <>
@@ -153,15 +187,22 @@ class Nominations extends React.Component {
                     {role.nominees.map(nominee => (
                       <NomineeCard
                         data={nominee}
-                        fontSize={FONT_SIZE}
+                        fontSize={font_size}
                         imageRef={this.imgRef}
-                        onImageLoad={this.onImgLoad} />
+                        onImageLoad={this.onImgLoad}
+                        onClick={() => this.clickNominee(nominee)} />
                     ))}
                   </div>
                 </>
               ))}
             </div>
           </section>
+          {console.log(`Modal active: ${this.state.toggleModal}`)}
+          <NomineeModal
+            data={this.state.nominee}
+            roles={this.getNominatedRoles(this.state.nominee.name)}
+            isOpen={this.state.toggleModal}
+            toggle={this.setModal} />
         </main>
         <SimpleFooter />
       </>

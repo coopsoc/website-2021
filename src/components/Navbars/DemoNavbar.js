@@ -170,11 +170,7 @@ class DemoNavbar extends React.Component {
                       to="/nominations" 
                       tag={Link}
                     >
-<<<<<<< HEAD
-                      <span className="nav-link-inner--text">Nominations</span>
-=======
                       <span className="nav-link-inner--text">NOMINATIONS</span>
->>>>>>> e4b43c4ab7ff0df87bbf187356c0fec2621ec416
                     </NavLink>
                   </NavItem>
                   
