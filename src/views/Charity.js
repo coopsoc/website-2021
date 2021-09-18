@@ -4,9 +4,6 @@ import React from "react";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
-// nodejs library that concatenates classes
-import classnames from "classnames";
-
 // yess let's get those animations
 import "animate.css";
 
@@ -36,7 +33,6 @@ class Charity extends React.Component {
       dirToggle: false,
       prev: charityData.end,
       year: charityData.end,
-
       showModal: false,
       current: {
         "title": "",
@@ -181,11 +177,13 @@ class Charity extends React.Component {
             <Row className="justify-content-center text-center">
               <Col lg="8">
                 <p className="lead text-muted">
-                  Co-op Soc merged with the Co-op Soc Charitable Society (CSCS) in 2018, and since then, the charity
-                  portfolio has been an integral way for Co-op scholars to give back to the community. We organise fun events
-                  to raise awareness for a diverse range of charities and social issues, encouraging collective participation
-                  through events such as the World’s Greatest Shave. Beyond having a positive impact on society, our core aims are to
-                  socialise, meet new people and above all, contribute with a giving heart.
+                Co-op Soc merged with the Co-op Soc Charitable Society (CSCS) in
+                2018, and since then, the charity portfolio has been an integral
+                way for Co-op scholars to give back to the community. We organise
+                fun events to support a diverse range of charities and social
+                issues, providing various avenues for social impact. Beyond having
+                a positive impact on society, our core aims are to socialise, meet
+                new people and above all, contribute with a giving heart.
                 </p>
               </Col>
             </Row>
