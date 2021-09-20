@@ -9,38 +9,32 @@ import "animate.css";
 
 // reactstrap components
 import {
-  Button,
   Card,
   Container,
   Row,
   Col,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
 } from "reactstrap";
 
 // plugin that creates slider
 import Slider from "nouislider";
 
-import charityData from "./data/CharityData.jsx";
+import CharityModal from "components/charity/CharityModal";
+
+import CharityData from "./data/CharityData.jsx";
 
 class Charity extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      // State for the slider and animations
       dirToggle: false,
-      prev: charityData.end,
-      year: charityData.end,
+      prev: CharityData.end,
+      year: CharityData.end,
+
+      // State for the modal
       showModal: false,
-      current: {
-        "title": "",
-        "image": "",
-        "description": "",
-        "link": "",
-        "image2": ""
-      },
+      current: {},
     };
 
     this.mainRef = React.createRef();
@@ -72,10 +66,10 @@ class Charity extends React.Component {
     this.mainRef.current.scrollTop = 0;
 
     Slider.create(this.sliderRef.current, {
-      start: [charityData.end],
+      start: [CharityData.end],
       connect: [true, false],
       step: 1,
-      range: { min: charityData.start, max: charityData.end }
+      range: { min: CharityData.start, max: CharityData.end }
     }).on("update", this.updateSlider);
   }
 
@@ -95,7 +89,7 @@ class Charity extends React.Component {
   }
 
   renderYear = () => {
-    const year = this.state.year - charityData.start;
+    const year = this.state.year - CharityData.start;
     const direction = this.state.year - this.state.prev;
     let direction_str = "";
 
@@ -113,7 +107,7 @@ class Charity extends React.Component {
           <div className="p-5">
             <Row className="align-items-center">
               <div class="row">
-                {charityData.data[year].map((data, index) => this.renderCharity(data, index))}
+                {CharityData.data[year].map((data, index) => this.renderCharity(data, index))}
               </div>
             </Row>
           </div>
@@ -169,86 +163,53 @@ class Charity extends React.Component {
           <section className="section section-lg">
             <Row className="justify-content-center text-center ">
               <Col lg="8">
-              <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
+                <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
               </Col>
             </Row>
 
             <Container className="py-lg-md d-flex">
-            <Row className="justify-content-center text-center">
-              <Col lg="8">
-                <p className="lead text-muted">
-                Co-op Soc merged with the Co-op Soc Charitable Society (CSCS) in
-                2018, and since then, the charity portfolio has been an integral
-                way for Co-op scholars to give back to the community. We organise
-                fun events to support a diverse range of charities and social
-                issues, providing various avenues for social impact. Beyond having
-                a positive impact on society, our core aims are to socialise, meet
-                new people and above all, contribute with a giving heart.
-                </p>
-              </Col>
-            </Row>
+              <Row className="justify-content-center text-center">
+                <Col lg="8">
+                  <p className="lead text-muted">
+                    Co-op Soc merged with the Co-op Soc Charitable Society (CSCS) in
+                    2018, and since then, the charity portfolio has been an integral
+                    way for Co-op scholars to give back to the community. We organise
+                    fun events to support a diverse range of charities and social
+                    issues, providing various avenues for social impact. Beyond having
+                    a positive impact on society, our core aims are to socialise, meet
+                    new people and above all, contribute with a giving heart.
+                  </p>
+                </Col>
+              </Row>
             </Container>
             <br></br>
 
             <Container className="py-lg-md d-flex">
-              <Col></Col>     
+              <Col></Col>
               <Col lg="5" sm="8" >
                 <div className="slider" ref={this.sliderRef} />
               </Col>
-              <Col></Col>    
+              <Col></Col>
             </Container>
             <Container className="py-lg-md d-flex">
-              <Col></Col>     
+              <Col></Col>
               <p>2019</p>
-              <Col className="mt-4 mt-md-0"lg="2" sm="2"></Col>
+              <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
               <p>2020</p>
-              <Col className="mt-4 mt-md-0"lg="2" sm="2"></Col>
+              <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
               <p>2021</p>
-              <Col></Col>     
+              <Col></Col>
 
-             </Container>
-             <br></br>
-             <br></br>
+            </Container>
+            <br></br>
+            <br></br>
             {this.renderYear()}
           </section>
 
-          <Modal isOpen={this.state.showModal} toggle={this.toggleModal} className="modal-dialog-centered modal-lg">
-            <ModalHeader toggle={this.toggleModal}>{this.state.current["title"]}</ModalHeader>
-            <ModalBody className="charityBody">
-              <div style={{textAlign: 'center'}}>
-              <img src={this.state.current["image"]} alt={this.state.current["title"]} style={{ width: "50%" }} />
-              </div>
-              <hr></hr>
-              {this.state.current["description"].split("\n").map(line => <p>{line}</p>)}
-
-              {/* Case Comp Winners  */}
-              { (this.state.current["title"] === "Case Comp 2021") 
-                ?
-                  <div >
-                    <hr></hr>
-                    <Row className="text-center">
-                      <Col >
-                      <div className='verticalAlignTextDiv'>
-                        <p > Congratulations to our winning team, Ignite Consulting, for their incredible solution. Well done Annie Yan, Nicole Huang, Jerry Yeh and Ethan Wong! </p>
-                      </div>
-                      </Col> 
-                      <Col>       
-                        <img src={this.state.current["image2"]} alt={this.state.current["title"]} style={{ width: "100%" }} />
-                      </Col>                
-                    </Row>
-                  </div> 
-                :
-                  null 
-              }
-
-            </ModalBody>
-            <ModalFooter>
-              <a target="_blank" href={this.state.current["link"]}>
-                <Button color="index" style={{minWidth: '100px'}} onClick={this.toggleModal}>Visit</Button>
-              </a>
-              <Button color="secondary" style={{minWidth: '100px'}} onClick={this.toggleModal}>Cancel</Button>
-            </ModalFooter>
-          </Modal>
+          <CharityModal
+            isOpen={this.state.showModal}
+            toggle={this.toggleModal}
+            event={this.state.current} />
         </main>
         <SimpleFooter />
       </>
