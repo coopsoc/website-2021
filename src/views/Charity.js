@@ -19,6 +19,8 @@ import {
 import Slider from "nouislider";
 
 import CharityModal from "components/charity/CharityModal";
+import CharityCard from "components/charity/CharityCard";
+import CharityEvents from "components/charity/CharityEvents";
 
 import CharityData from "./data/CharityData.jsx";
 
@@ -80,14 +82,6 @@ class Charity extends React.Component {
     });
   }
 
-  renderCharity(data, index) {
-    return (
-      <div key={index} class="col-md-4 col-lg-6 mb-4 mb-lg-4 charity-event">
-        <img src={data["image"]} alt={data["title"]} class="card-img-top" onClick={() => this.displayInfo(data)}></img>
-      </div>
-    );
-  }
-
   renderYear = () => {
     const year = this.state.year - CharityData.start;
     const direction = this.state.year - this.state.prev;
@@ -107,7 +101,12 @@ class Charity extends React.Component {
           <div className="p-5">
             <Row className="align-items-center">
               <div class="row">
-                {CharityData.data[year].map((data, index) => this.renderCharity(data, index))}
+                {CharityData.data[year].map((data, index) => (
+                  <CharityCard
+                    key={index}
+                    event={data}
+                    onClick={() => this.displayInfo(data)} />
+                ))}
               </div>
             </Row>
           </div>
@@ -184,6 +183,11 @@ class Charity extends React.Component {
             </Container>
             <br></br>
 
+            <CharityEvents
+              start={CharityData.start}
+              end={CharityData.end}
+              events={CharityData.events} />
+
             <Container className="py-lg-md d-flex">
               <Col></Col>
               <Col lg="5" sm="8" >
@@ -199,7 +203,6 @@ class Charity extends React.Component {
               <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
               <p>2021</p>
               <Col></Col>
-
             </Container>
             <br></br>
             <br></br>

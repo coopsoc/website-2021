@@ -6,10 +6,9 @@ import greatestShave from '../../assets/img/charity/greatest-shave.jpg';
 import hscWorkshop from '../../assets/img/charity/hsc-workshops.jpg';
 import pokerNight from '../../assets/img/charity/poker.jpg';
 import caseComp2021 from '../../assets/img/charity/case-comp2021.png';
-import caseCompWinners from '../../assets/img/charity/case-comp2021Winners.jpg';
 import funRun from '../../assets/img/charity/funRun.jpg';
 
-const charityData = {
+const CharityData = {
   start: 2019,
   end: 2021,
   data: [
@@ -65,6 +64,9 @@ const charityData = {
     ],
     [
       {
+        // Special items specifically for the case comp
+        "special": "casecomp",
+        // Regular
         "title": "Case Comp 2021",
         "image": caseComp2021,
         "description": `Get ready to put your thinking caps on 🧢 and problem-solve for a good cause💡, because Co-op Soc is excited to present our 2021 Charity Case Competition!! 🙌
@@ -73,9 +75,6 @@ const charityData = {
             Choose to register in a team of 3-4 people or enter as an individual and we’ll place you in a team. 👥
             This is your chance to use your skill set to give back to the community. Don’t miss this opportunity to help make a meaningful impact! 🙋‍♀️✅⚖️`,
         "link": "https://www.facebook.com/events/343320683808154/",
-        // Special items specifically for the case comp
-        "special": "casecomp",
-        "image2": caseCompWinners
       },
       {
         "title": "Fun Run",
@@ -89,4 +88,4 @@ const charityData = {
   ]
 };
 
-export default charityData;
+export default CharityData;
