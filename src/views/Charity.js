@@ -15,12 +15,8 @@ import {
   Col,
 } from "reactstrap";
 
-// plugin that creates slider
-import Slider from "nouislider";
-
-import CharityModal from "components/charity/CharityModal";
-import CharityCard from "components/charity/CharityCard";
-import CharityEvents from "components/charity/CharityEvents";
+import CharityModal from "components/charity/modal/CharityModal";
+import CharityEvents from "components/charity/events/CharityEvents";
 
 import CharityData from "./data/CharityData.jsx";
 
@@ -29,90 +25,25 @@ class Charity extends React.Component {
     super(props);
 
     this.state = {
-      // State for the slider and animations
-      dirToggle: false,
-      prev: CharityData.end,
-      year: CharityData.end,
-
       // State for the modal
       showModal: false,
       current: {},
     };
 
     this.mainRef = React.createRef();
-    this.sliderRef = React.createRef();
-    this.cardsRef = React.createRef();
-  }
-
-  updateSlider = (values, handle) => {
-    const value = parseInt(values[0]);
-
-    const prev_dir = this.state.year - this.state.prev;
-    const curr_dir = value - this.state.year;
-    let toggle = this.state.dirToggle;
-
-    if (Math.sign(prev_dir) === Math.sign(curr_dir)) {
-      toggle = !toggle;
-    }
-
-    this.setState({
-      dirToggle: toggle,
-      prev: this.state.year,
-      year: value
-    });
   }
 
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.mainRef.current.scrollTop = 0;
-
-    Slider.create(this.sliderRef.current, {
-      start: [CharityData.end],
-      connect: [true, false],
-      step: 1,
-      range: { min: CharityData.start, max: CharityData.end }
-    }).on("update", this.updateSlider);
   }
 
-  displayInfo(data) {
+  displayInfo = (event) => {
     this.setState({
       showModal: true,
-      current: data,
+      current: event,
     });
-  }
-
-  renderYear = () => {
-    const year = this.state.year - CharityData.start;
-    const direction = this.state.year - this.state.prev;
-    let direction_str = "";
-
-    if (direction < 0) {
-      direction_str = "Right";
-    } else if (direction > 0) {
-      direction_str = "Left";
-    }
-
-    direction_str += this.state.dirToggle ? "1" : "2";
-
-    return (
-      <Container className={direction === 0 ? "" : `animate__animated animate__fadeIn${direction_str}`}>
-        <Card className="bg-gradient-neutral shadow-lg border-0">
-          <div className="p-5">
-            <Row className="align-items-center">
-              <div class="row">
-                {CharityData.data[year].map((data, index) => (
-                  <CharityCard
-                    key={index}
-                    event={data}
-                    onClick={() => this.displayInfo(data)} />
-                ))}
-              </div>
-            </Row>
-          </div>
-        </Card>
-      </Container>
-    );
   }
 
   toggleModal = () => {
@@ -186,27 +117,8 @@ class Charity extends React.Component {
             <CharityEvents
               start={CharityData.start}
               end={CharityData.end}
-              events={CharityData.events} />
-
-            <Container className="py-lg-md d-flex">
-              <Col></Col>
-              <Col lg="5" sm="8" >
-                <div className="slider" ref={this.sliderRef} />
-              </Col>
-              <Col></Col>
-            </Container>
-            <Container className="py-lg-md d-flex">
-              <Col></Col>
-              <p>2019</p>
-              <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
-              <p>2020</p>
-              <Col className="mt-4 mt-md-0" lg="2" sm="2"></Col>
-              <p>2021</p>
-              <Col></Col>
-            </Container>
-            <br></br>
-            <br></br>
-            {this.renderYear()}
+              events={CharityData.events}
+              onClick={this.displayInfo} />
           </section>
 
           <CharityModal

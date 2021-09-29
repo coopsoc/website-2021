@@ -1416,8 +1416,6 @@ button.bg-events:focus {
   animation-name: fadeInRight2;
 }
 
-
-
 .verticalAlignTextDiv {
   display: table-cell;
   height: 200px;
@@ -1443,3 +1441,4 @@ button.bg-events:focus {
   .card > .list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
+

@@ -11,7 +11,7 @@ import funRun from '../../assets/img/charity/funRun.jpg';
 const CharityData = {
   start: 2019,
   end: 2021,
-  data: [
+  events: [
     [
       {
         "title": "Poker Night",

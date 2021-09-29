@@ -3,21 +3,15 @@ import { Col, Container } from "reactstrap";
 import Slider from "nouislider";
 import wNumb from "wnumb";
 
-class CharityEvents extends React.Component {
+class CharitySlider extends React.Component {
   constructor(props) {
-    super(props);
-
-    this.state = {
-      year: props.end
-    };
-
+    super(props); 
     this.sliderRef = React.createRef();
   }
 
   updateSlider = (values, _) => {
-    this.setState({
-      year: parseInt(values[0])
-    });
+    const year = parseInt(values[0]);
+    this.props.onChange(year);
   }
 
   componentDidMount() {
@@ -56,4 +50,4 @@ class CharityEvents extends React.Component {
   }
 }
 
-export default CharityEvents;
+export default CharitySlider;
