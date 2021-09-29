@@ -1,5 +1,7 @@
 import React from "react";
 
+// Code copied over from Team.js, separated out into its own component -
+// consists of a person's photo and their name directly underneath
 export default class NomineeCard extends React.Component {
   constructor(props) {
     super(props);
@@ -12,11 +14,10 @@ export default class NomineeCard extends React.Component {
   }
 
   render() {
-    // Code copied over from Team.js, separated out into its own component
     return (
       <div className="col-md-4">
         <div className="meet-the-execs">
-          <a className={`limit`} onClick={this.onClick}>
+          <a className="limit" onClick={this.onClick}>
             <img
               alt={this.data.name}
               src={this.data.image}
