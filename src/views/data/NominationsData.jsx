@@ -5,14 +5,14 @@ export default [
     "role": "President",
     "nominees": [
       {
-        "name": "Not Kenuka Wijayatunga",
+        "name": "Kenuka Wijayatunga",
         "image": Kenuka_Image,
         "preference" : 1,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.
                         I want to enhance the cohesion of Co-op Soc by ensuring that the incoming 2021 first-years feel welcomed into the Co-op family, and by also increasing the involvement of third and fourth years. Overall, despite what 2021 throws at us, get keen for a good time!`,
       },
       {
-        "name": "Not Kenuka Wijayatunga",
+        "name": "Linus Challis",
         "image": Kenuka_Image,
         "preference" : 2,
         "description": `Stepping into the role of President, my ultimate goal is to foster a strong community full of everlasting friendships and life-long memories by overseeing all facets of the society.

@@ -35,7 +35,7 @@ export default class NomineeCard extends React.Component {
         </div>
 
         <div className="card-body text-center">
-          <h4 className="about-name">{this.data.name}</h4>
+          <h4 className="agm-name">{this.data.name}</h4>
         </div>
       </div>
     );
