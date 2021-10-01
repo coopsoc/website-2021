@@ -1478,5 +1478,5 @@ button.bg-events:focus {
     padding-left: 15px; }
 
 .agm-name {
-  font-size: 2vw;
+  font-size: max(2vw, 15px);
 }
