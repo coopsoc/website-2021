@@ -1,4 +1,12 @@
-// images
+// Sponsor charity images
+import ILF from "assets/img/charity/logos/ilf.png";
+import Leukaemia from "assets/img/charity/logos/leukaemia_foundation.png";
+import Dignity from "assets/img/charity/logos/share_the_dignity.png";
+import Starlight from "assets/img/charity/logos/starlight.png";
+import Variety from "assets/img/charity/logos/variety.png";
+import WorldVision from "assets/img/charity/logos/world_vision.png";
+
+// Event images
 import sixKForWater from '../../assets/img/charity/6k-for-water.jpg';
 import bloodDrive from '../../assets/img/charity/blood-drive.jpg';
 import caseComp from '../../assets/img/charity/case-comp.jpg';
@@ -85,6 +93,38 @@ const CharityData = {
         "link": "https://www.facebook.com/events/286927249456511/",
       },
     ],
+  ],
+  sponsors: [
+    {
+      "name": "Indigenous Literacy Foundation",
+      "image": ILF,
+      "link": "https://www.indigenousliteracyfoundation.org.au/"
+    },
+    {
+      "name": "Leukaemia Foundation",
+      "image": Leukaemia,
+      "link": "https://www.leukaemia.org.au/"
+    },
+    {
+      "name": "Share the Dignity",
+      "image": Dignity,
+      "link": "https://www.sharethedignity.org.au/"
+    },
+    {
+      "name": "Starlight Children's Foundation",
+      "image": Starlight,
+      "link": "https://www.starlight.org.au/"
+    },
+    {
+      "name": "Variety",
+      "image": Variety,
+      "link": "https://www.variety.org.au/home/"
+    },
+    {
+      "name": "World Vision",
+      "image": WorldVision,
+      "link": "https://www.worldvision.com.au/"
+    },
   ]
 };
 

@@ -2,8 +2,8 @@ import React from "react";
 import { Card, Container, Row } from "reactstrap";
 import { Slide } from "@mui/material";
 
-import CharitySlider from "./CharitySlider";
-import CharityCard from "./CharityCard";
+import CharitySlider from "./events/CharitySlider";
+import CharityCard from "./events/CharityCard";
 
 class CharityEvents extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class CharityEvents extends React.Component {
     this.state = {
       year: props.end,
       slideIn: true,
-      direction: "down"
+      direction: "left"
     };
   }
 
@@ -70,7 +70,8 @@ class CharityEvents extends React.Component {
           onChange={year => this.updateYear(year)} />
         <Slide
           in={this.state.slideIn}
-          direction={this.state.direction}>
+          direction={this.state.direction}
+          timeout={{ enter: 500, exit: 500 }}>
           <div>
             {this.renderYear()}
           </div>

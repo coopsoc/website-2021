@@ -9,14 +9,14 @@ import "animate.css";
 
 // reactstrap components
 import {
-  Card,
   Container,
   Row,
   Col,
 } from "reactstrap";
 
-import CharityModal from "components/charity/modal/CharityModal";
-import CharityEvents from "components/charity/events/CharityEvents";
+import CharityEvents from "components/charity/CharityEvents";
+import CharityList from "components/charity/CharityList";
+import CharityModal from "components/charity/CharityModal";
 
 import CharityData from "./data/CharityData.jsx";
 
@@ -112,8 +112,21 @@ class Charity extends React.Component {
                 </Col>
               </Row>
             </Container>
-            <br></br>
+          </section>
 
+          <section className="section section-lg">
+            <Row className="justify-content-center text-center mb-lg">
+              <h2>Charities supported</h2>
+            </Row>
+            
+            <CharityList
+              sponsors={CharityData.sponsors} />
+          </section>
+
+          <section className="section section-lg">
+            <Row className="justify-content-center text-center mb-lg">
+              <h2>Our events!</h2>
+            </Row>
             <CharityEvents
               start={CharityData.start}
               end={CharityData.end}
