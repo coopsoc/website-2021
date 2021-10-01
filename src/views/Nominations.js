@@ -206,6 +206,7 @@ class Nominations extends React.Component {
                     }
                   <div class="row justify-content-center">
                    
+                  <div className="cardsAGM">
                     {/* Iterate over every nominee going for that role */}
                     {role.nominees.map(nominee => (
                       <NomineeCard
@@ -215,6 +216,7 @@ class Nominations extends React.Component {
                         onImageLoad={this.onImgLoad}
                         onClick={() => this.clickNominee(nominee)} />
                     ))}
+                    </div>
                   </div>
                   <br/>
                   <br/>

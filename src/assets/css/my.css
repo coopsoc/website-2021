@@ -1424,6 +1424,7 @@ button.bg-events:focus {
 
 .card {
   position: relative;
+  
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -1448,7 +1449,7 @@ button.bg-events:focus {
 }
 
 .pref1 {
-  border: 7px solid #fec1b3;
+  border: 7px solid #e5abc8;
   cursor: pointer;
 }
 
@@ -1457,6 +1458,14 @@ button.bg-events:focus {
   opacity:0.6;
 }
 .markPref1 {
-  background-color: #fec1b3;
+  background-color: #e5abc8;
   opacity:0.6;
+}
+
+.cardsAGM{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+
 }
