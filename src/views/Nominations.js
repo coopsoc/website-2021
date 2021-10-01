@@ -160,23 +160,28 @@ class Nominations extends React.Component {
           </div>
           <section className="section section-lg">
             {/* Title */}
-            <Row className="justify-content-center text-center mb-lg">
+            <Row className="justify-content-center text-center mb-md">
               <Col lg="8">
                 <h1 class="animate__animated animate__zoomIn animate__fast">
-                  <h2 className="display-1">2020 AGM NOMINATIONS</h2>
+                  <h2 className="display-1">2022 AGM NOMINATIONS</h2>
                 </h1>
               </Col>
             </Row>
             {/* PreferenceKey */}
-            <Row className="justify-content-center text-center mb-lg">
+            <Row className="justify-content-center text-center">
                 <p style={{fontSize:20}}><mark className='markPref1'>
-                    First Preference
+                &nbsp;&nbsp;&nbsp;&nbsp;First Preference&nbsp;&nbsp;&nbsp;
                 </mark></p>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <p style={{fontSize:20}}><mark className='markPref2'>
-                    Second Preference
+                &nbsp;Second Preference&nbsp;
                 </mark></p>
             </Row>
+            <br></br>
+            <Row className="justify-content-center text-center">
+            <p>Click on each nominee to find out more!</p>
+            </Row>
+            
             {/* Rendering all nominees using map functions */}
             <div class="container">
               {/* Iterate over every role */}

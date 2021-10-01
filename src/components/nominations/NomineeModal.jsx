@@ -23,7 +23,9 @@ export default class NomineeModal extends React.Component {
           <b>Running for:&nbsp; </b>{this.props.roles.join(", ")}
         </Row>
           <hr />
+          <Row className="justify-content-center text-center ">
           {this.props.data.description}
+          </Row>
         </ModalBody>
       </Modal>
     );
