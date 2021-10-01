@@ -1441,3 +1441,22 @@ button.bg-events:focus {
   .card > .list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
+
+.pref2 {
+  border: 7px solid  #6eb6d4;
+  cursor: pointer;
+}
+
+.pref1 {
+  border: 7px solid #fec1b3;
+  cursor: pointer;
+}
+
+.markPref2 {
+  background-color: #6eb6d4 ;
+  opacity:0.6;
+}
+.markPref1 {
+  background-color: #fec1b3;
+  opacity:0.6;
+}
