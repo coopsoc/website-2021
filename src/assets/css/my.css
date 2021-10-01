@@ -1461,11 +1461,18 @@ button.bg-events:focus {
   background-color: #e5abc8;
   opacity:0.6;
 }
-
+/* 
 .cardsAGM{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1rem;
 
-}
+} */
+.col-md-4-agm {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; }

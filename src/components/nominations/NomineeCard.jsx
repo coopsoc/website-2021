@@ -21,7 +21,8 @@ export default class NomineeCard extends React.Component {
 
   render() {
     return (
-      <div className="agmCard">
+      <div className="col-md-4-agm">
+      {/* <div className="agmCard"> */}
         <div className="meet-the-execs">
           <a className="limit" onClick={this.onClick}>
             <img

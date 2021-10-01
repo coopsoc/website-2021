@@ -13,7 +13,7 @@ import React from "react";
 import '../assets/css/my.css';
 
 // reactstrap components
-import { Row, Col } from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 
 // yess let's get those animations
 import "animate.css"
@@ -206,7 +206,8 @@ class Nominations extends React.Component {
                     }
                   <div class="row justify-content-center">
                    
-                  <div className="cardsAGM">
+                  <Container >
+                  <div class="row justify-content-center ">
                     {/* Iterate over every nominee going for that role */}
                     {role.nominees.map(nominee => (
                       <NomineeCard
@@ -217,7 +218,11 @@ class Nominations extends React.Component {
                         onClick={() => this.clickNominee(nominee)} />
                     ))}
                     </div>
+                    
+                </Container>
                   </div>
+                 
+
                   <br/>
                   <br/>
                   <br/>
