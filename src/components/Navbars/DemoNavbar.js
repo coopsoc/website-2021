@@ -168,7 +168,7 @@ class DemoNavbar extends React.Component {
                       to="/agm" 
                       tag={Link}
                     >
-                      <span className="nav-link-inner--text">AGM</span>
+                      <span className="nav-link-inner--text">2022 EXEC NOMINEES</span>
                     </NavLink>
                   </NavItem>
                   
