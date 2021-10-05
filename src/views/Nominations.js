@@ -182,11 +182,11 @@ class Nominations extends React.Component {
               </Col>
             </Row>
             <Row className="justify-content-center text-center">
-                <p style={{fontSize:18}}><mark className='markPref1'>
+                <p style={{fontSize:16}}><mark className='markPref1'>
                 &nbsp;&nbsp;&nbsp;&nbsp;First Preference&nbsp;&nbsp;&nbsp;
                 </mark></p>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <p style={{fontSize:18}}><mark className='markPref2'>
+                <p style={{fontSize:16}}><mark className='markPref2'>
                 &nbsp;Second Preference&nbsp;
                 </mark></p>
             </Row>
