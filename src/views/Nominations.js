@@ -163,7 +163,7 @@ class Nominations extends React.Component {
             <Row className="justify-content-center text-center">
               <Col lg="8">
                 <h1 class="animate__animated animate__zoomIn animate__fast">
-                  <h2 className="display-1">2022 AGM NOMINATIONS</h2>
+                  <h2 className="display-1">2022 EXECUTIVE TEAM NOMINATIONS</h2>
                 </h1>
               </Col>
             </Row>
