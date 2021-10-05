@@ -13,7 +13,7 @@ import React from "react";
 import '../assets/css/my.css';
 
 // reactstrap components
-import { Row, Col, Container } from "reactstrap";
+import { Row, Col, Container, Button } from "reactstrap";
 
 // yess let's get those animations
 import "animate.css"
@@ -160,7 +160,7 @@ class Nominations extends React.Component {
           </div>
           <section className="section section-lg">
             {/* Title */}
-            <Row className="justify-content-center text-center mb-md">
+            <Row className="justify-content-center text-center">
               <Col lg="8">
                 <h1 class="animate__animated animate__zoomIn animate__fast">
                   <h2 className="display-1">2022 AGM NOMINATIONS</h2>
@@ -168,12 +168,25 @@ class Nominations extends React.Component {
               </Col>
             </Row>
             {/* PreferenceKey */}
+            <Row className="justify-content-center text-center mb-md">
+              <Col lg="8">
+                <Button
+                  className="mt-4"
+                  color="index2"
+                  target="_blank"
+                  href="https://forms.office.com/pages/responsepage.aspx?id=pM_2PxXn20i44Qhnufn7o3RWEvm0h4VKiDUlanya_ihUMlM4UUVBT1FTVzBSTlk2QTJTNU9XQ04xMi4u"
+                >
+                  Vote Now!
+                </Button>
+
+              </Col>
+            </Row>
             <Row className="justify-content-center text-center">
-                <p style={{fontSize:20}}><mark className='markPref1'>
+                <p style={{fontSize:18}}><mark className='markPref1'>
                 &nbsp;&nbsp;&nbsp;&nbsp;First Preference&nbsp;&nbsp;&nbsp;
                 </mark></p>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <p style={{fontSize:20}}><mark className='markPref2'>
+                <p style={{fontSize:18}}><mark className='markPref2'>
                 &nbsp;Second Preference&nbsp;
                 </mark></p>
             </Row>

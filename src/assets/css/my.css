@@ -1444,12 +1444,12 @@ button.bg-events:focus {
     border-bottom-left-radius: 0.25rem; }
 
 .pref2 {
-  border: 7px solid  #6eb6d4;
+  border: 4px solid  #6eb6d4;
   cursor: pointer;
 }
 
 .pref1 {
-  border: 7px solid #e5abc8;
+  border: 4px solid #e5abc8;
   cursor: pointer;
 }
 
