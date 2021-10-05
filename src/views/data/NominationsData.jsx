@@ -202,7 +202,7 @@ export default [
     ]
   },
   {
-    "role": "ARC Delegate",
+    "role": "Arc Delegate",
     "nominees": [
       {
         "name": "Callum Wainwright",
