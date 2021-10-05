@@ -209,7 +209,7 @@ class Nominations extends React.Component {
                             <h2>{role.role}</h2>
                         </Row>
                         <Row className="justify-content-center text-center mb-md">
-                           <p style={{fontSize:20}}>There are two positions available to elect.</p>
+                           <p style={{fontSize:20}}>Two directors will be elected.</p>
                         </Row>
                         </div>
                         : 
