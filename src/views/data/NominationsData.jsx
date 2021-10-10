@@ -184,7 +184,7 @@ export default [
     "role": "Treasurer",
     "nominees": [
       {
-        "name": "Joesph Booth",
+        "name": "Joseph Booth",
         "image": Joesph_Image,
         "preference" : 1,
         "description": `Over the last 6 years the treasurer of this highly sort after society has been a Finance & Banking Scholar. There is a reason for this. In the tumultuous times in which we live in, now is not the time to buck the trend nor engage in a high-risk strategy. Ultimately, Co-op Soc should not be treated like the highly volatile crypto market, but needs the respect of a 3% growth Vanguard fund. Following in my predecessor and friend’s footsteps, Connor, the Co-op Commsec Accounts will balloon to their largest surplus yet through stringent financial management and ensuring everyone gets their fair share of drinks on camp. Moreover, upon starting my first Investment Bank placement, I will ensure the same skills learnt on placement will be utilised to grow this society. Of course, being Greek, I will also employ my genetic capacities to make sure Co-op Soc does not pay their fair share of tax for years to come. I continued the finance tradition on camp, let’s keep tradition for a second time.`,
