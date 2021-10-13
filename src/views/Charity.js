@@ -9,6 +9,7 @@ import "animate.css";
 
 // reactstrap components
 import {
+  Card,
   Container,
   Col,
   Row,
@@ -93,12 +94,26 @@ class Charity extends React.Component {
             {/* 1st Hero Variation */}
           </div>
 
-          <section className="section section-lg">
+          <section className="section">
             <Row className="justify-content-center text-center ">
               <Col lg="8">
                 <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
               </Col>
             </Row>
+
+            {/* Temporary card for movie night */}
+            <Container>
+              <Card className="bg-gradient-neutral shadow-lg">
+                <Row style={{ padding: "20px" }}>
+                  <Col lg="8" className="text-center">
+                    <p>If you want to donate to our movie night, you can visit the GoFundMe website from the embed to the right:</p>
+                  </Col>
+                  <Col lg="4">
+                    <div class="gfm-embed" data-url="https://www.gofundme.com/f/Co-op-Soc-charity-movie-night/widget/medium/"></div>
+                  </Col>
+                </Row>
+              </Card>
+            </Container>
 
             <Container className="py-lg-md d-flex">
               <Row className="justify-content-center text-center">
@@ -118,16 +133,16 @@ class Charity extends React.Component {
           </section>
 
           {/* List of supported charities */}
-          <section className="section section-lg">
+          <section className="section">
             <Row className="justify-content-center text-center mb-lg">
               <h2>Charities supported</h2>
             </Row>
-            
+
             <CharityList />
           </section>
 
           {/* Interactive carousel for events */}
-          <section className="section section-lg">
+          <section className="section">
             <Row className="justify-content-center text-center mb-lg">
               <h2>Our events!</h2>
             </Row>
@@ -140,7 +155,7 @@ class Charity extends React.Component {
           </section>
 
           {/* List of upcoming events */}
-          <section>
+          <section className="section">
             <Row className="justify-content-center text-center mb-lg">
               <h2>Upcoming events in the community</h2>
             </Row>
