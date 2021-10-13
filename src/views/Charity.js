@@ -10,15 +10,16 @@ import "animate.css";
 // reactstrap components
 import {
   Container,
-  Row,
   Col,
+  Row,
 } from "reactstrap";
 
 import CharityEvents from "components/charity/CharityEvents";
 import CharityList from "components/charity/CharityList";
 import CharityModal from "components/charity/CharityModal";
+import CharityUpcoming from "components/charity/CharityUpcoming";
 
-import CharityData from "./data/CharityData.jsx";
+import { START, END, EVENTS } from "./data/CharityData.jsx";
 
 class Charity extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Charity extends React.Component {
     this.state = {
       // State for the modal
       showModal: false,
-      current: {},
+      currentEvent: {},
     };
 
     this.mainRef = React.createRef();
@@ -39,13 +40,15 @@ class Charity extends React.Component {
     this.mainRef.current.scrollTop = 0;
   }
 
+  // Given a charity event, display its details in the modal.
   displayInfo = (event) => {
     this.setState({
       showModal: true,
-      current: event,
+      currentEvent: event,
     });
   }
 
+  // Toggle the modal on or off.
   toggleModal = () => {
     this.setState({
       showModal: !this.state.showModal
@@ -114,30 +117,41 @@ class Charity extends React.Component {
             </Container>
           </section>
 
+          {/* List of supported charities */}
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">
               <h2>Charities supported</h2>
             </Row>
             
-            <CharityList
-              sponsors={CharityData.sponsors} />
+            <CharityList />
           </section>
 
+          {/* Interactive carousel for events */}
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">
               <h2>Our events!</h2>
             </Row>
+
             <CharityEvents
-              start={CharityData.start}
-              end={CharityData.end}
-              events={CharityData.events}
+              start={START}
+              end={END}
+              events={EVENTS}
               onClick={this.displayInfo} />
+          </section>
+
+          {/* List of upcoming events */}
+          <section>
+            <Row className="justify-content-center text-center mb-lg">
+              <h2>Upcoming events in the community</h2>
+            </Row>
+
+            <CharityUpcoming />
           </section>
 
           <CharityModal
             isOpen={this.state.showModal}
             toggle={this.toggleModal}
-            event={this.state.current} />
+            event={this.state.currentEvent} />
         </main>
         <SimpleFooter />
       </>

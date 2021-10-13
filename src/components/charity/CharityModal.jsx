@@ -29,7 +29,7 @@ const CharityModal = ({ isOpen, toggle, event }) => {
         {chooseBody(event["special"])}
       </ModalBody>
       <ModalFooter>
-        <a target="_blank" href={event["link"]}>
+        <a href={event["link"]}>
           <Button
             color="index"
             style={{ minWidth: '100px' }}
