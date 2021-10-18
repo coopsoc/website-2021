@@ -73,12 +73,6 @@ ReactDOM.render(
         exact
         render={props => <Blog {...props} />}
       />
-      <Route path="/AGM" exact render={props => <Nominations {...props} />} />
-      <Route
-        path="/AGM"
-        exact
-        render={props => <Nominations {...props} />}
-      />
 
       <Redirect to="/" />
     </Switch>
