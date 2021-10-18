@@ -1424,6 +1424,7 @@ button.bg-events:focus {
 
 .card {
   position: relative;
+  
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -1442,3 +1443,40 @@ button.bg-events:focus {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
 
+.pref2 {
+  border: 4px solid  #6eb6d4;
+  cursor: pointer;
+}
+
+.pref1 {
+  border: 4px solid #e5abc8;
+  cursor: pointer;
+}
+
+.markPref2 {
+  background-color: #6eb6d4 ;
+  opacity:0.6;
+}
+.markPref1 {
+  background-color: #e5abc8;
+  opacity:0.6;
+}
+/* 
+.cardsAGM{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+
+} */
+.col-md-4-agm {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; }
+
+.agm-name {
+  font-size: max(2vw, 15px);
+}

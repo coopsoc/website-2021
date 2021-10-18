@@ -10,6 +10,7 @@ import classnames from "classnames";
 
 
 // Images
+import stonks from '../assets/img/pubs/stonks.jpeg'
 import Checkin_Image from '../assets/img/pubs/checkin.png'
 import Kahoot_Image from '../assets/img/pubs/kahoot.png'
 
@@ -116,7 +117,29 @@ render() {
           <section className="section section-lg mt--200 ">
           <Row className="justify-content-center text-center ">
 
-          
+            <Col lg="5">  
+            <br></br>
+            <br></br>
+            <Container className="py-lg-md d-flex">
+                <div class="card">
+                    <img src={stonks} class="card-img-top"></img>
+                    <div class="card-body" >
+                        <h5 class="card-title" style={{height: '50px'}}><b>Why Most Young People Should Start Investing</b></h5>
+                        <p class="card-text" style={{height: '100px'}}>Ever considered learning to invest? This article by Ethan Wong (BIS21) - a passionate young investor himself - outlines why you should, and how you can make a start on it today!</p>   
+    
+                    <Button
+                      className="mt-4"
+                      color="index"
+                      href="https://ethwong.medium.com/why-most-young-people-should-start-investing-6ea64448ef6b"
+                      target="_Blank"
+                    >
+                      Learn more
+                    </Button>
+                    </div>
+              </div>
+              </Container>        
+            </Col> 
+              
             <Col lg="5">       
             <br></br>
             <br></br>
@@ -125,7 +148,7 @@ render() {
                     <img src={connected} class="card-img-top"></img>
                     <div class="card-body">
                         <h5 class="card-title" style={{height: '50px'}}><b>Social Distancing Without the Socially Distant</b></h5>
-                        <p class="card-text" style={{height: '50px'}}>How can we stay connected during isolation?</p>
+                        <p class="card-text" style={{height: '100px'}}>How can we stay connected during isolation?</p>
                         <Button
                           className="mt-4"
                           color="index"
@@ -139,6 +162,9 @@ render() {
                 </Container>
             </Col>    
             
+          </Row>
+          <Row className="justify-content-center text-center ">
+          
             <Col lg="5">  
             <br></br>
             <br></br>
@@ -147,7 +173,7 @@ render() {
                     <img src={placement} class="card-img-top"></img>
                     <div class="card-body" >
                         <h5 class="card-title" style={{height: '50px'}}><b>First Placement Experiences</b></h5>
-                        <p class="card-text" style={{height: '50px'}}>Read about some of our past Exec's placement experiences!</p>   
+                        <p class="card-text" style={{height: '100px'}}>Read about some of our past Exec's placement experiences!</p>   
     
                     <Button
                       className="mt-4"
