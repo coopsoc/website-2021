@@ -33,6 +33,7 @@ class Charity extends React.Component {
     super(props);
 
     this.state = {
+      goFundMePopUp: true,
       dirToggle: false,
       prev: charityData.end,
       year: charityData.end,
@@ -68,6 +69,8 @@ class Charity extends React.Component {
       prev: this.state.year,
       year: value
     });
+
+    
   }
 
   componentDidMount() {
@@ -129,6 +132,12 @@ class Charity extends React.Component {
   toggleModal = () => {
     this.setState({
       showModal: !this.state.showModal
+    });
+  }
+
+  toggleGFMModal = () => {
+    this.setState({
+      goFundMePopUp: !this.state.goFundMePopUp
     });
   }
 
@@ -251,6 +260,35 @@ class Charity extends React.Component {
               <Button color="secondary" style={{minWidth: '100px'}} onClick={this.toggleModal}>Cancel</Button>
             </ModalFooter>
           </Modal>
+
+
+          {/* goFundMePopUp */}
+          <Modal
+              className="modal-dialog-centered"
+              isOpen={this.state.goFundMePopUp}
+              toggle={this.toggleGFMModal}
+            >
+              <div className="modal-body">
+                <Row style={{ padding: "20px" }} className="justify-content-center text-center">
+                <h5>Our upcoming movie night is being run in support of One In Five! Donate to our GoFundMe campaign now!</h5>
+                </Row>
+                <Row className="justify-content-center text-center">
+                  <div class="gfm-embed" data-url="https://www.gofundme.com/f/Co-op-Soc-charity-movie-night/widget/large/"></div>
+                </Row>
+              </div>
+              <div className="modal-footer">
+                <Button
+                  className="ml-auto"
+                  color="link"
+                  data-dismiss="modal"
+                  type="button"
+                  onClick={() => this.toggleGFMModal("goFundMePopUp")}
+                >
+                  Close
+                </Button>
+              </div>
+            </Modal>
+
         </main>
         <SimpleFooter />
       </>
