@@ -20,7 +20,7 @@ class CharitySlider extends React.Component {
       connect: [true, false],
       step: 1,
       range: { min: this.props.start, max: this.props.end },
-      tooltips: true,
+      //tooltips: true,
       format: wNumb({
         decimals: 0
       })
