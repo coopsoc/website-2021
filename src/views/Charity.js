@@ -273,7 +273,14 @@ class Charity extends React.Component {
                 <h5>Our upcoming movie night is being run in support of One In Five! Donate to our GoFundMe campaign now!</h5>
                 </Row>
                 <Row className="justify-content-center text-center">
-                  <div class="gfm-embed" data-url="https://www.gofundme.com/f/Co-op-Soc-charity-movie-night/widget/large/"></div>
+                <Button
+
+                  type="button"
+                  href="https://www.gofundme.com/f/Co-op-Soc-charity-movie-night"
+                  target="_blank"
+                >
+                  Donate Now
+                </Button>
                 </Row>
               </div>
               <div className="modal-footer">
