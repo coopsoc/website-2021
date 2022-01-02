@@ -9,7 +9,7 @@ const CharityList = () => {
       <Row className="justify-content-center align-items-center">
         {SPONSORS.map(sponsor => (
           <div className="col-lg-3 mb-3 mb-lg-0">
-            <a href={sponsor.link}>
+            <a href={sponsor.link} target="_blank">
               <img
                 alt={sponsor.name}
                 src={sponsor.image}
