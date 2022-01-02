@@ -36,7 +36,6 @@ class Charity extends React.Component {
     this.state = {
       // State for the modal
       showModal: false,
-      goFundMePopUp: true,
       currentEvent: {},
     };
 
@@ -64,14 +63,6 @@ class Charity extends React.Component {
       showModal: !this.state.showModal
     });
   }
-
-  // Toggle the movie night pop up on or off.
-  toggleModal = () => {
-    this.setState({
-      goFundMePopUp: !this.state.goFundMePopUp
-    });
-  }
-
 
   render() {
     return (
