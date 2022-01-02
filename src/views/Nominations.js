@@ -19,7 +19,8 @@ import { Row, Col, Container, Button } from "reactstrap";
 import "animate.css"
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
+import Header from "components/Header";
+import Navigation from "components/Navigation";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import NomineeCard from "components/nominations/NomineeCard";
 import NomineeModal from "components/nominations/NomineeModal";
@@ -101,7 +102,7 @@ class Nominations extends React.Component {
   }
 
   setModal = () => {
-    this.setState({toggleModal: !this.state.toggleModal});
+    this.setState({ toggleModal: !this.state.toggleModal });
   }
 
   onImgLoad({ target: img }) {
@@ -124,40 +125,9 @@ class Nominations extends React.Component {
 
     return (
       <>
-        <DemoNavbar />
+        <Navigation />
         <main ref={this.mainRef}>
-          <div className="position-relative">
-            {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-100">
-              <div className="shape shape-style-1 shape-primary">
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-              </div>
-
-              {/* SVG separator */}
-              <div className="separator separator-bottom separator-skew">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div>
-            </section>
-            {/* 1st Hero Variation */}
-          </div>
+          <Header />
           <section className="section section-lg">
             {/* Title */}
             <Row className="justify-content-center text-center">
@@ -182,69 +152,69 @@ class Nominations extends React.Component {
               </Col>
             </Row>
             <Row className="justify-content-center text-center">
-                <p style={{fontSize:16}}><mark className='markPref1'>
+              <p style={{ fontSize: 16 }}><mark className='markPref1'>
                 &nbsp;&nbsp;&nbsp;&nbsp;First Preference&nbsp;&nbsp;&nbsp;
-                </mark></p>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <p style={{fontSize:16}}><mark className='markPref2'>
+              </mark></p>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <p style={{ fontSize: 16 }}><mark className='markPref2'>
                 &nbsp;Second Preference&nbsp;
-                </mark></p>
+              </mark></p>
             </Row>
             <br></br>
             <Row className="justify-content-center text-center">
-            <p>Click on each nominee to find out more!</p>
+              <p>Click on each nominee to find out more!</p>
             </Row>
-            
+
             {/* Rendering all nominees using map functions */}
             <div class="container">
               {/* Iterate over every role */}
               {NominationsData.map(role => (
                 <>
-                <hr/>
-                <br/>
-                    { (role.role  === "Marketing Director" || role.role  === "Charity Director" )
-                        ? 
-                        <div>
-                        <Row className="justify-content-center text-center ">
-                            <h2>{role.role}</h2>
-                        </Row>
-                        <Row className="justify-content-center text-center mb-md">
-                           <p style={{fontSize:20}}>Two directors will be elected.</p>
-                        </Row>
-                        </div>
-                        : 
-                        <Row className="justify-content-center text-center mb-md">
-                            <h2>{role.role}</h2>
-                        </Row>
-                    }
-                  <div class="row justify-content-center">
-                   
-                  <Container >
-                  <div class="row justify-content-center ">
-                    {/* Iterate over every nominee going for that role */}
-                    {role.nominees.map(nominee => (
-                      <NomineeCard
-                        data={nominee}
-                        fontSize={font_size}
-                        imageRef={this.imgRef}
-                        onImageLoad={this.onImgLoad}
-                        onClick={() => this.clickNominee(nominee)} />
-                    ))}
+                  <hr />
+                  <br />
+                  {(role.role === "Marketing Director" || role.role === "Charity Director")
+                    ?
+                    <div>
+                      <Row className="justify-content-center text-center ">
+                        <h2>{role.role}</h2>
+                      </Row>
+                      <Row className="justify-content-center text-center mb-md">
+                        <p style={{ fontSize: 20 }}>Two directors will be elected.</p>
+                      </Row>
                     </div>
-                    
-                </Container>
-                  </div>
-                 
+                    :
+                    <Row className="justify-content-center text-center mb-md">
+                      <h2>{role.role}</h2>
+                    </Row>
+                  }
+                  <div class="row justify-content-center">
 
-                  <br/>
-                  <br/>
-                  <br/>
-                  
+                    <Container >
+                      <div class="row justify-content-center ">
+                        {/* Iterate over every nominee going for that role */}
+                        {role.nominees.map(nominee => (
+                          <NomineeCard
+                            data={nominee}
+                            fontSize={font_size}
+                            imageRef={this.imgRef}
+                            onImageLoad={this.onImgLoad}
+                            onClick={() => this.clickNominee(nominee)} />
+                        ))}
+                      </div>
+
+                    </Container>
+                  </div>
+
+
+                  <br />
+                  <br />
+                  <br />
+
                 </>
               ))}
             </div>
           </section>
-          
+
           {console.log(`Modal active: ${this.state.toggleModal}`)}
           <NomineeModal
             data={this.state.nominee}

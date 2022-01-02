@@ -43,7 +43,7 @@ import {
 } from "reactstrap";
 
 
-class DemoNavbar extends React.Component {
+class Navigation extends React.Component {
 
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
@@ -268,4 +268,4 @@ class DemoNavbar extends React.Component {
   }
 }
 
-export default DemoNavbar;
+export default Navigation;

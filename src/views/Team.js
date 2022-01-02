@@ -38,7 +38,8 @@ import {
 } from "reactstrap";
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
+import Header from "components/Header";
+import Navigation from "components/Navigation";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 // Fas Icons
@@ -157,40 +158,9 @@ class Team extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <Navigation />
         <main ref="main">
-          <div className="position-relative">
-            {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-100">
-              <div className="shape shape-style-1 shape-primary">
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-                <span className="floating" />
-              </div>
-
-              {/* SVG separator */}
-              <div className="separator separator-bottom separator-skew">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div>
-            </section>
-            {/* 1st Hero Variation */}
-          </div>
+          <Header />
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">  
             <Col lg="8">       
