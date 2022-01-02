@@ -52,10 +52,10 @@ import Swiper from "swiper";
 // import Swiper styles
 import 'swiper/swiper-bundle.css';
 // core version + navigation, pagination modules:
-import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+import SwiperCore, { SNavigation, Pagination } from 'swiper/core';
 
 // configure Swiper to use modules
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([SNavigation, Pagination]);
 
 
 class Events extends React.Component {

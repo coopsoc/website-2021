@@ -25,7 +25,7 @@ import SimpleFooter from "components/Footers/SimpleFooter.js";
 import NomineeCard from "components/nominations/NomineeCard";
 import NomineeModal from "components/nominations/NomineeModal";
 
-import NominationsData from "./data/NominationsData";
+import NominationsData from "../data/NominationsData";
 
 class Nominations extends React.Component {
   constructor(props) {
