@@ -10,12 +10,9 @@ import "animate.css";
 
 // reactstrap components
 import {
-  Card,
   Container,
   Col,
-  Row,
-  Modal,
-  Button
+  Row
 } from "reactstrap";
 
 import CharityEvents from "components/charity/CharityEvents";
@@ -28,8 +25,6 @@ import { START, END, EVENTS } from "./data/CharityData.jsx";
 
 
 class Charity extends React.Component {
-
-
   constructor(props) {
     super(props);
 
@@ -72,7 +67,6 @@ class Charity extends React.Component {
           <Header />
 
           <section className="section">
-
             <Row className="justify-content-center text-center ">
               <Col lg="8">
                 <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
@@ -95,21 +89,6 @@ class Charity extends React.Component {
               </Row>
             </Container>
           </section>
-
-          {/* Temporary card for movie night */}
-          {/* <Container>
-            <div class="container"><hr /></div>
-              <Card className="bg-gradient-neutral shadow-lg">
-                <Row style={{ padding: "20px" }}>
-                  <Col lg="8" className="text-center">
-                    <h5>Our upcoming movie night is being run in support of One In Five! Donate to our GoFundMe campaign now!</h5>
-                  </Col>
-                  <Col lg="4">
-                    <div class="gfm-embed" data-url="https://www.gofundme.com/f/Co-op-Soc-charity-movie-night/widget/medium/"></div>
-                  </Col>
-                </Row>
-              </Card>
-            </Container> */}
 
           {/* Interactive carousel for events */}
           <section className="section">

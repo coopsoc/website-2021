@@ -65,9 +65,9 @@ class Nominations extends React.Component {
 
     if (width > 400) {
       FONT_SIZE = 20;
-    } else if (width == 210) {
+    } else if (width === 210) {
       FONT_SIZE = 8;
-    } else if (width == 290) {
+    } else if (width === 290) {
       FONT_SIZE = 12;
     } else {
       FONT_SIZE = 13;

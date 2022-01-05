@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useBreakpoints } from "react-use-size";
 import { Col, Container, Row } from "reactstrap";
 
 import { UPCOMING } from "views/data/CharityData";
-
-// TODO: change based on screen display size
-const ROW_ITEMS = 4;
 
 const partition = (list, n) => {
   let result = [];
@@ -12,11 +10,14 @@ const partition = (list, n) => {
   for (let i = 0; i < list.length; i += n) {
     result.push(list.slice(i, i + n));
   }
-  
+
   return result;
 };
 
 const CharityUpcoming = () => {
+  const [small, medium, large] = useBreakpoints([720, 960, 1140]);
+  const [parts, setParts] = useState([]);
+
   const rowToDisplay = (row) => {
     let images = [];
     let names = [];
@@ -26,7 +27,7 @@ const CharityUpcoming = () => {
       const item = row[i];
 
       images.push(
-        <img 
+        <img
           alt={item["name"]}
           src={item["image"]}
           style={{ width: "100%" }} />
@@ -38,14 +39,30 @@ const CharityUpcoming = () => {
     return [images, names, dates];
   }
 
-  let partitioned = partition(UPCOMING, ROW_ITEMS).map(rowToDisplay).flat(1);
+  useEffect(() => {
+    console.log(small, medium, large);
+    let rowItems;
+
+    if (small) {
+      rowItems = 1;
+    } else if (medium) {
+      rowItems = 2;
+    } else if (large) {
+      rowItems = 3;
+    } else {
+      rowItems = 4;
+    }
+
+    const partitioned = partition(UPCOMING, rowItems).map(rowToDisplay).flat(1);
+    setParts(partitioned);
+  }, [small, medium, large]);
 
   return (
-    <Container>
-      {partitioned.map(row => (
+    <Container id="charityContainer">
+      {parts.map(row => (
         <Row className="justify-content-center align-items-center">
           {row.map(item => (
-            <Col lg="2" className="mb-2 mb-lg-0 text-center">
+            <Col sm="6" md="4" lg="3" className="mb-2 mb-lg-0 text-center">
               {item}
             </Col>
           ))}
