@@ -148,4 +148,3 @@ const UPCOMING = [
 export {
   START, END, EVENTS, SPONSORS, UPCOMING
 };
-

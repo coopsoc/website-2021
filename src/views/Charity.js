@@ -66,8 +66,8 @@ class Charity extends React.Component {
         <main ref={this.mainRef}>
           <Header />
 
-          <section className="section">
-            <Row className="justify-content-center text-center ">
+          <section className="charity-section">
+            <Row className="justify-content-center text-center">
               <Col lg="8">
                 <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">CHARITY</h2></h1>
               </Col>
@@ -91,7 +91,7 @@ class Charity extends React.Component {
           </section>
 
           {/* Interactive carousel for events */}
-          <section className="section">
+          <section className="charity-section">
             <div class="container"><hr /></div>
             <Row className="justify-content-center text-center mb-lg">
               <h2>Our Events</h2>
@@ -105,7 +105,7 @@ class Charity extends React.Component {
           </section>
 
           {/* List of supported charities */}
-          <section className="section">
+          <section className="charity-section">
             <div class="container"><hr /></div>
             <Row className="justify-content-center text-center mb-lg">
               <h2>Charities Supported</h2>

@@ -4,6 +4,12 @@ import { Col, Container, Row } from "reactstrap";
 
 import { UPCOMING } from "views/data/CharityData";
 
+/**
+ * Partitions a list into smaller sublists, each with a maximum of n elements.
+ * @param {any[]} list - The list to be partitioned.
+ * @param {number} n   - The number of elements in each part.
+ * @returns {any[][]}
+ */
 const partition = (list, n) => {
   let result = [];
 
@@ -39,8 +45,9 @@ const CharityUpcoming = () => {
     return [images, names, dates];
   }
 
+  // Breakpoints change whenever we resize, and we need to change the number
+  // of items in each row for a responsive layout
   useEffect(() => {
-    console.log(small, medium, large);
     let rowItems;
 
     if (small) {
