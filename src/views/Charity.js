@@ -59,6 +59,12 @@ class Charity extends React.Component {
     });
   }
 
+  toggleGFMModal = () => {
+    this.setState({
+      goFundMePopUp: !this.state.goFundMePopUp
+    });
+  }
+
   render() {
     return (
       <>
