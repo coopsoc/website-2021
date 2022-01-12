@@ -1,12 +1,12 @@
 // Event images
-import sixKForWater from '../../assets/img/charity/6k-for-water.jpg';
-import bloodDrive from '../../assets/img/charity/blood-drive.jpg';
-import caseComp from '../../assets/img/charity/case-comp.jpg';
-import greatestShave from '../../assets/img/charity/greatest-shave.jpg';
-import hscWorkshop from '../../assets/img/charity/hsc-workshops.jpg';
-import pokerNight from '../../assets/img/charity/poker.jpg';
-import caseComp2021 from '../../assets/img/charity/case-comp2021.png';
-import funRun from '../../assets/img/charity/funRun.jpg';
+import sixKForWater from '../assets/img/charity/6k-for-water.jpg';
+import bloodDrive from '../assets/img/charity/blood-drive.jpg';
+import caseComp from '../assets/img/charity/case-comp.jpg';
+import greatestShave from '../assets/img/charity/greatest-shave.jpg';
+import hscWorkshop from '../assets/img/charity/hsc-workshops.jpg';
+import pokerNight from '../assets/img/charity/poker.jpg';
+import caseComp2021 from '../assets/img/charity/case-comp2021.png';
+import funRun from '../assets/img/charity/funRun.jpg';
 
 // Sponsor charity images
 import ILF from "assets/img/charity/logos/ilf.png";

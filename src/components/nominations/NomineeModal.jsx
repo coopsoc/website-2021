@@ -14,7 +14,7 @@ export default class NomineeModal extends React.Component {
         <ModalHeader toggle={this.toggle}>{this.props.data.name}</ModalHeader>
         <ModalBody>
         <Row className="justify-content-center text-center ">
-          <img src={this.props.data.image} style={{
+          <img alt={this.props.data.name} src={this.props.data.image} style={{
             width: "50%",
             padding: "20px 50px 20px 50px"
           }} />

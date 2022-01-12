@@ -3,7 +3,7 @@ import { Col, Container } from "reactstrap";
 import Slider from "nouislider";
 import wNumb from "wnumb";
 
-class CharitySlider extends React.Component {
+class YearSlider extends React.Component {
   constructor(props) {
     super(props); 
     this.sliderRef = React.createRef();
@@ -50,4 +50,4 @@ class CharitySlider extends React.Component {
   }
 }
 
-export default CharitySlider;
+export default YearSlider;
