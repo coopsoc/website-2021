@@ -97,33 +97,9 @@ class Team extends React.Component {
     return FONT_SIZE;
   }
 
-  handleResize = e => {
-    const img = this.imgRef.current;
-    if (img != null) {
-      this.setState({
-        dimensions: {
-          height: img.offsetHeight,
-          width: img.offsetWidth
-        }
-      });
-    }
-  };
-
-  seededRandom(s) {
-    let hash = 0;
-    if (s.length === 0) return hash;
-
-    for (let i = 0; i < s.length; i++) {
-      const chr = s.charCodeAt(i);
-      hash = ((hash << 5) - hash) + chr;
-      hash |= 0; // Convert to 32bit integer
-    }
-
-    return hash;
-  }
-
   render() {
     const currentYear = this.state.year - START;
+    const members = MEMBERS[currentYear];
 
     return (
       <>
@@ -133,7 +109,7 @@ class Team extends React.Component {
           <section className="section section-lg">
             <Row className="justify-content-center text-center mb-lg">
               <Col lg="8">
-                <h1 class="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
+                <h1 className="animate__animated animate__zoomIn animate__fast"><h2 className="display-1">MEET THE TEAM</h2></h1>
               </Col>
             </Row>
 
@@ -145,22 +121,23 @@ class Team extends React.Component {
               })} />
             <br></br>
 
-            <div class="container">
-              {MEMBERS[currentYear]["exec"].map(section => (
+            <div className="container">
+              {members["exec"].map((section, index) => (
                 <ExecSection
+                  key={`exec-section${index}`}
                   section={section}
                   fontSize={this.getFontSize()}
                   imgRef={this.imgRef}
                   onImgLoad={this.onImgLoad} />
               ))}
 
-              <section class="about-section text-center bg-white pb-sm-5">
-                <div class="container subcom">
+              <section className="about-section text-center bg-white pb-sm-5">
+                <div className="container subcom">
                   <hr></hr>
                   <Row className="justify-content-center text-center mb-lg">
                     <h2>The Committee</h2>
                   </Row>
-                  {MEMBERS[currentYear]["subcoms"].map(portfolio => (
+                  {members["subcoms"] && members["subcoms"].map(portfolio => (
                     <Subcom
                       data={portfolio} />
                   ))}

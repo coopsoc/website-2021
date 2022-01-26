@@ -1,42 +1,53 @@
 import { faBullhorn, faDesktop, faDove, faEdit, faUserFriends } from "@fortawesome/free-solid-svg-icons";
 
-// 2021 Team Images
-import Kenuka_Image from '../assets/img/2021_exec/Kenuka.jpg'
-import Celine_Image from '../assets/img/2021_exec/Celine.jpg'
-import Kai_Image from '../assets/img/2021_exec/Kai.jpeg'
-import Connor_Image from '../assets/img/2021_exec/Connor.jpg'
-import Micah_Image from '../assets/img/2021_exec/Micah.jpg'
-import Jasmin_Image from '../assets/img/2021_exec/Jasmin.jpeg'
-import Hirun_Image from '../assets/img/2021_exec/Hirun.jpeg'
-import Keshmira_Image from '../assets/img/2021_exec/Keshmira.jpg'
-import Claire_Image from '../assets/img/2021_exec/Claire.jpg'
-import Jack_Image from '../assets/img/2021_exec/Jack.jpg'
-import Noa_Image from '../assets/img/2021_exec/Noa.jpg'
-import Miah_Image from '../assets/img/2021_exec/Miah.jpg'
-import Ronaldo_Image from '../assets/img/2021_exec/Ronaldo.jpg'
-
 // 2020 Team Images
-import Jelinna_Image from '../assets/img/2020_exec/Jelinna.jpg'
-import Roary_Image from '../assets/img/2020_exec/Roary.jpg'
-import Shrey_Image from '../assets/img/2020_exec/Shrey.jpg'
-import Xavier_Image from '../assets/img/2020_exec/Xavier.jpg'
-import Ian_Image from '../assets/img/2020_exec/Ian.png'
-import Stanley_Image from '../assets/img/2020_exec/Stanley.jpeg'
-import Hayes_Image from '../assets/img/2020_exec/Hayes.jpeg'
-import Emily_Image from '../assets/img/2020_exec/Emily.png'
-import Lelland_Image from '../assets/img/2020_exec/Lelland.jpeg'
-import Susan_Image from '../assets/img/2020_exec/Susan.jpg'
-import Vincent_Image from '../assets/img/2020_exec/Vincent.jpg'
+import Jelinna_Image from '../assets/img/exec/2020/Jelinna.jpg';
+import Roary_Image from '../assets/img/exec/2020/Roary.jpg';
+import Shrey_Image from '../assets/img/exec/2020/Shrey.jpg';
+import Xavier_Image from '../assets/img/exec/2020/Xavier.jpg';
+import Ian_Image from '../assets/img/exec/2020/Ian.png';
+import Stanley_Image from '../assets/img/exec/2020/Stanley.jpeg';
+import Hayes_Image from '../assets/img/exec/2020/Hayes.jpeg';
+import Emily20_Image from '../assets/img/exec/2020/Emily.png';
+import Lelland_Image from '../assets/img/exec/2020/Lelland.jpeg';
+import Susan_Image from '../assets/img/exec/2020/Susan.jpg';
+import Vincent_Image from '../assets/img/exec/2020/Vincent.jpg';
+
+// 2021 Team Images
+import Kenuka_Image from '../assets/img/exec/2021/Kenuka.jpg';
+import Celine_Image from '../assets/img/exec/2021/Celine.jpg';
+import Kai_Image from '../assets/img/exec/2021/Kai.jpeg';
+import Connor_Image from '../assets/img/exec/2021/Connor.jpg';
+import Micah_Image from '../assets/img/exec/2021/Micah.jpg';
+import Jasmin_Image from '../assets/img/exec/2021/Jasmin.jpeg';
+import Hirun_Image from '../assets/img/exec/2021/Hirun.jpeg';
+import Keshmira_Image from '../assets/img/exec/2021/Keshmira.jpg';
+import Claire_Image from '../assets/img/exec/2021/Claire.jpg';
+import Jack_Image from '../assets/img/exec/2021/Jack.jpg';
+import Noa_Image from '../assets/img/exec/2021/Noa.jpg';
+
+// 2022 Team Images
+import Miah_Image from '../assets/img/exec/2022/Miah.jpg';
+import Ronaldo_Image from '../assets/img/exec/2022/Ronaldo.jpg';
+import Nala_Image from "../assets/img/exec/2022/Nala.jpg";
+import Vivian_Image from "../assets/img/exec/2022/Vivian.jpg";
+import Cameron_Image from "../assets/img/exec/2022/Cameron.jpg";
+import Jess_Image from "../assets/img/exec/2022/Jess.jpg";
+import Alannah_Image from "../assets/img/exec/2022/Alannah.png";
+import Tiana_Image from "../assets/img/exec/2022/Tiana.png";
+import Emily22_Image from "../assets/img/exec/2022/Emily.jpg";
+import Nicole_Image from "../assets/img/exec/2022/Nicole.jpg";
+import Annie_Image from "../assets/img/exec/2022/Annie.png";
+import Hanyuan_Image from "../assets/img/exec/2022/Hanyuan.png";
 
 const START = 2020;
-const END = 2021;
+const END = 2022;
 
 const MEMBERS = [
   {
     "exec": [
       {
         "sectionName": "Executive",
-        "colour": 2,
         "members": [
           [
             {
@@ -77,7 +88,6 @@ const MEMBERS = [
       },
       {
         "sectionName": "Directors",
-        "colour": 5,
         "members": [
           [
             {
@@ -93,7 +103,7 @@ const MEMBERS = [
               "role": "Charity"
             },
             {
-              "image": Emily_Image,
+              "image": Emily20_Image,
               "description": `Coming into the Charity Director role, my goal was to organise fun events that allow Co-ops to volunteer first-hand and give back to the community - to do good and feel good. We’ve had the opportunity to hold some great events, such as our upcoming online Case Comp partnering with a real charity to help them tackle a very real issue in our society. Looking forward to launching some of our planned events when in-person activities resume!`,
               "name": "Emily Kasovska",
               "role": "Charity"
@@ -125,7 +135,6 @@ const MEMBERS = [
       },
       {
         "sectionName": "First Year Representatives",
-        "colour": 1,
         "members": [
           [
             {
@@ -181,7 +190,6 @@ const MEMBERS = [
     "exec": [
       {
         "sectionName": "Executive",
-        "colour": 2,
         "members": [
           [
             {
@@ -227,7 +235,6 @@ const MEMBERS = [
       },
       {
         "sectionName": "Directors",
-        "colour": 5,
         "members": [
           [
             {
@@ -273,7 +280,6 @@ const MEMBERS = [
       },
       {
         "sectionName": "First Year Representatives",
-        "colour": 1,
         "members": [
           [
             {
@@ -336,6 +342,134 @@ const MEMBERS = [
       }
     ],
   },
+  {
+    "exec": [
+      {
+        "sectionName": "Executive",
+        "members": [
+          [
+            {
+              "image": Miah_Image,
+              "description": `As President, I hope to foster a supportive and welcoming sense of community amongst
+              Co-ops by overseeing all aspects of the society. I look forward to working with our wonderful team, to
+              coordinate events and initiatives that will ultimately facilitate new friendships, mentorship and lasting memories.`,
+              "name": "Miah Panovrakos",
+              "role": "President"
+            },
+            {
+              "image": Ronaldo_Image,
+              "description": `Stepping into the role of Vice President and Grievance Officer, I would love to see fellow
+              Co-ops bond over these unprecedented times. I hope to facilitate the wonderful executives to bring forth
+              events and initiatives both online and in-person to improve the social experiences of being a UNSW Co-op
+              student. Most of all, I hope to make the Co-op Society everyone’s second family on campus.`,
+              "name": "Ronaldo Keng",
+              "role": "Vice President"
+            },
+          ], [
+            {
+              "image": Nala_Image,
+              "description": `I’m looking forward to another incredible year with the Co-op team as the 2022 secretary.
+              With this role, I’m aiming to foster growth and bonding in the society through delivering efficient,
+              transparent communication to all parties and building structured systems within the team. I also strive
+              to become not just a behind-the-scenes figure, but a familiar face in the support network of the incoming cohort.`,
+              "name": "Nala Hong",
+              "role": "Secretary"
+            },
+            {
+              "image": Vivian_Image,
+              "description": `As the treasurer in 2022, I aim to maximise the Co-op community’s experience whilst
+              maintaining a robust financial position for present and future generations of Co-op scholars. Overall, I
+              hope to benefit Co-op society through continuing past treasurers’ work in growing our financial assets to
+              create more opportunities for our community.`,
+              "name": "Vivian Chan",
+              "role": "Treasurer"
+            },
+            {
+              "image": Cameron_Image,
+              "description": `Hi I’m Cam! 
+              I’m a 2nd year CS student and this year I am go to above and beyond the average Arc Delegate and be extra
+              on time with forms and signup sheets, and also to ensure that everybody gets the same welcome into Co-op that I did! :))`,
+              "name": "Cameron Mayhew",
+              "role": "Arc Delegate"
+            },
+          ]
+        ]
+      },
+      {
+        "sectionName": "Directors",
+        "members": [
+          [
+            {
+              "image": Jess_Image,
+              "description": `I provide the 'play hard' to the 'work hard' of Co-op. As our Society's 2022 social
+              director I will deliver a broad range of inclusive and enjoyable events that enable Co-op scholars across
+              degrees and year groups to build strong friendships and break away from university stressors.`,
+              "name": "Jess Degeling",
+              "role": "Events"
+            },
+            {
+              "image": Alannah_Image,
+              "description": `I’m passionate about social justice, and as one of the 2022 Charity Directors, I look
+              forward to making meaningful change while bringing the members of Co-op Society closer together, through
+              fundraising, volunteering and working with charities for our events.`,
+              "name": "Alannah Darling",
+              "role": "Charity"
+            },
+            {
+              "image": Tiana_Image,
+              "description": `As one of the 2022 Charity Directors, I look forward to fostering a love of altruism and
+              sense of positivity. I hope to strengthen the sense of community within the society and our connection to
+              the broader public by running our fundraising and volunteering events.`,
+              "name": "Tiana Vincent",
+              "role": "Charity"
+            },
+          ],
+          [
+            {
+              "image": Emily22_Image,
+              "description": `Above all, my main goal as one of the Marketing Directors is to further the society’s open
+              and animated environment. I am extremely excited to work with the team to bring the community closer, both
+              by providing platforms for engagement via social media and by aiding interpersonal connections through event marketing.`,
+              "name": "Emily Ross",
+              "role": "Marketing"
+            },
+            {
+              "image": Nicole_Image,
+              "description": `Marketing serves as a medium for the connection of not only ideas, but of people. As one of
+              Co-op Soc’s Marketing Directors for 2022 I’m excited to work with the team to manage our social media
+              platforms as well as deliver content that’ll nourish our Co-op community in ways which bring us closer.`,
+              "name": "Nicole Huang",
+              "role": "Marketing"
+            },
+            {
+              "image": Annie_Image,
+              "description": `Going into the role of Publications Director for 2022, I am excited to find various ways
+              for Co-ops to learn from and connect with each other. This comes from our social media to the Chicken Coop
+              podcast with alumni and now more recreational pieces that affirm our strong culture. The Publications
+              portfolio serves us a platform for all of us to amplify our voices.`,
+              "name": "Annie Yan",
+              "role": "Publications"
+            },
+          ],
+          [
+            {
+              "image": Hanyuan_Image,
+              "description": `As the new IT director for 2022, I’m excited to continue work on the Co-op Soc website,
+              the first point of access new students have with our society. I hope to consult with the Co-op community
+              and create features that would benefit the school and social lives of each scholar, and give back to my
+              cohort using my technical skills.`,
+              "name": "Hanyuan Li",
+              "role": "IT"
+            },
+          ]
+        ]
+      },
+      // TODO: fill in FYR as they come in
+    ],
+    "subcoms": [
+      // TODO: fill in subcom as they come in
+    ]
+  }
 ];
 
 export { START, END, MEMBERS };

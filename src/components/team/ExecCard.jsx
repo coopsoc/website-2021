@@ -5,11 +5,15 @@ const ExecCard = ({ data, colour, fontSize, imgRef, onImgLoad }) => {
     <div className="col-md-4">
       <div className="meet-the-execs">
         <a className={`card${colour} limit`} >
-          <img src={data["image"]} ref={imgRef} onLoad={onImgLoad} className="card-img-top" />
+          <img
+            alt={data["name"]}
+            src={data["image"]}
+            ref={imgRef}
+            onLoad={onImgLoad}
+            className="card-img-top" />
           <p style={{ fontSize: fontSize }}>{data["description"]}</p>
           <div className={`go-corner${colour}`}>
-            <div className="go-arrow">
-            </div>
+            <div className="go-arrow" />
           </div>
         </a>
       </div>
