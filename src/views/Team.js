@@ -137,10 +137,12 @@ class Team extends React.Component {
                   <Row className="justify-content-center text-center mb-lg">
                     <h2>The Committee</h2>
                   </Row>
-                  {members["subcoms"] && members["subcoms"].map(portfolio => (
+                  {members["subcoms"] ? members["subcoms"].map(portfolio => (
                     <Subcom
                       data={portfolio} />
-                  ))}
+                  )) : (
+                    <h4 className="display-1">Coming soon!</h4>
+                  )}
                 </div>
               </section>
             </div>

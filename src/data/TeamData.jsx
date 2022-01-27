@@ -466,9 +466,7 @@ const MEMBERS = [
       },
       // TODO: fill in FYR as they come in
     ],
-    "subcoms": [
-      // TODO: fill in subcom as they come in
-    ]
+    // TODO: fill in subcom as they come in
   }
 ];
 
