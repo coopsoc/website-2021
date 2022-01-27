@@ -405,7 +405,7 @@ const MEMBERS = [
               director I will deliver a broad range of inclusive and enjoyable events that enable Co-op scholars across
               degrees and year groups to build strong friendships and break away from university stressors.`,
               "name": "Jess Degeling",
-              "role": "Events"
+              "role": "Social"
             },
             {
               "image": Alannah_Image,
