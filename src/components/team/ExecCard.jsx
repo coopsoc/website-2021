@@ -4,7 +4,7 @@ const ExecCard = ({ data, colour, fontSize, imgRef, onImgLoad }) => {
   return (
     <div className="col-md-4">
       <div className="meet-the-execs">
-        <a className={`card${colour} limit`} >
+        <a className={`card${colour} limit`}>
           <img
             alt={data["name"]}
             src={data["image"]}
@@ -19,7 +19,7 @@ const ExecCard = ({ data, colour, fontSize, imgRef, onImgLoad }) => {
       </div>
       <div className="card-body text-center">
         <h4 className="about-name">{data["name"]}</h4>
-        {data["role"] === "" ? <p className="about-role">{data["role"]}</p> : null}
+        {data["role"] === "" ? null : <p className="about-role">{data["role"]}</p>}
       </div>
     </div>
   );
