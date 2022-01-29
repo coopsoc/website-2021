@@ -131,20 +131,20 @@ class Team extends React.Component {
                   onImgLoad={this.onImgLoad} />
               ))}
 
-              <section className="about-section text-center bg-white pb-sm-5">
-                <div className="container subcom">
-                  <hr></hr>
-                  <Row className="justify-content-center text-center mb-lg">
-                    <h2>The Committee</h2>
-                  </Row>
-                  {members["subcoms"] ? members["subcoms"].map(portfolio => (
-                    <Subcom
-                      data={portfolio} />
-                  )) : (
-                    <h4 className="display-1">Coming soon!</h4>
-                  )}
-                </div>
-              </section>
+              {members["subcoms"] && (
+                <section className="about-section text-center bg-white pb-sm-5">
+                  <div className="container subcom">
+                    <hr></hr>
+                    <Row className="justify-content-center text-center mb-lg">
+                      <h2>The Committee</h2>
+                    </Row>
+                    {members["subcoms"].map(portfolio => (
+                      <Subcom
+                        data={portfolio} />
+                    ))}
+                  </div>
+                </section>
+              )}
             </div>
           </section>
         </main>
