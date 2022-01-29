@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
 
-import { SPONSORS } from "views/data/CharityData";
+import { SPONSORS } from "../../data/CharityData";
 
 const CharityList = () => {
   return (

@@ -36,8 +36,8 @@ import '../assets/css/my.css';
 import Typewriter from 'typewriter-effect';
 
 // images
-import Ball2021 from '../assets/img/upcomingEvents/co-op_ball.jpg'
-import ILFCaseComp from '../assets/img/upcomingEvents/ILF_case_comp.jpg'
+import Ball2021 from '../assets/img/events/upcoming/co-op_ball.jpg'
+import ILFCaseComp from '../assets/img/events/upcoming/ILF_case_comp.jpg'
 
 // Import Swiper styles
 import 'swiper/swiper.scss';

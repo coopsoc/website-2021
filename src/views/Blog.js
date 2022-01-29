@@ -18,10 +18,10 @@ import Kahoot_Image from '../assets/img/pubs/kahoot.png'
 import connected from '../assets/img/pubs/connected.jpg'
 import placement from '../assets/img/pubs/placement.jpg'
 
-import Roary_Image from '../assets/img/2020_exec/Roary.jpg'
-import Stanley_Image from '../assets/img/2020_exec/Stanley.jpeg'
-import Emily_Image from '../assets/img/2020_exec/Emily.png'
-import Lelland_Image from '../assets/img/2020_exec/Lelland.jpeg'
+import Roary_Image from '../assets/img/exec/2020/Roary.jpg'
+import Stanley_Image from '../assets/img/exec/2020/Stanley.jpeg'
+import Emily_Image from '../assets/img/exec/2020/Emily.png'
+import Lelland_Image from '../assets/img/exec/2020/Lelland.jpeg'
 
 // reactstrap components
 import {

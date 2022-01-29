@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useBreakpoints } from "react-use-size";
 import { Col, Container, Row } from "reactstrap";
 
-import { UPCOMING } from "views/data/CharityData";
+import { UPCOMING } from "../../data/CharityData";
 
 /**
  * Partitions a list into smaller sublists, each with a maximum of n elements.

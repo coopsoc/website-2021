@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Container, Row } from "reactstrap";
 import { Slide } from "@mui/material";
 
-import CharitySlider from "./events/CharitySlider";
+import YearSlider from "../YearSlider";
 import CharityCard from "./events/CharityCard";
 
 class CharityEvents extends React.Component {
@@ -64,7 +64,7 @@ class CharityEvents extends React.Component {
   render() {
     return (
       <>
-        <CharitySlider
+        <YearSlider
           start={this.props.start}
           end={this.props.end}
           onChange={year => this.updateYear(year)} />

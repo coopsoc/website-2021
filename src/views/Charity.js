@@ -21,7 +21,7 @@ import CharityModal from "components/charity/CharityModal";
 import CharityUpcoming from "components/charity/CharityUpcoming";
 
 
-import { START, END, EVENTS } from "./data/CharityData.jsx";
+import { START, END, EVENTS } from "../data/CharityData.jsx";
 
 
 class Charity extends React.Component {
