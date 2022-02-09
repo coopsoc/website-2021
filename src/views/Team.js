@@ -27,7 +27,7 @@ import {
 // core components
 import Header from "components/Header";
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 
 import ExecSection from "components/team/ExecSection";
 import YearSlider from "components/YearSlider";
@@ -148,7 +148,7 @@ class Team extends React.Component {
             </div>
           </section>
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

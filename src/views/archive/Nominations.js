@@ -21,7 +21,7 @@ import "animate.css"
 // core components
 import Header from "components/Header";
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 import NomineeCard from "components/nominations/NomineeCard";
 import NomineeModal from "components/nominations/NomineeModal";
 
@@ -221,7 +221,7 @@ class Nominations extends React.Component {
             isOpen={this.state.toggleModal}
             toggle={this.setModal} />
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

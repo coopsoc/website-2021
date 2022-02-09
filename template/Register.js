@@ -36,7 +36,7 @@ import {
 
 // core components
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 
 class Register extends React.Component {
   componentDidMount() {
@@ -188,7 +188,7 @@ class Register extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

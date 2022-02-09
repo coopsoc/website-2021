@@ -29,7 +29,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-class SimpleFooter extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
       <>
@@ -54,4 +54,4 @@ class SimpleFooter extends React.Component {
   }
 }
 
-export default SimpleFooter;
+export default Footer;

@@ -36,7 +36,7 @@ import {
 
 // core components
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 
 class Login extends React.Component {
   componentDidMount() {
@@ -178,7 +178,7 @@ class Login extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

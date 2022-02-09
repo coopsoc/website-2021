@@ -4,7 +4,7 @@ import React from "react";
 // core components
 import Header from "components/Header";
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 
 // nodejs library that concatenates classes
 import classnames from "classnames";
@@ -167,7 +167,7 @@ class Publications extends React.Component {
 
           </section>
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }
