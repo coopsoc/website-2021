@@ -10,19 +10,9 @@ const SocialDistanceBlog = () => {
         <h4 className="modal-title" id="modal-title-default">
           Social Distancing Without the Socially Distant
         </h4>
-
-        <button
-          aria-label="Close"
-          className="close"
-          data-dismiss="modal"
-          type="button"
-          onClick={() => this.toggleModal("modal1")}
-        >
-          <span aria-hidden={true}>×</span>
-        </button>
       </div>
-      <div className="modal-body">
 
+      <div className="modal-body">
         <section id="publications" class="publications-section pb-md-4">
           <div class="container pb-md-4">
             <h4 class="display-5 text-left">

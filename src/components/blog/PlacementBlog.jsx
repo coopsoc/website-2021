@@ -23,19 +23,9 @@ const PlacementBlog = () => {
         <h4 className="modal-title" id="modal-title-default">
           First Placement Experiences
         </h4>
-
-        <button
-          aria-label="Close"
-          className="close"
-          data-dismiss="modal"
-          type="button"
-          onClick={() => this.toggleModal("modal2")}
-        >
-          <span aria-hidden={true}>×</span>
-        </button>
       </div>
-      <div className="modal-body">
 
+      <div className="modal-body">
         <section id="publications" class="publications-section pb-md-4">
           <div class="container pb-md-4">
             <br></br>
