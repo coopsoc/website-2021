@@ -3,7 +3,7 @@ import React from "react";
 // core components
 import Header from "components/Header";
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 
 // yess let's get those animations
 import "animate.css";
@@ -135,7 +135,7 @@ class Charity extends React.Component {
             toggle={this.toggleModal}
             event={this.state.currentEvent} />
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

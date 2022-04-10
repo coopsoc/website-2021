@@ -22,7 +22,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 
 // core components
 import Navigation from "components/Navigation";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footer";
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -160,7 +160,7 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

@@ -244,8 +244,7 @@ class Navigation extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.linkedin.com/in/kenuka-wijayatunga-9b1990198/"
-                      //href="https://www.linkedin.com/company/unsw-co-op-society/"
+                      href="https://www.linkedin.com/company/unsw-co-op-society/"
                       id="tooltip184698705"
                       target="_blank"
                     >
