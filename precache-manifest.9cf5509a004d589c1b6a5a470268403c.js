@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f75fa470837fe77eb830d342a7c94dee",
+    "revision": "8c019b2aa9f11128edf007336e1ea42b",
     "url": "/index.html"
   },
   {
-    "revision": "777a78960ab7d64d9843",
-    "url": "/static/css/2.420168ba.chunk.css"
+    "revision": "735c4f47398404b7b0c3",
+    "url": "/static/css/2.5ad76346.chunk.css"
   },
   {
-    "revision": "71b21bd3a229580f30c0",
-    "url": "/static/css/main.29e224bd.chunk.css"
+    "revision": "af47dbca6a15f9e60c69",
+    "url": "/static/css/main.f6199994.chunk.css"
   },
   {
-    "revision": "777a78960ab7d64d9843",
-    "url": "/static/js/2.c0c031b2.chunk.js"
+    "revision": "735c4f47398404b7b0c3",
+    "url": "/static/js/2.901b5106.chunk.js"
   },
   {
     "revision": "20f042ed7f0a3d33a250c33c95c9dfd9",
-    "url": "/static/js/2.c0c031b2.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.901b5106.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71b21bd3a229580f30c0",
-    "url": "/static/js/main.2732c99c.chunk.js"
+    "revision": "af47dbca6a15f9e60c69",
+    "url": "/static/js/main.42b4ce9c.chunk.js"
   },
   {
     "revision": "7a6956e196ccd2e4ccc8856708b02847",
-    "url": "/static/js/main.2732c99c.chunk.js.LICENSE.txt"
+    "url": "/static/js/main.42b4ce9c.chunk.js.LICENSE.txt"
   },
   {
     "revision": "8aa3d7f9ac5e47205f7b",
@@ -228,8 +228,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
-    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
-    "url": "/static/media/fontawesome-webfont.acf3dcb7.svg"
+    "revision": "912ec66d7572ff821749319396470bde",
+    "url": "/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
@@ -292,16 +292,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo_white.8bdceb4b.png"
   },
   {
+    "revision": "0b8a30b10cbe7708d5f3a4b007c1d665",
+    "url": "/static/media/nucleo-icons.0b8a30b1.svg"
+  },
+  {
     "revision": "2569aaea6eaaf8cd210db7f2fa016743",
     "url": "/static/media/nucleo-icons.2569aaea.woff"
   },
   {
     "revision": "426439788ec5ba772cdf94057f6f4659",
     "url": "/static/media/nucleo-icons.42643978.woff2"
-  },
-  {
-    "revision": "46abbc4a676739dbd61f8a305cb63fd8",
-    "url": "/static/media/nucleo-icons.46abbc4a.svg"
   },
   {
     "revision": "c1733565b32b585676302d4233c39da8",
