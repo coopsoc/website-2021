@@ -41,9 +41,6 @@ import {
   Col
 } from "reactstrap";
 
-// index page sections
-import Download from "./components/Download.js.js.js.js";
-
 
 class Index extends React.Component {
   componentDidMount() {
@@ -686,7 +683,6 @@ class Index extends React.Component {
               </Row>
             </Container>
           </section>
-          <Download />
         </main>
         <CardsFooter />
       </>

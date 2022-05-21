@@ -6,15 +6,15 @@ import Footer from "components/Footer.jsx";
 
 const Podcast = () => {
   const mainRef = useRef();
-  
+
   return (
     <>
       <Navigation />
-        <main ref={mainRef}>
-          <Header />
-        </main>
-        <Footer />
-      </>
+      <main ref={mainRef}>
+        <Header />
+      </main>
+      <Footer />
+    </>
   );
 };
 
