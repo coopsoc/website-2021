@@ -1,33 +1,18 @@
 import React from "react";
 
 // core components
-import Header from "components/Header";
 import Navigation from "components/Navigation";
 import Footer from "components/Footer";
 
-// nodejs library that concatenates classes
-import classnames from "classnames";
-
 // reactstrap components
 import {
-  UncontrolledAlert,
-  Badge,
   Button,
   Card,
   CardBody,
-  CardLink,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
-  NavLink,
-  Label
 } from "reactstrap";
-import { Link } from "react-router-dom";
 
 // import css
 import '../assets/css/my.css';
@@ -35,14 +20,8 @@ import '../assets/css/my.css';
 // Effects
 import Typewriter from 'typewriter-effect';
 
-// images
-import Ball2021 from '../assets/img/events/upcoming/co-op_ball.jpg'
-import ILFCaseComp from '../assets/img/events/upcoming/ILF_case_comp.jpg'
-
 // Import Swiper styles
 import 'swiper/swiper.scss';
-// import Swiper JS
-import Swiper from "swiper";
 // import Swiper styles
 import 'swiper/swiper-bundle.css';
 // core version + navigation, pagination modules:
@@ -53,17 +32,23 @@ SwiperCore.use([SNavigation, Pagination]);
 
 
 class Index extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.mainRef = React.createRef();
+  }
+
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
+    this.mainRef.current.scrollTop = 0;
   }
 
   render() {
     return (
       <>
         <Navigation />
-        <main ref="main">
+        <main ref={this.mainRef}>
 
           <div className="position-relative">
             {/* shape Hero */}
@@ -145,7 +130,7 @@ class Index extends React.Component {
                             <Button
                               className="btn-icon mb-3 mb-sm-0"
                               color="index1"
-                              href="#/events"
+                              href="/events"
                             >
                               Learn more
                             </Button>
@@ -173,7 +158,7 @@ class Index extends React.Component {
                             <Button
                               className="mt-4"
                               color="index2"
-                              href="#/publications"
+                              href="/publications"
                             >
                               Learn more
                             </Button>
@@ -201,7 +186,7 @@ class Index extends React.Component {
                             <Button
                               className="btn-icon mb-3 mb-sm-0"
                               color="index3"
-                              href="#/charity"
+                              href="/charity"
                             >
                               Learn more
                             </Button>
@@ -218,65 +203,6 @@ class Index extends React.Component {
           <br></br>
           <br></br>
           <br></br>
-
-
-          <section className="section section-lg pt-lg-0 mt--200">
-
-            <Container>
-
-
-
-              {/* <hr></hr>
-          <section class="section section-lg">
-          <Row>
-          <Col>
-          <Row className="justify-content-center text-center ">
-            <Col lg="8">       
-              <h2 className="display-3">UPCOMING EVENTS</h2>
-              <br></br>
-            </Col>                
-          </Row>
-            <div class="eventcard-slider eventcard-bg-wrapper" >
-              <div class="eventcard-slider__wrp swiper-wrapper container">
-
-                <div class="eventcard-slider__item swiper-slide">
-                  <div class="eventcard-slider__img">
-                    <img src={ILFCaseComp} alt="ILF Case Comp 2021"/>
-                  </div>
-                  <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">On now!</span>
-                    <div class="eventcard-slider__title">The Indigenous Literacy Foundation x Co-op Soc: 2021 Charity Case Competition</div>
-                    <div class="eventcard-slider__text">Our annual charity case comp.</div>
-   
-                  </div>
-                </div>
-
-                <div class="eventcard-slider__item swiper-slide">
-                  <div class="eventcard-slider__img">
-                    <img src={Ball2021} alt="Ball 2021"/>
-                  </div>
-                  <div class="eventcard-slider__content">
-                    <span class="eventcard-slider__code">27 August 2021</span>
-                    <div class="eventcard-slider__title">Co-op Ball</div>
-                    <div class="eventcard-slider__text">Our annual Co-op Ball is back!</div>
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="eventcard-slider__pagination"></div>
-            </div>
-
-          </Col> 
-          </Row>
-        </section> */}
-              {/* <hr></hr> */}
-              {/* <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
-
-            </Container>
-          </section>
-
-
         </main>
         <Footer />
       </>

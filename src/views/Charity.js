@@ -21,7 +21,7 @@ import CharityModal from "components/charity/CharityModal";
 import CharityUpcoming from "components/charity/CharityUpcoming";
 
 
-import { START, END, EVENTS } from "../data/CharityData.jsx";
+import { START, END, EVENTS } from "../data/CharityData.js";
 
 
 class Charity extends React.Component {
@@ -56,12 +56,6 @@ class Charity extends React.Component {
   toggleModal = () => {
     this.setState({
       showModal: !this.state.showModal
-    });
-  }
-
-  toggleGFMModal = () => {
-    this.setState({
-      goFundMePopUp: !this.state.goFundMePopUp
     });
   }
 

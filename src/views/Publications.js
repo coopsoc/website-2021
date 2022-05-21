@@ -1,4 +1,3 @@
-
 import React from "react";
 
 // core components
@@ -6,51 +5,23 @@ import Header from "components/Header";
 import Navigation from "components/Navigation";
 import Footer from "components/Footer";
 
-// nodejs library that concatenates classes
-import classnames from "classnames";
-
 // reactstrap components
 import {
-  Badge,
-  Button,
   Card,
   CardBody,
-  CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
-  Modal,
   Row,
-  Col,
-  UncontrolledAlert
+  Col
 } from "reactstrap";
 
 import { Link } from "react-router-dom";
 
-
 // yess let's get those animations
-import "animate.css"
-
-// plugin that creates slider
-import Slider from "nouislider";
-
-// images
-import sixKForWater from '../assets/img/charity/6k-for-water.jpg'
-import bloodDrive from '../assets/img/charity/blood-drive.jpg'
-import caseComp from '../assets/img/charity/case-comp.jpg'
-import greatestShave from '../assets/img/charity/greatest-shave.jpg'
-import hscWorkshop from '../assets/img/charity/hsc-workshops.jpg'
-import pokerNight from '../assets/img/charity/poker.jpg'
-import caseComp2021 from '../assets/img/charity/case-comp2021.png'
-import funRun from '../assets/img/charity/funRun.jpg'
-
+import "animate.css";
 
 // Fas Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullhorn, faDesktop, faDove, faEdit, faHandsHelping, faMicrophoneAlt, faQuestion, faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import { faHandsHelping, faMicrophoneAlt } from "@fortawesome/free-solid-svg-icons";
 
 class Publications extends React.Component {
 
@@ -130,7 +101,7 @@ class Publications extends React.Component {
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
-                        <a href="https://open.spotify.com/show/25fOObrHq0t3hPrmf8B8Dx?si=IYM-tZg-Q0CfufTKVqTqJg&dl_branch=1" target="_blank">
+                        <Link to={{ pathname: "/podcast" }}>
                           <CardBody className="py-5">
                             <div className="icon icon-shape icon-shape-index3 rounded-circle mb-4">
                               <FontAwesomeIcon icon={faMicrophoneAlt} size="4x" />
@@ -139,7 +110,7 @@ class Publications extends React.Component {
                               Podcast
                             </h6>
                           </CardBody>
-                        </a>
+                        </Link>
 
                         {/* <iframe src="https://open.spotify.com/embed/show/25fOObrHq0t3hPrmf8B8Dx?theme=0" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
 
@@ -161,18 +132,13 @@ class Publications extends React.Component {
                   </Row>
                 </Col>
               </Row>
-
             </Container>
-
-
           </section>
         </main>
         <Footer />
       </>
     );
   }
-
 }
-
 
 export default Publications;

@@ -2,21 +2,21 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Subcom = ({ data }) => {
-  const n_icons = data["icon"].length;
+  const n_icons = data["icons"].length;
 
   return (
     <>
       <br />
       <div class="row">
         <div class="col-sm-8">
-          {data["icon"].map((icon, index) => {
+          {data["icons"].map((icon, index) => {
             if (index === n_icons - 1) {
               return <FontAwesomeIcon icon={icon} size="4x" />;
             } else {
               return <FontAwesomeIcon icon={icon} size="4x" style={{ margin: "10px" }} />;
             }
           })}
-          <FontAwesomeIcon icon={data["icon"]} size="4x" />
+          <FontAwesomeIcon icon={data["icons"]} size="4x" />
           <div class="card-body text-center">
             <h4 class="about-name">{data["name"]}</h4>
             <p class="card-text subcom-desc">{data["description"]}</p>
