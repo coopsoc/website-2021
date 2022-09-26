@@ -7,6 +7,8 @@ import hscWorkshop from '../assets/img/charity/hsc-workshops.jpg';
 import pokerNight from '../assets/img/charity/poker.jpg';
 import caseComp2021 from '../assets/img/charity/case-comp2021.png';
 import funRun from '../assets/img/charity/funRun.jpg';
+import charitycasecomp from '../assets/img/charity/charitycasecop.jpg';
+import funRun22 from '../assets/img/charity/funrun2022.jpg';
 
 // Sponsor charity images
 import ILF from "assets/img/charity/logos/ilf.png";
@@ -19,9 +21,10 @@ import WorldVision from "assets/img/charity/logos/world_vision.png";
 // Upcoming event images
 import FHF from "assets/img/charity/upcoming/40_hour_famine.png";
 import WGS from "assets/img/charity/upcoming/worlds_greatest_shave.png";
+import coopLogo from "../assets/img/charity/coopLogo.jpg";
 
 const START = 2019;
-const END = 2021;
+const END = 2022;
 
 const EVENTS = [
   [
@@ -97,6 +100,23 @@ const EVENTS = [
       "link": "https://www.facebook.com/events/286927249456511/",
     },
   ],
+  [
+    {
+      // Special items specifically for the case comp
+      "special": "casecomp",
+      // Regular
+      "title": "Case Comp 2021",
+      "image": charitycasecomp,
+      "description": `In term 2, we collaborated with the TLR Foundation to deliver a case challenging teams to increase the number of suitable donors on the Australian Bone Marrow Donor Registry (ABMDR). `,
+      "link": "https://www.facebook.com/events/369691528601159/",
+    },
+    {
+      "title": "Fun Run",
+      "image": funRun22,
+      "description": `This year, Co-ops walked or ran from Rose Bay to Lighthouse Reserve in Vaucluse, in support of the Givit Flood Relief Appeal. `,
+      "link": "https://www.facebook.com/events/2052689421569622",
+    },
+  ],
 ];
 
 const SPONSORS = [
@@ -134,14 +154,9 @@ const SPONSORS = [
 
 const UPCOMING = [
   {
-    "name": "40 Hour Famine",
-    "image": FHF,
-    "date": "17th June 2021",
-  },
-  {
-    "name": "World's Greatest Shave",
-    "image": WGS,
-    "date": "15th Oct 2021",
+    "name": "Poker Night",
+    "image": coopLogo,
+    "date": "Term 3",
   },
 ];
 
